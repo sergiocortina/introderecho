@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 — Estructura del Derecho Positivo Mexicano</title>
+    
+    <!-- Reveal.js CSS + Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --r-background-color: #0a0a1a;
+            --r-main-font: 'Inter', sans-serif;
+            --r-heading-font: 'Playfair Display', serif;
+            --r-main-font-size: 24px;
+            --accent-blue: #4f8cff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --glass: rgba(255,255,255,0.06);
+            --glass-border: rgba(255,255,255,0.1);
+        }
+        
+        .reveal {
+            font-family: var(--r-main-font);
+        }
+        
+        .reveal .slides {
+            text-align: left;
+        }
+        
+        .reveal .slides section {
+            padding: 20px 40px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .reveal .slides section * {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .reveal .slides p, .reveal .slides li, .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        
+        /* ====== TITLE SLIDE ====== */
+        .reveal .slides section.title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+        }
+        
+        .reveal .slides section.title-slide h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4f8cff, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .reveal .slides section.title-slide .subtitle {
+            font-size: 1em;
+            color: rgba(255,255,255,0.6);
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .reveal .slides section.title-slide .unit-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.7em;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+        
+        /* ====== SECTION HEADERS ====== */
+        .reveal .slides section.section-header {
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+        }
+        
+        .reveal .slides section.section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4f8cff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+        
+        .reveal .slides section.section-header .section-icon {
+            font-size: 2.5em;
+            margin-bottom: 14px;
+            display: block;
+        }
+        
+        /* ====== CONTENT CARDS ====== */
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin: 8px 0;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .card p, .card li, .card h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            font-size: 0.85em;
+        }
+        
+        .card-accent-blue { border-left: 4px solid var(--accent-blue); }
+        .card-accent-purple { border-left: 4px solid var(--accent-purple); }
+        .card-accent-pink { border-left: 4px solid var(--accent-pink); }
+        .card-accent-green { border-left: 4px solid var(--accent-green); }
+        .card-accent-orange { border-left: 4px solid var(--accent-orange); }
+        .card-accent-red { border-left: 4px solid var(--accent-red); }
+        
+        /* ====== GRIDS ====== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 14px;
+        }
+        
+        .grid-2 > .card, .grid-3 > .card {
+            margin: 0;
+            min-width: 0;
+        }
+        
+        /* ====== HEADINGS ====== */
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            color: white;
+            font-weight: 700;
+        }
+        
+        .reveal h2 {
+            font-size: 1.4em;
+            margin-bottom: 14px;
+        }
+        
+        .reveal h3 {
+            font-size: 1.05em;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+        
+        .reveal h4 {
+            font-size: 0.9em;
+            color: var(--accent-purple);
+        }
+        
+        /* ====== TEXT ====== */
+        .reveal p, .reveal li {
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+        
+        .reveal ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .reveal ul li {
+            padding: 3px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .reveal ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        
+        /* ====== HIGHLIGHTS ====== */
+        .highlight {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        
+        .highlight-purple {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        
+        .highlight-pink {
+            color: var(--accent-pink);
+            font-weight: 600;
+        }
+        
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+        
+        /* ====== EMOJI ICONS ====== */
+        .icon-lg {
+            font-size: 1.6em;
+            display: inline-block;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        
+        .icon-xl {
+            font-size: 3em;
+            display: block;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        
+        /* ====== TIMELINE ====== */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--accent-pink));
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 10px;
+            padding: 8px 14px;
+            background: var(--glass);
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 18px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: 2px solid #0a0a1a;
+        }
+        
+        .timeline-item .year {
+            font-size: 0.75em;
+            color: var(--accent-blue);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .timeline-item .event {
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.8);
+            margin-top: 4px;
+        }
+        
+        /* ====== QUOTE / DEFINITION ====== */
+        .definition-box {
+            background: linear-gradient(135deg, rgba(79,140,255,0.15), rgba(168,85,247,0.15));
+            border: 1px solid rgba(79,140,255,0.3);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 14px 0;
+            position: relative;
+        }
+        
+        .definition-box::before {
+            content: '📖';
+            font-size: 1.5em;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+        }
+        
+        .definition-box .def-title {
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-blue);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        
+        .definition-box .def-text {
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.5;
+        }
+        
+        /* ====== COMPARISON TABLE ====== */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.65em;
+            margin-top: 12px;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 8px 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 7px 12px;
+            border-bottom: 1px solid var(--glass-border);
+            color: rgba(255,255,255,0.85);
+        }
+        
+        .comparison-table tr:nth-child(even) td {
+            background: var(--glass);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* ====== FUN FACT / CURIOSITY ====== */
+        .fun-fact {
+            background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1));
+            border: 1px solid rgba(245,158,11,0.3);
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+        
+        .fun-fact .ff-label {
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* ====== QUIZ CARD ====== */
+        .quiz-card {
+            background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(79,140,255,0.15));
+            border: 1px solid rgba(16,185,129,0.3);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 10px 0;
+        }
+        
+        .quiz-card .quiz-q {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        
+        .quiz-option {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 7px 14px;
+            margin: 4px 0;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .quiz-option:hover {
+            border-color: var(--accent-green);
+            background: rgba(16,185,129,0.1);
+        }
+        
+        .quiz-option.correct {
+            border-color: var(--accent-green);
+            background: rgba(16,185,129,0.2);
+            color: var(--accent-green);
+        }
+        
+        .quiz-option.wrong {
+            border-color: var(--accent-red);
+            background: rgba(239,68,68,0.1);
+            opacity: 0.6;
+        }
+        
+        /* ====== PRINCIPLE CARDS ====== */
+        .principle-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 14px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+        
+        .principle-card .p-icon {
+            font-size: 1.6em;
+            margin-bottom: 6px;
+        }
+        
+        .principle-card .p-name {
+            font-weight: 700;
+            font-size: 0.8em;
+            color: white;
+            margin-bottom: 4px;
+        }
+        
+        .principle-card .p-desc {
+            font-size: 0.65em;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.3;
+        }
+        
+        /* ====== REAL LIFE EXAMPLE ====== */
+        .real-life {
+            background: linear-gradient(135deg, rgba(236,72,153,0.15), rgba(168,85,247,0.15));
+            border: 1px solid rgba(236,72,153,0.3);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 10px 0;
+        }
+        
+        .real-life .rl-label {
+            color: var(--accent-pink);
+            font-weight: 700;
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+        
+        /* ====== COUNTER ====== */
+        .counter-number {
+            font-size: 3em;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+        
+        /* ====== SCROLLBAR ====== */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(79,140,255,0.5);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(79,140,255,0.7);
+        }
+        
+        /* ====== BUTTONS ====== */
+        .index-btn, .fullscreen-btn {
+            position: fixed;
+            top: 16px;
+            z-index: 9999;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid var(--glass-border);
+            background: rgba(10,10,26,0.7);
+            backdrop-filter: blur(10px);
+            color: rgba(255,255,255,0.8);
+            font-size: 1em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .index-btn {
+            right: 16px;
+        }
+        
+        .fullscreen-btn {
+            right: 66px;
+        }
+        
+        .index-btn:hover, .fullscreen-btn:hover {
+            background: rgba(79,140,255,0.25);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* ====== SLIDE NAV ====== */
+        .slide-nav {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(10,10,26,0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .slide-nav:hover {
+            background: rgba(79,140,255,0.2);
+        }
+        
+        .slide-nav-display {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .slide-nav-current {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        
+        .slide-nav-sep {
+            color: rgba(255,255,255,0.4);
+        }
+        
+        .slide-nav-input {
+            width: 40px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            text-align: center;
+            outline: none;
+            display: none;
+        }
+        
+        .slide-nav-input.active {
+            display: block;
+        }
+        
+        /* ====== FRAGMENT COUNTER ====== */
+        .fragment-counter {
+            position: fixed;
+            top: 22px;
+            right: 142px;
+            z-index: 9999;
+            height: 38px;
+            padding: 0 14px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            background: rgba(10,10,26,0.65);
+            backdrop-filter: blur(10px);
+            color: rgba(255,255,255,0.9);
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            white-space: nowrap;
+        }
+        
+        .fragment-counter.has-fragments {
+            display: flex;
+        }
+        
+        .fragment-counter .fc-current {
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Contador de elementos por diapositiva -->
+    <div class="fragment-counter" id="fragment-counter" title="Elementos de la diapositiva (mostrados/total)">
+        <span class="fc-current">0</span>/<span class="fc-total">0</span>
+    </div>
+    
+    <button class="index-btn" id="index-btn" title="Ir al índice de la unidad" aria-label="Ir al índice de la unidad">
+        <i class="fa-solid fa-list-ul"></i>
+    </button>
+    
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa" aria-label="Pantalla completa">
+        <i class="fa-solid fa-expand"></i>
+    </button>
+    
+    <!-- Navegador de diapositivas -->
+    <div class="slide-nav" id="slide-nav" title="Clic para ir a una diapositiva">
+        <div class="slide-nav-display">
+            <span class="slide-nav-current" id="slide-nav-current">1</span>
+            <span class="slide-nav-sep">/</span>
+            <span id="slide-nav-total">1</span>
+        </div>
+        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1" placeholder="">
+    </div>
+    
+    <div class="reveal">
+        <div class="slides">
+        
+            <!-- ========== PORTADA ========== -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%)">
+                <span class="unit-badge">Unidad 1</span>
+                <h1 style="margin-top: 30px;">Estructura del Derecho<br>Positivo Mexicano</h1>
+                <p class="subtitle">Introducción al Derecho — Elementos Básicos</p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.7em; margin-top: 40px;">
+                    <i class="fa-solid fa-book"></i> Patricia Lemus Raya & José Manuel Vargas Menchaca<br>
+                    <i class="fa-solid fa-building-columns"></i> Pearson Educación · UNAM
+                </p>
+            </section>
+            
+            <!-- ========== OBJETIVOS ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎯</span> Objetivos de Aprendizaje</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em; margin-bottom: 16px;">Al terminar esta unidad podrás:</p>
+                
+                <div class="grid-2">
+                    <div>
+                        <div class="card card-accent-blue fragment">
+                            <h4 style="color: var(--accent-blue);">📚 Comprender</h4>
+                            <p style="font-size: 0.8em;">La importancia del derecho en la vida cotidiana del ser humano</p>
+                        </div>
+                        <div class="card card-accent-purple fragment">
+                            <h4 style="color: var(--accent-purple);">🔍 Distinguir</h4>
+                            <p style="font-size: 0.8em;">Las diferencias entre ley natural y ley social</p>
+                        </div>
+                        <div class="card card-accent-pink fragment">
+                            <h4 style="color: var(--accent-pink);">📝 Identificar</h4>
+                            <p style="font-size: 0.8em;">Las normas jurídicas y su clasificación</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-accent-green fragment">
+                            <h4 style="color: var(--accent-green);">📖 Definir</h4>
+                            <p style="font-size: 0.8em;">Las diversas definiciones del vocablo "derecho"</p>
+                        </div>
+                        <div class="card card-accent-orange fragment">
+                            <h4 style="color: var(--accent-orange);">⚖️ Analizar</h4>
+                            <p style="font-size: 0.8em;">La diferencia entre derecho positivo y derecho vigente</p>
+                        </div>
+                        <div class="card card-accent-red fragment">
+                            <h4 style="color: var(--accent-red);">🏛️ Clasificar</h4>
+                            <p style="font-size: 0.8em;">Las ramas del derecho: público, privado y social</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== MAPA CONCEPTUAL ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Mapa Conceptual</h2>
+                
+                <div style="font-family: 'Consolas', monospace; font-size: 0.65em; line-height: 1.5; color: rgba(255,255,255,0.85); background: var(--glass); border-radius: 12px; padding: 20px 24px; border: 1px solid var(--glass-border);">
+                    <div style="text-align: center; font-weight: 700; font-size: 1.15em; margin-bottom: 14px; color: var(--accent-blue);">ESTRUCTURA DEL DERECHO POSITIVO MEXICANO</div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
+                        <div>
+                            <div style="color: var(--accent-blue); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">📘 CONCEPTOS BÁSICOS</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Importancia del derecho<br>
+                                ├── Mundos del ser y deber ser<br>
+                                ├── Ley natural vs social<br>
+                                └── Axiología jurídica
+                            </div>
+                            
+                            <div style="color: var(--accent-green); font-weight: 700; margin-top: 12px; margin-bottom: 6px; font-size: 1.05em;">📜 NORMAS</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Morales<br>
+                                ├── Religiosas<br>
+                                ├── Jurídicas<br>
+                                └── De trato social
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div style="color: var(--accent-purple); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">⚖️ DEFINICIÓN DEL DERECHO</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Derecho objetivo<br>
+                                ├── Derecho subjetivo<br>
+                                ├── Derecho positivo<br>
+                                └── Derecho vigente
+                            </div>
+                            
+                            <div style="color: var(--accent-orange); font-weight: 700; margin-top: 12px; margin-bottom: 6px; font-size: 1.05em;">🏛️ ORGANIZACIÓN DEL ESTADO</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Poder Legislativo<br>
+                                ├── Poder Ejecutivo<br>
+                                └── Poder Judicial
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div style="color: var(--accent-pink); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">📋 PROCESOS LEGISLATIVOS</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Iniciativa<br>
+                                ├── Discusión<br>
+                                ├── Aprobación<br>
+                                ├── Sanción<br>
+                                ├── Publicación<br>
+                                └── Vigencia
+                            </div>
+                            
+                            <div style="color: var(--accent-red); font-weight: 700; margin-top: 12px; margin-bottom: 6px; font-size: 1.05em;">🔗 FUENTES DEL DERECHO</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Históricas<br>
+                                ├── Reales<br>
+                                └── Formales
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== ÍNDICE DE LA UNIDAD ========== -->
+            <section data-background-color="#0a0a1a" id="indice">
+                <h2><span class="icon-lg">📑</span> Índice de la Unidad 1</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Toca o haz clic en un tema para ir directo a él</p>
+                
+                <div class="grid-2" style="margin-top: 10px;">
+                    <a class="card card-accent-blue" href="#/sec-importancia" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">1. Importancia del Derecho</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">En la vida cotidiana</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-ser-deber" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">2. Mundos del Ser y Deber Ser</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Ley natural vs ley social</p>
+                    </a>
+                    <a class="card card-accent-pink" href="#/sec-axiologia" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-pink); margin: 0;">3. Axiología Jurídica</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Valores y fines del derecho</p>
+                    </a>
+                    <a class="card card-accent-green" href="#/sec-normas" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-green); margin: 0;">4. Las Normas</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Morales, religiosas, jurídicas</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/sec-normas-juridicas" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">5. Normas Jurídicas</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Ámbitos de validez</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/sec-definicion" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">6. Definición del Derecho</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Objetivo, subjetivo, positivo</p>
+                    </a>
+                    <a class="card card-accent-blue" href="#/sec-poder-publico" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">7. Organización del Estado</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Los tres poderes</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-procesos" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">8. Procesos Legislativos</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Creación de las normas</p>
+                    </a>
+                    <a class="card card-accent-green" href="#/sec-fuentes" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-green); margin: 0;">9. Fuentes del Derecho</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Históricas, reales, formales</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/quiz" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">🧠 Autoevaluación</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Preguntas interactivas</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/casos" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">📋 Casos Prácticos</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Aplica lo aprendido</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sintesis" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">🗂️ Síntesis Final</h4>
+                        <p style="font-size: 0.75em; margin: 4px 0 0;">Repaso completo</p>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 1: IMPORTANCIA DEL DERECHO ========== -->
+            <section class="section-header" id="sec-importancia" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">⚖️</span>
+                <h2>Importancia del Derecho</h2>
+                <p style="color: rgba(255,255,255,0.5);">En la vida cotidiana del ser humano</p>
+            </section>
+            
+            <!-- Tres aspectos fundamentales -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔑</span> Tres Aspectos Fundamentales</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Para entender el derecho debemos considerar:</p>
+                
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">📜</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Orden Normativo</h4>
+                        <p style="font-size: 0.75em;">La norma jurídica y la autoridad que conforma el Estado</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">👥</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Orden Social</h4>
+                        <p style="font-size: 0.75em;">Todos los fines alcanzables mediante la convivencia humana</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">💎</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Orden Ético</h4>
+                        <p style="font-size: 0.75em;">El bien actuar, participan lo normativo y lo social</p>
+                    </div>
+                </div>
+                
+                <div class="fun-fact fragment" style="margin-top: 16px;">
+                    <div class="ff-label">💡 Dato importante</div>
+                    <p style="font-size: 0.85em;">Sin los principios del orden ético, las normas y las relaciones sociales <strong>perderían su carácter humano y carecerían de sentido</strong>.</p>
+                </div>
+            </section>
+            
+            <!-- Por qué surge el derecho -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤔</span> ¿Por qué surge el Derecho?</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        El ser humano vive en compañía de sus semejantes, lo que trae como consecuencia que existan <strong>fricciones o conflictos</strong> entre las personas. Por eso surge el derecho como autoridad necesaria para regular la convivencia y <strong>evitar el uso de la fuerza</strong>.
+                    </div>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-green);">🎯 Misión del Derecho</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;">Señalar a cada quien sus <strong>derechos, facultades y obligaciones</strong></li>
+                        <li style="font-size: 0.85em;">Garantizar una convivencia social humana</li>
+                        <li style="font-size: 0.85em;">Generar <strong>paz, seguridad y orden social</strong> sobre bases de igualdad y justicia</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- El derecho es omnipresente -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> El Derecho es Omnipresente</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Todas las actividades del hombre están regidas por el derecho</p>
+                
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🛒</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Compras y Ventas</h4>
+                        <p style="font-size: 0.75em;">Todo lo que compras o vendes está sujeto al derecho</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">💒</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Familia</h4>
+                        <p style="font-size: 0.75em;">Matrimonio, divorcio, unión libre, testamento</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🏢</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Empresas</h4>
+                        <p style="font-size: 0.75em;">Relaciones entre personas morales y sociedades anónimas</p>
+                    </div>
+                </div>
+                
+                <div class="real-life fragment" style="margin-top: 16px;">
+                    <div class="rl-label">🌍 Ejemplos modernos</div>
+                    <p style="font-size: 0.85em;">El derecho también regula aspectos como: <strong>ecología, espacio exterior, internet</strong> y nuevas tecnologías que surgieron a partir de la segunda mitad del siglo XX.</p>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 2: MUNDOS DEL SER Y DEL DEBER SER ========== -->
+            <section class="section-header" id="sec-ser-deber" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🌍</span>
+                <h2>Mundos del Ser y del Deber Ser</h2>
+                <p style="color: rgba(255,255,255,0.5);">Ontología y Deontología Jurídica</p>
+            </section>
+            
+            <!-- Ser vs Deber ser -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Dos Mundos Distintos</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📖 Mundo del SER</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Explicación objetiva de una realidad evidente</li>
+                            <li style="font-size: 0.8em;">Sistema de la razón que explica las cosas y sus relaciones</li>
+                            <li style="font-size: 0.8em;">Estudiado por la <strong>ontología</strong> (ontología jurídica)</li>
+                            <li style="font-size: 0.8em;">Regulado por la razón pura según leyes constantes e indefectibles</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📝 Mundo del DEBER SER</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Necesidad moral de realizar actos acordes con el bienestar humano</li>
+                            <li style="font-size: 0.8em;">Actos que perfeccionan y los que degradan</li>
+                            <li style="font-size: 0.8em;">Estudiado por la <strong>deontología</strong> (deontología jurídica)</li>
+                            <li style="font-size: 0.8em;">Regulado por la razón práctica según leyes morales</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="definition-box fragment" style="margin-top: 16px;">
+                    <div class="def-title">Cita de Miguel Villoro Toranzo</div>
+                    <div class="def-text">
+                        "Los juicios (de valor) tienen una función reguladora de la objetividad; es claro que la distinción entre juicios enunciativos y juicios normativos establece <strong>dos reinos distintos de objetividad</strong>."
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Ley Natural -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌿</span> La Ley Natural</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Concepto</div>
+                    <div class="def-text">
+                        Dios es principio y fin de todas las cosas; puede ser conocido con certeza, partiendo de las cosas creadas por la <strong>luz natural de nuestra razón</strong>. Al crear el mundo, estableció sus propias directrices que constituyen el orden universal.
+                    </div>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-green);">📋 Características</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;">Comprende todos los criterios y principios supremos de la conducta humana</li>
+                        <li style="font-size: 0.85em;">Contiene juicios enunciativos que explican y demuestran relaciones entre fenómenos</li>
+                        <li style="font-size: 0.85em;">Es <strong>válida cuando es verdadera</strong>; el derecho natural es intrínsecamente justo</li>
+                        <li style="font-size: 0.85em;">Regula relaciones de carácter <strong>necesario y son inviolables</strong></li>
+                        <li style="font-size: 0.85em;">Pertenece al <strong>mundo del ser</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">📖 Incluye</div>
+                    <p style="font-size: 0.85em;">Leyes naturales (físicas, químicas, biológicas), leyes lógicas, morales e históricas.</p>
+                </div>
+            </section>
+            
+            <!-- Ley Social -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👥</span> La Ley Social</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Concepto</div>
+                    <div class="def-text">
+                        Expresa reglas de conducta, señala el acto que debe realizarse porque es justo, útil o conveniente; también expresa la omisión de un determinado acto.
+                    </div>
+                </div>
+                
+                <div class="grid-2 fragment" style="margin-top: 16px;">
+                    <div class="card card-accent-orange">
+                        <h4 style="color: var(--accent-orange);">📋 Características</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Constituye el <strong>mundo normativo o del deber ser</strong></li>
+                            <li style="font-size: 0.8em;">Regula relaciones de carácter <strong>contingente</strong></li>
+                            <li style="font-size: 0.8em;">Los supuestos pueden o no suceder</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-red">
+                        <h4 style="color: var(--accent-red);">⚠️ Importante</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Son susceptibles de ser <strong>violadas</strong></li>
+                            <li style="font-size: 0.8em;">Esto NO conduce a su invalidez</li>
+                            <li style="font-size: 0.8em;">No se afecta la importancia de su contenido</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="comparison-table fragment" style="margin-top: 16px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Ley Natural</th>
+                                <th>Ley Social</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Mundo</strong></td>
+                                <td>Ser (realidad)</td>
+                                <td>Deber ser (norma)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Carácter</strong></td>
+                                <td>Necesario</td>
+                                <td>Contingente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Violación</strong></td>
+                                <td>Inviolable</td>
+                                <td>Sancionable</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Validez</strong></td>
+                                <td>Cuando es verdadera</td>
+                                <td>Por autoridad competente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 3: AXIOLOGÍA JURÍDICA ========== -->
+            <section class="section-header" id="sec-axiologia" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">💎</span>
+                <h2>Axiología Jurídica</h2>
+                <p style="color: rgba(255,255,255,0.5);">Valores y Fines del Derecho</p>
+            </section>
+            
+            <!-- Valores jurídicos - García Máynez -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⭐</span> Valores Jurídicos (García Máynez)</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">¿Qué es la axiología?</div>
+                    <div class="def-text">
+                        Disciplina que estudia los <strong>valores</strong> a cuya realización debe tender el derecho. También llamada <strong>estimativa</strong>, es la parte de la filosofía encargada del estudio de los valores.
+                    </div>
+                </div>
+                
+                <div class="grid-3 fragment" style="margin-top: 16px;">
+                    <div class="card card-accent-blue" style="text-align: center;">
+                        <span style="font-size: 2em;">🏛️</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Fundamentales</h4>
+                        <p style="font-size: 0.75em;"><strong>Justicia, Seguridad Jurídica, Bien Común</strong><br>De ellos depende todo orden jurídico genuino</p>
+                    </div>
+                    <div class="card card-accent-purple" style="text-align: center;">
+                        <span style="font-size: 2em;">🎯</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Consecutivos</h4>
+                        <p style="font-size: 0.75em;"><strong>Libertad, Igualdad, Paz Social</strong><br>Consecuencia de los fundamentales</p>
+                    </div>
+                    <div class="card card-accent-pink" style="text-align: center;">
+                        <span style="font-size: 2em;">🔧</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Instrumentales</h4>
+                        <p style="font-size: 0.75em;"><strong>Garantías constitucionales y procesales</strong><br>Medios de realización</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 11 Valores jurídicos - Rojas Roldán -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌟</span> 11 Valores Jurídicos (Rojas Roldán)</h2>
+                
+                <div class="grid-3" style="font-size: 0.85em;">
+                    <div class="card card-accent-blue fragment">
+                        <p><strong>1. Justicia social</strong><br><span style="font-size: 0.8em;">Dar a cada quien lo que le corresponde</span></p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <p><strong>2. Paz social</strong><br><span style="font-size: 0.8em;">Todo se realice sin violencia</span></p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <p><strong>3. Solidaridad</strong><br><span style="font-size: 0.8em;">Cooperación y repartir responsabilidades</span></p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <p><strong>4. Seguridad jurídica</strong><br><span style="font-size: 0.8em;">Las leyes se aplican a todos por igual</span></p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <p><strong>5. Orden</strong><br><span style="font-size: 0.8em;">Lo contrario a caos, planificación</span></p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <p><strong>6. Libertad</strong><br><span style="font-size: 0.8em;">Necesaria para existencia y desarrollo</span></p>
+                    </div>
+                    <div class="card card-accent-blue fragment">
+                        <p><strong>7. Dignidad humana</strong><br><span style="font-size: 0.8em;">Reconocimiento de calidad humana</span></p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <p><strong>8. Igualdad humana</strong><br><span style="font-size: 0.8em;">Tratamiento equiparado</span></p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <p><strong>9. Equidad</strong><br><span style="font-size: 0.8em;">Grado máximo de justicia</span></p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <p><strong>10. Bien común</strong><br><span style="font-size: 0.8em;">Bienestar de la sociedad</span></p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <p><strong>11. Equilibrio social</strong><br><span style="font-size: 0.8em;">Punto de moderación</span></p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Fines del derecho -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎯</span> Los Fines del Derecho</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Diferencia entre valores y fines</div>
+                    <div class="def-text">
+                        Los <strong>fines</strong> son los propósitos a cumplir; los <strong>valores</strong> son la meta a seguir. El ser humano es el único ser que puede proponerse fines y estar en contacto con los valores.
+                    </div>
+                </div>
+                
+                <div class="grid-2 fragment" style="margin-top: 16px;">
+                    <div class="card card-accent-blue">
+                        <h4 style="color: var(--accent-blue);">⚖️ Justicia</h4>
+                        <p style="font-size: 0.8em;">Es social porque surge en la sociedad. La estabilidad del sistema jurídico depende de la disposición a aceptar las normas como justas y rectas.</p>
+                    </div>
+                    <div class="card card-accent-purple">
+                        <h4 style="color: var(--accent-purple);">🛡️ Seguridad</h4>
+                        <p style="font-size: 0.8em;">El individuo sabe que su situación no será cambiada por una acción violenta. Incluye la <strong>certeza</strong> sobre las consecuencias de nuestros actos.</p>
+                    </div>
+                    <div class="card card-accent-green">
+                        <h4 style="color: var(--accent-green);">🤝 Bien Común</h4>
+                        <p style="font-size: 0.8em;">El bienestar de la mayoría de individuos de una sociedad organizada políticamente. Es la justa organización para evitar injusticias.</p>
+                    </div>
+                    <div class="card card-accent-orange">
+                        <h4 style="color: var(--accent-orange);">📜 Equidad</h4>
+                        <p style="font-size: 0.8em;">El grado máximo de justicia. Busca el equilibrio entre las partes en conflicto.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 4: LAS NORMAS ========== -->
+            <section class="section-header" id="sec-normas" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📋</span>
+                <h2>Las Normas</h2>
+                <p style="color: rgba(255,255,255,0.5);">Morales, Religiosas, Jurídicas y de Trato Social</p>
+            </section>
+            
+            <!-- Clasificación de normas -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> Clasificación de las Normas</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🙏 Normas Morales</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Manera de actuar, sentir y pensar</li>
+                            <li style="font-size: 0.8em;">Vinculan al hombre con Dios</li>
+                            <li style="font-size: 0.8em;">Unilaterales e incoercibles</li>
+                            <li style="font-size: 0.8em;">Autónomas (se autolegislan)</li>
+                            <li style="font-size: 0.8em;">Interior (conciencia) y exterior (actuar)</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">⛪ Normas Religiosas</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Surgen de la actitud humana al actuar</li>
+                            <li style="font-size: 0.8em;">Unilaterales e incoercibles</li>
+                            <li style="font-size: 0.8em;">Cumplimiento espontáneo</li>
+                            <li style="font-size: 0.8em;">Sin presiones externas</li>
+                            <li style="font-size: 0.8em;">Interior y exterior</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">⚖️ Normas Jurídicas</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Mandatos que determinan lo que debe ser</li>
+                            <li style="font-size: 0.8em;">Impuestas por el Estado</li>
+                            <li style="font-size: 0.8em;"><strong>Obligatorias y coercibles</strong></li>
+                            <li style="font-size: 0.8em;">Crean deberes y otorgan facultades</li>
+                            <li style="font-size: 0.8em;">Sancionables (civil, administrativa, penal)</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange);">🤝 Normas de Trato Social</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Hacen más llevadera la convivencia</li>
+                            <li style="font-size: 0.8em;">Evitan situaciones de tensión social</li>
+                            <li style="font-size: 0.8em;">Cortesía, tolerancia y urbanidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Características de las normas jurídicas -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔍</span> Características de las Normas Jurídicas</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">↔️ Bilateralidad</h4>
+                        <p style="font-size: 0.8em;">Tienen dos aspectos: un derecho y una obligación. Todo lo que es facultad de alguno es obligación para otro, y viceversa.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">👁️ Externalidad</h4>
+                        <p style="font-size: 0.8em;">Al derecho le interesan las <strong>manifestaciones externas</strong> de la conducta humana, el aspecto objetivo del comportamiento.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">👑 Heteronomía</h4>
+                        <p style="font-size: 0.8em;">Están sometidas a la autoridad o mando de <strong>otro</strong> (el Estado). No se autolegislan.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">💪 Coercibilidad</h4>
+                        <p style="font-size: 0.8em;">Imponen el cumplimiento de sus mandatos <strong>por la fuerza</strong> si es necesario.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 5: NORMAS JURÍDICAS - ÁMBITOS DE VALIDEZ ========== -->
+            <section class="section-header" id="sec-normas-juridicas" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📐</span>
+                <h2>Ámbitos de Validez</h2>
+                <p style="color: rgba(255,255,255,0.5);">Clasificación de las Normas Jurídicas</p>
+            </section>
+            
+            <!-- Ámbito espacial -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Ámbito Espacial de Validez</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">El espacio geográfico o territorial en que un precepto es aplicable</p>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🌍 Normas Internacionales</h4>
+                        <p style="font-size: 0.8em;">Regulan relaciones entre Estados</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🇲🇽 Normas Nacionales o Federales</h4>
+                        <p style="font-size: 0.8em;">Aplicables en todo el territorio nacional</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🏛️ Normas Locales o Estatales</h4>
+                        <p style="font-size: 0.8em;">Aplicables en una entidad federativa</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">🏘️ Normas Municipales</h4>
+                        <p style="font-size: 0.8em;">Aplicables en un municipio</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Ámbito material -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📚</span> Ámbito Material de Validez</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Depende del tema, tipo de asunto o materia jurídica</p>
+                
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🏛️</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Derecho Público</h4>
+                        <p style="font-size: 0.75em;">Constitucional, Administrativo, Penal, Internacional Público</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">👥</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Derecho Privado</h4>
+                        <p style="font-size: 0.75em;">Civil, Mercantil</p>
+                    </div>
+                    <div class="card card-accent-green fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🤝</span>
+                        <h4 style="color: var(--accent-green); margin-top: 8px;">Derecho Social</h4>
+                        <p style="font-size: 0.75em;">Agrario, Laboral, Seguridad Social</p>
+                    </div>
+                </div>
+                
+                <div class="fun-fact fragment" style="margin-top: 16px;">
+                    <div class="ff-label">📖 Dato histórico</div>
+                    <p style="font-size: 0.85em;">En la antigüedad solo existían derecho público y privado. Es a partir del <strong>siglo XX</strong> cuando se comienza a hablar de derecho social.</p>
+                </div>
+            </section>
+            
+            <!-- Ámbito temporal -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⏰</span> Ámbito Temporal de Validez</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Las normas tienen una vigencia determinada</p>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📅 Sistema Sucesivo</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Vigencia a los <strong>3 días</strong> siguientes a su publicación</li>
+                            <li style="font-size: 0.8em;">Se extiende 1 día por cada 40 km de distancia</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📅 Sistema Sincrónico</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Vigencia en la fecha indicada en el artículo transitorio</li>
+                            <li style="font-size: 0.8em;">Generalmente al <strong>día siguiente</strong> de su publicación</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid-2 fragment" style="margin-top: 16px;">
+                    <div class="card card-accent-orange">
+                        <h4 style="color: var(--accent-orange);">❌ Abrogación</h4>
+                        <p style="font-size: 0.8em;"><strong>Revocación TOTAL</strong> de una ley u ordenamiento jurídico</p>
+                    </div>
+                    <div class="card card-accent-red">
+                        <h4 style="color: var(--accent-red);">✂️ Derogación</h4>
+                        <p style="font-size: 0.8em;"><strong>Revocación PARCIAL</strong> (solo se eliminan algunos artículos)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Ámbito personal y jerarquía -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👥</span> Ámbito Personal y Jerarquía</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">👤 Ámbito Personal</h4>
+                        <p style="font-size: 0.8em;">Las normas son aplicables para:</p>
+                        <ul>
+                            <li style="font-size: 0.8em;">Solo mayores de edad o menores</li>
+                            <li style="font-size: 0.8em;">Hombres o mujeres</li>
+                            <li style="font-size: 0.8em;">Obreros o comerciantes</li>
+                            <li style="font-size: 0.8em;">Nacionales o extranjeros</li>
+                            <li style="font-size: 0.8em;"><strong>Genéricas</strong> (todos) o <strong>Individualizadas</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📊 Jerarquía Normativa</h4>
+                        <p style="font-size: 0.8em;">Las normas superiores regulan la creación de las inferiores:</p>
+                        <ul>
+                            <li style="font-size: 0.8em;"><strong>1.</strong> Constitucionales (CPEUM)</li>
+                            <li style="font-size: 0.8em;"><strong>2.</strong> Leyes reglamentarias</li>
+                            <li style="font-size: 0.8em;"><strong>3.</strong> Leyes ordinarias/secundarias</li>
+                            <li style="font-size: 0.8em;"><strong>4.</strong> Reglamentos, decretos, acuerdos</li>
+                            <li style="font-size: 0.8em;"><strong>5.</strong> Sentencias, convenios, contratos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 6: DEFINICIÓN DEL DERECHO ========== -->
+            <section class="section-header" id="sec-definicion" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📖</span>
+                <h2>Definición del Derecho</h2>
+                <p style="color: rgba(255,255,255,0.5);">Objetivo, Subjetivo, Positivo y Vigente</p>
+            </section>
+            
+            <!-- Definición general -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📚</span> ¿Qué es el Derecho?</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición de Rafael Rojina Villegas</div>
+                    <div class="def-text">
+                        "Un conjunto de normas <strong>bilaterales, externas, generalmente heterónomas y coercibles</strong>, que tienen por objeto regular la conducta humana en su interferencia intersubjetiva."
+                    </div>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-green);">📝 Definición completa</h4>
+                    <p style="font-size: 0.85em;">El derecho es el <strong>conjunto de conceptos, principios, instituciones, normas y fines</strong> establecidos por los hombres para regular la convivencia social que permita la armonía y paz social.</p>
+                </div>
+                
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">📖 Etimología</div>
+                    <p style="font-size: 0.85em;">La palabra "derecho" proviene del latín <strong>directum</strong> (dirigere → regere: conducir rectamente). Siempre en la misma dirección, sin ángulos ni torceduras.</p>
+                </div>
+            </section>
+            
+            <!-- Cuatro acepciones -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔢</span> Cuatro Acepciones del Derecho</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">✋ Derecho como Facultad</h4>
+                        <p style="font-size: 0.8em;">Poder, pretensión, facultad o autorización que conforme a la norma jurídica tiene un sujeto frente a otros.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📚 Derecho como Ciencia</h4>
+                        <p style="font-size: 0.8em;">Conjunto de conocimientos sistemáticos sobre las normas jurídicas.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">⚖️ Derecho como Idea Moral</h4>
+                        <p style="font-size: 0.8em;">La idea de justicia que inspira las normas.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">📋 Derecho como Sistema de Normas</h4>
+                        <p style="font-size: 0.8em;">El conjunto ordenado de normas que regulan la convivencia.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Derecho Objetivo y Subjetivo -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Derecho Objetivo vs Subjetivo</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📜 Derecho Objetivo</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Conjunto de disposiciones legales</li>
+                            <li style="font-size: 0.8em;">Protege la facultad de una persona</li>
+                            <li style="font-size: 0.8em;">Se divide en <strong>interno</strong> y <strong>externo</strong></li>
+                            <li style="font-size: 0.8em;">El interno: público, privado, social</li>
+                            <li style="font-size: 0.8em;">El externo: interestatal</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">👤 Derecho Subjetivo</h4>
+                        <p style="font-size: 0.8em;">Se divide en tres:</p>
+                        <ul>
+                            <li style="font-size: 0.8em;"><strong>1.</strong> Conducta propia autorizada (ej: propiedad)</li>
+                            <li style="font-size: 0.8em;"><strong>2.</strong> Pretensión: exigir conducta de otro</li>
+                            <li style="font-size: 0.8em;"><strong>3.</strong> Poder de formación jurídica (crear, modificar, extinguir relaciones)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="real-life fragment" style="margin-top: 16px;">
+                    <div class="rl-label">💡 Ejemplo práctico</div>
+                    <p style="font-size: 0.85em;"><strong>Ejemplo:</strong> Los hijos tienen la <em>facultad</em> de exigir educación, alimentos y vivienda. Cuando el Código Civil <em>obliga</em> a los padres a dar alimentos, se convierte en <strong>derecho objetivo</strong>.</p>
+                </div>
+            </section>
+            
+            <!-- Derecho Positivo y Vigente -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Derecho Positivo y Derecho Vigente</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📜 Derecho Positivo</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Conjunto de normas con <strong>fuerza obligatoria</strong> en momento y lugar determinados</li>
+                            <li style="font-size: 0.8em;">Es el derecho de una sociedad</li>
+                            <li style="font-size: 0.8em;">Es vigente, eficaz y fáctico</li>
+                            <li style="font-size: 0.8em;">Cuenta con medios coercitivos</li>
+                            <li style="font-size: 0.8em;">Interviene la voluntad de los hombres</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📋 Derecho Vigente</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Conjunto de normas <strong>imperativas</strong></li>
+                            <li style="font-size: 0.8em;">En cierta época y país determinado</li>
+                            <li style="font-size: 0.8em;">El Estado considera <strong>obligatoria su observancia</strong></li>
+                            <li style="font-size: 0.8em;">Es políticamente reconocido</li>
+                            <li style="font-size: 0.8em;">Lo crea y aplica el Estado por medio de sus órganos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fun-fact fragment" style="margin-top: 16px;">
+                    <div class="ff-label">📖 Ejemplo contemporáneo</div>
+                    <p style="font-size: 0.85em;">El <strong>matrimonio entre personas del mismo sexo</strong> es un ejemplo de derecho vigente: antes no existía, ahora es reconocido en países como Suecia, Holanda, Canadá y España.</p>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 7: ORGANIZACIÓN DEL ESTADO ========== -->
+            <section class="section-header" id="sec-poder-publico" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏛️</span>
+                <h2>Organización del Estado</h2>
+                <p style="color: rgba(255,255,255,0.5);">Los Tres Poderes Públicos</p>
+            </section>
+            
+            <!-- Los tres poderes -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> División de Poderes</h2>
+                
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">📜</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Poder Legislativo</h4>
+                        <p style="font-size: 0.75em;"><strong>Congreso de la Unión</strong><br>Diputados (3 años) y Senadores (6 años)<br>Crea leyes y decretos</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">👔</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Poder Ejecutivo</h4>
+                        <p style="font-size: 0.75em;"><strong>Presidente de la República</strong><br>Jefe de Estado y de Gobierno<br>Ejecuta las leyes</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">⚖️</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Poder Judicial</h4>
+                        <p style="font-size: 0.75em;"><strong>Tribunales y Juzgados</strong><br>Juzgados de distrito (unipersonales)<br>Tribunales colegiados (3 magistrados)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Administración Pública -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏢</span> La Administración Pública</h2>
+                
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Administración Centralizada</h4>
+                        <p style="font-size: 0.8em;">18 Secretarías de Estado, entre ellas:</p>
+                        <ul>
+                            <li style="font-size: 0.8em;">Secretaría de Gobernación</li>
+                            <li style="font-size: 0.8em;">Secretaría de Economía</li>
+                            <li style="font-size: 0.8em;">Secretaría de Hacienda</li>
+                            <li style="font-size: 0.8em;">Y 15 más...</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🏢 Administración Paraestatal</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Empresas de participación estatal mayoritaria o minoritaria</li>
+                            <li style="font-size: 0.8em;">Sociedades nacionales de crédito</li>
+                            <li style="font-size: 0.8em;">Fideicomisos públicos</li>
+                            <li style="font-size: 0.8em;">Instituciones de seguros y fianzas</li>
+                            <li style="font-size: 0.8em;">Organismos públicos descentralizados</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="fun-fact fragment" style="margin-top: 16px;">
+                    <div class="ff-label">📖 Marco legal</div>
+                    <p style="font-size: 0.85em;">Ley Orgánica de la Administración Pública Federal, Reglamentos Interiores de las Secretarías, Manuales de Organización y Ley Federal de las Entidades Paraestatales.</p>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 8: PROCESOS LEGISLATIVOS ========== -->
+            <section class="section-header" id="sec-procesos" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📋</span>
+                <h2>Procesos de Creación de las Normas</h2>
+                <p style="color: rgba(255,255,255,0.5);">El Proceso Legislativo</p>
+            </section>
+            
+            <!-- Las 6 fases -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔄</span> Las 6 Fases del Proceso Legislativo</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item fragment">
+                        <div class="year">FASE 1</div>
+                        <div class="event"><strong>Iniciativa</strong> — Primer paso; facultad de proponer un proyecto de ley. Art. 71 CPEUM: Presidente, diputados, senadores, legislaturas.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">FASE 2</div>
+                        <div class="event"><strong>Discusión</strong> — Se examina en cámaras. Para impuestos/reclutamiento: primero en Cámara de Diputados (Art. 72 CPEUM).</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">FASE 3</div>
+                        <div class="event"><strong>Aprobación</strong> — Las cámaras aceptan la iniciativa con votos afirmativos de la mayoría.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">FASE 4</div>
+                        <div class="event"><strong>Sanción</strong> — El Presidente firma la aprobación. Puede ejercer el <strong>derecho de veto</strong> (suspensivo, no absoluto).</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">FASE 5</div>
+                        <div class="event"><strong>Publicación</strong> — Diario Oficial de la Federación (federal) o Gaceta del Distrito Federal (local).</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">FASE 6</div>
+                        <div class="event"><strong>Iniciación de Vigencia</strong> — Sistema sucesivo (3 días + 1 por 40 km) o sincrónico (fecha del transitorio).</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Derecho de veto -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚫</span> El Derecho de Veto</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Concepto</div>
+                    <div class="def-text">
+                        Es la facultad del Presidente de <strong>devolver</strong> un texto aprobado por las cámaras con <strong>observaciones</strong>. No es absoluto sino <strong>suspensivo</strong>.
+                    </div>
+                </div>
+                
+                <div class="card card-accent-red fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-red);">⚠️ Limitaciones del veto</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;">No puede rechazar el texto en su <strong>totalidad</strong></li>
+                        <li style="font-size: 0.85em;">Solo puede formular <strong>observaciones y discusiones</strong></li>
+                        <li style="font-size: 0.85em;">Las cámaras reenvían el texto al Presidente para sancionar</li>
+                        <li style="font-size: 0.85em;">Proceso similar para gobernadores y Jefe del DF en leyes locales</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 9: FUENTES DEL DERECHO ========== -->
+            <section class="section-header" id="sec-fuentes" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🔗</span>
+                <h2>Fuentes del Derecho</h2>
+                <p style="color: rgba(255,255,255,0.5);">Históricas, Reales y Formales</p>
+            </section>
+            
+            <!-- Las tres fuentes -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📚</span> Tres Clases de Fuentes</h2>
+                
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición de Rafael Rojina Villegas</div>
+                    <div class="def-text">
+                        "Los diversos procesos a través de los cuales se elaboran las normas jurídicas."
+                    </div>
+                </div>
+                
+                <div class="grid-3 fragment" style="margin-top: 16px;">
+                    <div class="card card-accent-blue" style="text-align: center;">
+                        <span style="font-size: 2em;">📜</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Fuentes Históricas</h4>
+                        <p style="font-size: 0.75em;">Manifestaciones reales que dan origen a las normas: factores sociales, políticos, económicos</p>
+                    </div>
+                    <div class="card card-accent-purple" style="text-align: center;">
+                        <span style="font-size: 2em;">🌍</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Fuentes Reales</h4>
+                        <p style="font-size: 0.75em;">Formas reguladas por el propio derecho para la creación sistemática y ordenada</p>
+                    </div>
+                    <div class="card card-accent-pink" style="text-align: center;">
+                        <span style="font-size: 2em;">📋</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Fuentes Formales</h4>
+                        <p style="font-size: 0.75em;">Proceso legislativo, obra de la jurisprudencia, costumbre jurídica</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ========== SECCIÓN 10: AUTOEVALUACIÓN ========== -->
+            <section class="section-header" id="quiz" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🧠</span>
+                <h2>Autoevaluación</h2>
+                <p style="color: rgba(255,255,255,0.5);">Pon a prueba tus conocimientos</p>
+            </section>
+            
+            <!-- Quiz 1 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 1</h2>
+                
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Cuáles son los tres aspectos fundamentales para entender el derecho?</div>
+                    
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Moral, religión y costumbre</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Orden normativo, orden social y orden ético</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Ley natural, ley positiva y ley social</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Público, privado y social</div>
+                </div>
+            </section>
+            
+            <!-- Quiz 2 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 2</h2>
+                
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Cuál es la diferencia entre abrogación y derogación?</div>
+                    
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Son sinónimos</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Abrogación es supresión total; derogación es parcial</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Abrogación es parcial; derogación es total</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Solo existe la derogación</div>
+                </div>
+            </section>
+            
+            <!-- Quiz 3 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 3</h2>
+                
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Qué características tienen las normas jurídicas?</div>
+                    
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Unilaterales, autónomas e incoercibles</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Bilaterales, heterónomas y coercibles</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Morales, religiosas y sociales</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Internas, externas y secretas</div>
+                </div>
+            </section>
+            
+            <!-- Quiz 4 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 4</h2>
+                
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Cuántas fases tiene el proceso legislativo según Soto Pérez?</div>
+                    
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) 4 fases</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">B) 5 fases</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">C) 6 fases</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) 7 fases</div>
+                </div>
+            </section>
+            
+            <!-- Quiz 5 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 5</h2>
+                
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Qué es el derecho de veto del Presidente?</div>
+                    
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Poder absoluto para rechazar leyes</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Facultad suspensiva para formular observaciones</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Derecho para crear nuevas leyes</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Poder para cambiar la Constitución</div>
+                </div>
+            </section>
+            
+            <!-- ========== CASOS PRÁCTICOS ========== -->
+            <section class="section-header" id="casos" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📋</span>
+                <h2>Casos Prácticos</h2>
+                <p style="color: rgba(255,255,255,0.5);">Aplica lo aprendido</p>
+            </section>
+            
+            <!-- Caso 1 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 1: La Ley del Agua</h2>
+                
+                <div class="real-life">
+                    <div class="rl-label">🌍 Situación</div>
+                    <p style="font-size: 0.85em;">La compañía de agua de tu ciudad cobra tarifas que consideras excesivas. Decides presentar una queja ante la autoridad competente.</p>
+                </div>
+                
+                <div class="card card-accent-green fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-green);">🔍 Análisis</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;"><strong>¿Qué tipo de norma regula esto?</strong> Norma jurídica (obligatoria y coercible)</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué ámbito de validez?</strong> Espacial: local; Material: derecho público administrativo</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué poder interviene?</strong> Poder Ejecutivo (regulación) y potencialmente el Judicial</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Caso 2 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 2: La Nueva Ley Electoral</h2>
+                
+                <div class="real-life">
+                    <div class="rl-label">🌍 Situación</div>
+                    <p style="font-size: 0.85em;">El Congreso de la Unión aprueba una nueva ley que modifica las reglas para financiamiento de partidos políticos. El Presidente no está de acuerdo.</p>
+                </div>
+                
+                <div class="card card-accent-orange fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-orange);">🔍 Análisis</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;"><strong>¿Qué fase del proceso?</strong> El Presidente puede ejercer su derecho de veto</li>
+                        <li style="font-size: 0.85em;"><strong>¿Es absoluto o suspensivo?</strong> Suspensivo: solo puede formular observaciones</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué sigue?</strong> Las cámaras reenvían el texto para su sanción</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Caso 3 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 3: Valores Jurídicos</h2>
+                
+                <div class="real-life">
+                    <div class="rl-label">🌍 Situación</div>
+                    <p style="font-size: 0.85em;">Una empresa despedió a 100 trabajadores sin justificación. Los trabajadores demandan ante la Junta de Conciliación y Arbitraje.</p>
+                </div>
+                
+                <div class="card card-accent-purple fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-purple);">🔍 Análisis</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;"><strong>¿Qué valor se afecta?</strong> Justicia social (dar a cada quien lo que le corresponde)</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué tipo de derecho?</strong> Derecho social (laboral)</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué norma aplica?</strong> Ley Federal del Trabajo</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- ========== SÍNTESIS FINAL ========== -->
+            <section class="section-header" id="sintesis" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🗂️</span>
+                <h2>Síntesis de la Unidad</h2>
+                <p style="color: rgba(255,255,255,0.5);">Repaso final de todo lo aprendido</p>
+            </section>
+            
+            <!-- Resumen completo -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Resumen de la Unidad 1</h2>
+                
+                <div class="grid-2">
+                    <div>
+                        <div class="card card-accent-blue fragment">
+                            <h4 style="color: var(--accent-blue);">⚖️ Conceptos Básicos</h4>
+                            <p style="font-size: 0.75em;">El derecho regula la convivencia social. Tres órdenes: normativo, social y ético.</p>
+                        </div>
+                        <div class="card card-accent-purple fragment">
+                            <h4 style="color: var(--accent-purple);">🌍 Ser vs Deber Ser</h4>
+                            <p style="font-size: 0.75em;">Ley natural (ser, necesario, inviolable) vs ley social (deber ser, contingente, sancionable).</p>
+                        </div>
+                        <div class="card card-accent-pink fragment">
+                            <h4 style="color: var(--accent-pink);">💎 Valores Jurídicos</h4>
+                            <p style="font-size: 0.75em;">Fundamentales (justicia, seguridad, bien común), consecutivos e instrumentales.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-accent-green fragment">
+                            <h4 style="color: var(--accent-green);">📋 Normas</h4>
+                            <p style="font-size: 0.75em;">Morales, religiosas, jurídicas (bilaterales, heterónomas, coercibles) y de trato social.</p>
+                        </div>
+                        <div class="card card-accent-orange fragment">
+                            <h4 style="color: var(--accent-orange);">🏛️ Organización del Estado</h4>
+                            <p style="font-size: 0.75em;">Tres poderes: Legislativo, Ejecutivo y Judicial. Administración centralizada y paraestatal.</p>
+                        </div>
+                        <div class="card card-accent-red fragment">
+                            <h4 style="color: var(--accent-red);">📜 Proceso Legislativo</h4>
+                            <p style="font-size: 0.75em;">6 fases: Iniciativa → Discusión → Aprobación → Sanción → Publicación → Vigencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Cierre -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%)">
+                <span class="unit-badge">Unidad 1 Completa</span>
+                <h1 style="margin-top: 30px;">¡Excelente Trabajo!</h1>
+                <p class="subtitle">Ya conoces la estructura del derecho positivo mexicano</p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.7em; margin-top: 40px;">
+                    <i class="fa-solid fa-book"></i> Introducción al Derecho — Patricia Lemus Raya & José Manuel Vargas Menchaca<br>
+                    <i class="fa-solid fa-building-columns"></i> Universidad Cristóbal Colón
+                </p>
+            </section>
+        
+        </div>
+    </div>
+    
+    <!-- Reveal.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    
+    <script>
+        // ====== INICIALIZACIÓN ======
+        Reveal.initialize({
+            hash: true,
+            slideNumber: false,
+            controls: false,
+            progress: false,
+            center: false,
+            transition: 'slide',
+            transitionSpeed: 'fast',
+            width: 1280,
+            height: 720,
+            margin: 0.04,
+            keyboard: true,
+            overview: true,
+            touch: true,
+            loop: false
+        });
+        
+        // ====== NAVEGADOR DE DIAPOSITIVAS ======
+        const slideNav = document.getElementById('slide-nav');
+        const slideNavCurrent = document.getElementById('slide-nav-current');
+        const slideNavTotal = document.getElementById('slide-nav-total');
+        const slideNavInput = document.getElementById('slide-nav-input');
+        
+        Reveal.on('slidechanged', (event) => {
+            slideNavCurrent.textContent = event.indexh + 1;
+        });
+        
+        Reveal.on('ready', () => {
+            slideNavTotal.textContent = Reveal.getTotalSlides();
+            slideNavCurrent.textContent = Reveal.getIndices().h + 1;
+        });
+        
+        slideNav.addEventListener('click', () => {
+            slideNavInput.classList.toggle('active');
+            if (slideNavInput.classList.contains('active')) {
+                slideNavInput.value = slideNavCurrent.textContent;
+                slideNavInput.focus();
+                slideNavInput.select();
+            }
+        });
+        
+        slideNavInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const slideNum = parseInt(slideNavInput.value);
+                if (slideNum >= 1 && slideNum <= Reveal.getTotalSlides()) {
+                    Reveal.slide(slideNum - 1);
+                }
+                slideNavInput.classList.remove('active');
+            } else if (e.key === 'Escape') {
+                slideNavInput.classList.remove('active');
+            }
+        });
+        
+        slideNavInput.addEventListener('blur', () => {
+            slideNavInput.classList.remove('active');
+        });
+        
+        // ====== BOTÓN ÍNDICE ======
+        document.getElementById('index-btn').addEventListener('click', () => {
+            var s = document.getElementById('indice');
+            if (s) {
+                var i = Reveal.getIndices(s);
+                Reveal.slide(i.h, i.v, i.f);
+            }
+        });
+        
+        // ====== BOTÓN PANTALLA COMPLETA ======
+        document.getElementById('fullscreen-btn').addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log('Error:', err);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        });
+        
+        // ====== CONTADOR DE FRAGMENTS ======
+        const fragmentCounter = document.getElementById('fragment-counter');
+        const fcCurrent = fragmentCounter.querySelector('.fc-current');
+        const fcTotal = fragmentCounter.querySelector('.fc-total');
+        
+        Reveal.on('slidechanged', (event) => {
+            const slide = event.currentSlide;
+            const fragments = slide.querySelectorAll('.fragment');
+            if (fragments.length > 0) {
+                fragmentCounter.classList.add('has-fragments');
+                fcTotal.textContent = fragments.length;
+                fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+            } else {
+                fragmentCounter.classList.remove('has-fragments');
+            }
+        });
+        
+        Reveal.on('fragmentshown', () => {
+            const slide = Reveal.getCurrentSlide();
+            const fragments = slide.querySelectorAll('.fragment');
+            fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+        });
+        
+        Reveal.on('fragmenthidden', () => {
+            const slide = Reveal.getCurrentSlide();
+            fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+        });
+        
+        // ====== TECLAS DE VOLUMEN (USB) ======
+        document.addEventListener('keydown', (e) => {
+            if (e.keyCode === 175) { // Volumen +
+                window.scrollBy(0, -100);
+            } else if (e.keyCode === 174) { // Volumen -
+                window.scrollBy(0, 100);
+            }
+        });
+        
+        // ====== SCROLL VERTICAL ======
+        Reveal.on('ready', () => {
+            document.querySelectorAll('.reveal .slides section').forEach(section => {
+                section.style.overflowY = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>
