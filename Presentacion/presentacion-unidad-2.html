@@ -1,0 +1,2606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2 — El Estado, Ley Fundamental y División de Poderes</title>
+    
+    <!-- Reveal.js CSS + Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --r-background-color: #0a0a1a;
+            --r-main-font: 'Inter', sans-serif;
+            --r-heading-font: 'Playfair Display', serif;
+            --r-main-font-size: 24px;
+            --accent-blue: #4f8cff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --glass: rgba(255,255,255,0.06);
+            --glass-border: rgba(255,255,255,0.1);
+        }
+        
+        .reveal {
+            font-family: var(--r-main-font);
+        }
+        
+        .reveal .slides {
+            text-align: left;
+        }
+        
+        .reveal .slides section {
+            padding: 20px 40px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .reveal .slides section * {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .reveal .slides p, .reveal .slides li, .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        
+        /* ====== TITLE SLIDE ====== */
+        .reveal .slides section.title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+        }
+        
+        .reveal .slides section.title-slide h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4f8cff, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .reveal .slides section.title-slide .subtitle {
+            font-size: 1em;
+            color: rgba(255,255,255,0.6);
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .reveal .slides section.title-slide .unit-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.7em;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+        
+        /* ====== SECTION HEADERS ====== */
+        .reveal .slides section.section-header {
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+        }
+        
+        .reveal .slides section.section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4f8cff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+        
+        .reveal .slides section.section-header .section-icon {
+            font-size: 2.5em;
+            margin-bottom: 14px;
+            display: block;
+        }
+        
+        /* ====== CONTENT CARDS ====== */
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin: 8px 0;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .card p, .card li, .card h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            font-size: 0.85em;
+        }
+        
+        .card-accent-blue { border-left: 4px solid var(--accent-blue); }
+        .card-accent-purple { border-left: 4px solid var(--accent-purple); }
+        .card-accent-pink { border-left: 4px solid var(--accent-pink); }
+        .card-accent-green { border-left: 4px solid var(--accent-green); }
+        .card-accent-orange { border-left: 4px solid var(--accent-orange); }
+        .card-accent-red { border-left: 4px solid var(--accent-red); }
+        
+        /* ====== GRIDS ====== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 14px;
+        }
+        
+        .grid-2 > .card, .grid-3 > .card {
+            margin: 0;
+            min-width: 0;
+        }
+        
+        /* ====== HEADINGS ====== */
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            color: white;
+            font-weight: 700;
+        }
+        
+        .reveal h2 {
+            font-size: 1.4em;
+            margin-bottom: 14px;
+        }
+        
+        .reveal h3 {
+            font-size: 1.05em;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+        
+        .reveal h4 {
+            font-size: 0.9em;
+            color: var(--accent-purple);
+        }
+        
+        /* ====== TEXT ====== */
+        .reveal p, .reveal li {
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+        
+        .reveal ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .reveal ul li {
+            padding: 3px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .reveal ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        
+        /* ====== HIGHLIGHTS ====== */
+        .highlight {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        
+        .highlight-purple {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        
+        .highlight-pink {
+            color: var(--accent-pink);
+            font-weight: 600;
+        }
+        
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+        
+        /* ====== EMOJI ICONS ====== */
+        .icon-lg {
+            font-size: 1.6em;
+            display: inline-block;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        
+        .icon-xl {
+            font-size: 3em;
+            display: block;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        
+        /* ====== TIMELINE ====== */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--accent-pink));
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 10px;
+            padding: 8px 14px;
+            background: var(--glass);
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 18px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: 2px solid #0a0a1a;
+        }
+        
+        .timeline-item .year {
+            font-size: 0.75em;
+            color: var(--accent-blue);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .timeline-item .event {
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.8);
+            margin-top: 4px;
+        }
+        
+        /* ====== QUOTE / DEFINITION ====== */
+        .definition-box {
+            background: linear-gradient(135deg, rgba(79,140,255,0.15), rgba(168,85,247,0.15));
+            border: 1px solid rgba(79,140,255,0.3);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 14px 0;
+            position: relative;
+        }
+        
+        .definition-box::before {
+            content: '📖';
+            font-size: 1.5em;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+        }
+        
+        .definition-box .def-title {
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-blue);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        
+        .definition-box .def-text {
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.5;
+        }
+        
+        /* ====== COMPARISON TABLE ====== */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.65em;
+            margin-top: 12px;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 8px 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 7px 12px;
+            border-bottom: 1px solid var(--glass-border);
+            color: rgba(255,255,255,0.85);
+        }
+        
+        .comparison-table tr:nth-child(even) td {
+            background: var(--glass);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* ====== FUN FACT / CURIOSITY ====== */
+        .fun-fact {
+            background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1));
+            border: 1px solid rgba(245,158,11,0.3);
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+        
+        .fun-fact .ff-label {
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* ====== QUIZ CARD ====== */
+        .quiz-card {
+            background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(79,140,255,0.15));
+            border: 1px solid rgba(16,185,129,0.3);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 10px 0;
+        }
+        
+        .quiz-card .quiz-q {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        
+        .quiz-option {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 7px 14px;
+            margin: 4px 0;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .quiz-option:hover {
+            border-color: var(--accent-green);
+            background: rgba(16,185,129,0.1);
+        }
+        
+        .quiz-option.correct {
+            border-color: var(--accent-green);
+            background: rgba(16,185,129,0.2);
+            color: var(--accent-green);
+        }
+        
+        .quiz-option.wrong {
+            border-color: var(--accent-red);
+            background: rgba(239,68,68,0.1);
+            opacity: 0.6;
+        }
+        
+        /* ====== PRINCIPLE CARDS ====== */
+        .principle-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 14px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+        
+        .principle-card .p-icon {
+            font-size: 1.6em;
+            margin-bottom: 6px;
+        }
+        
+        .principle-card .p-name {
+            font-weight: 700;
+            font-size: 0.8em;
+            color: white;
+            margin-bottom: 4px;
+        }
+        
+        .principle-card .p-desc {
+            font-size: 0.65em;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.3;
+        }
+        
+        /* ====== REAL LIFE EXAMPLE ====== */
+        .real-life {
+            background: linear-gradient(135deg, rgba(236,72,153,0.15), rgba(168,85,247,0.15));
+            border: 1px solid rgba(236,72,153,0.3);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 10px 0;
+        }
+        
+        .real-life .rl-label {
+            color: var(--accent-pink);
+            font-weight: 700;
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+        
+        /* ====== COUNTER ====== */
+        .counter-number {
+            font-size: 3em;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+        
+        /* ====== SCROLLBAR ====== */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(79,140,255,0.5);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(79,140,255,0.7);
+        }
+        
+        /* ====== BUTTONS ====== */
+        .index-btn, .fullscreen-btn {
+            position: fixed;
+            top: 16px;
+            z-index: 9999;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid var(--glass-border);
+            background: rgba(10,10,26,0.7);
+            backdrop-filter: blur(10px);
+            color: rgba(255,255,255,0.8);
+            font-size: 1em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .index-btn {
+            right: 16px;
+        }
+        
+        .fullscreen-btn {
+            right: 66px;
+        }
+        
+        .index-btn:hover, .fullscreen-btn:hover {
+            background: rgba(79,140,255,0.25);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* ====== SLIDE NAV ====== */
+        .slide-nav {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(10,10,26,0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .slide-nav:hover {
+            background: rgba(79,140,255,0.2);
+        }
+        
+        .slide-nav-display {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .slide-nav-current {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        
+        .slide-nav-sep {
+            color: rgba(255,255,255,0.4);
+        }
+        
+        .slide-nav-input {
+            width: 40px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            text-align: center;
+            outline: none;
+            display: none;
+        }
+        
+        .slide-nav-input.active {
+            display: block;
+        }
+        
+        /* ====== FRAGMENT COUNTER ====== */
+        .fragment-counter {
+            position: fixed;
+            top: 22px;
+            right: 142px;
+            z-index: 9999;
+            height: 38px;
+            padding: 0 14px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            background: rgba(10,10,26,0.65);
+            backdrop-filter: blur(10px);
+            color: rgba(255,255,255,0.9);
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            white-space: nowrap;
+        }
+        
+        .fragment-counter.has-fragments {
+            display: flex;
+        }
+        
+        .fragment-counter .fc-current {
+            color: var(--accent-blue);
+        }
+        
+        .reveal .slide-number { display: none !important; }
+        .reveal .controls { display: block !important; opacity: 1 !important; }
+    </style>
+</head>
+<body>
+    <!-- Contador de elementos por diapositiva -->
+    <div class="fragment-counter" id="fragment-counter" title="Elementos de la diapositiva (mostrados/total)">
+        <span class="fc-current">0</span>/<span class="fc-total">0</span>
+    </div>
+    
+    <button class="index-btn" id="index-btn" title="Ir al índice de la unidad" aria-label="Ir al índice de la unidad">
+        <i class="fa-solid fa-list-ul"></i>
+    </button>
+    
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa" aria-label="Pantalla completa">
+        <i class="fa-solid fa-expand"></i>
+    </button>
+    
+    <!-- Navegador de diapositivas -->
+    <div class="slide-nav" id="slide-nav" title="Clic para ir a una diapositiva">
+        <div class="slide-nav-display">
+            <span class="slide-nav-current" id="slide-nav-current">1</span>
+            <span class="slide-nav-sep">/</span>
+            <span id="slide-nav-total">1</span>
+        </div>
+        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1" placeholder="">
+    </div>
+    
+    <div class="reveal">
+        <div class="slides">
+        
+            <!-- ========== PORTADA ========== -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%)">
+                <span class="unit-badge">Unidad 2 de 2</span>
+                <h1 style="margin-top: 30px;">El Estado, Ley Fundamental<br>y División de Poderes</h1>
+                <p class="subtitle">Introducción al Derecho — Derecho 1, pp. 46–89</p>
+                <p style="margin-top: 14px; font-size: 0.7em;"><a href="../index.html" style="color: rgba(255,255,255,0.55); text-decoration: underline;">⌂ Menú de unidades (1 y 2)</a></p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.7em; margin-top: 40px;">
+                    <i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+
+            <!-- ========== OBJETIVOS ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎯</span> Objetivos de Aprendizaje</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em; margin-bottom: 16px;">Al terminar esta unidad podrás:</p>
+
+                <div class="grid-2">
+                    <div>
+                        <div class="card card-accent-blue fragment">
+                            <h4 style="color: var(--accent-blue);">🌍 Comprender</h4>
+                            <p style="font-size: 0.8em;">El origen, la definición y los elementos del Estado</p>
+                        </div>
+                        <div class="card card-accent-purple fragment">
+                            <h4 style="color: var(--accent-purple);">🗺️ Identificar</h4>
+                            <p style="font-size: 0.8em;">La población, el territorio y el gobierno en México</p>
+                        </div>
+                        <div class="card card-accent-pink fragment">
+                            <h4 style="color: var(--accent-pink);">🏛️ Distinguir</h4>
+                            <p style="font-size: 0.8em;">Los tres niveles de gobierno: federal, estatal y municipal</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-accent-green fragment">
+                            <h4 style="color: var(--accent-green);">📜 Explicar</h4>
+                            <p style="font-size: 0.8em;">La Constitución como ley fundamental y el control constitucional</p>
+                        </div>
+                        <div class="card card-accent-orange fragment">
+                            <h4 style="color: var(--accent-orange);">⚖️ Reconocer</h4>
+                            <p style="font-size: 0.8em;">Los derechos humanos, sus garantías y mecanismos de protección</p>
+                        </div>
+                        <div class="card card-accent-red fragment">
+                            <h4 style="color: var(--accent-red);">🗳️ Describir</h4>
+                            <p style="font-size: 0.8em;">La división de poderes y las facultades de cada uno</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== GUÍA DEL DOCENTE ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧭</span> Guía Rápida del Docente</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Plan sugerido para impartir la unidad (≈150 min, 2–3 sesiones)</p>
+
+                <table class="comparison-table">
+                    <tr>
+                        <th>Bloque</th>
+                        <th>Contenido</th>
+                        <th>Tiempo</th>
+                        <th>Estrategia didáctica</th>
+                    </tr>
+                    <tr>
+                        <td><strong>1. El Estado</strong></td>
+                        <td>Origen, definición, elementos, población y territorio</td>
+                        <td>30 min</td>
+                        <td>Lluvia de ideas: ¿qué es un Estado? Comparar con el municipio donde viven</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Gobierno y forma de Estado</strong></td>
+                        <td>Soberanía, art. 39/40, tres niveles, municipio y CDMX</td>
+                        <td>30 min</td>
+                        <td>Leer en voz alta los arts. 39, 40 y 115; ejemplos locales</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. La Constitución</strong></td>
+                        <td>Definición, objetivos, partes y medios de control</td>
+                        <td>25 min</td>
+                        <td>Traer una copia (digital) de la CPEUM; ubicar art. 1 y 29</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. DDHH y garantías</strong></td>
+                        <td>Clasificación, preceptos, garantías y amparo</td>
+                        <td>40 min</td>
+                        <td>Analizar un caso de amparo paso a paso con la clase</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. División de poderes</strong></td>
+                        <td>Arts. 49, 73, 89 y 94; integración de cada poder</td>
+                        <td>25 min</td>
+                        <td>Diagrama en el pizarrón (actividad del libro)</td>
+                    </tr>
+                </table>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Manejo de la presentación</div>
+                    <p style="font-size: 0.85em;">Avanza con <strong>→ / espacio</strong>; los puntos <strong>•</strong> revelan contenido paso a paso. El botón <strong>☰</strong> (arriba a la derecha) regresa al índice, <strong>⛶</strong> activa pantalla completa y el contador <strong>x/y</strong> (esquina superior) indica cuántos elementos faltan en la diapositiva. El recuadro <strong>n/total</strong> (abajo a la derecha) permite saltar a cualquier diapositiva.</p>
+                </div>
+            </section>
+
+            <!-- ========== MAPA CONCEPTUAL ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Mapa Conceptual</h2>
+
+                <div style="font-family: 'Consolas', monospace; font-size: 0.65em; line-height: 1.5; color: rgba(255,255,255,0.85); background: var(--glass); border-radius: 12px; padding: 20px 24px; border: 1px solid var(--glass-border);">
+                    <div style="text-align: center; font-weight: 700; font-size: 1.15em; margin-bottom: 14px; color: var(--accent-blue);">EL ESTADO, LEY FUNDAMENTAL Y DIVISIÓN DE PODERES</div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
+                        <div>
+                            <div style="color: var(--accent-blue); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">🌍 EL ESTADO</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Origen (horda → tribu → pueblo)<br>
+                                ├── Definición y elementos<br>
+                                │&nbsp;&nbsp; ├── Población<br>
+                                │&nbsp;&nbsp; ├── Territorio<br>
+                                │&nbsp;&nbsp; └── Gobierno<br>
+                                └── Persona moral (art. 42)
+                            </div>
+
+                            <div style="color: var(--accent-green); font-weight: 700; margin-top: 12px; margin-bottom: 6px; font-size: 1.05em;">🏛️ GOBIERNO Y SOBERANÍA</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Soberanía popular (art. 39)<br>
+                                ├── Forma de gobierno (art. 40)<br>
+                                ├── Tres niveles de gobierno<br>
+                                ├── Municipio libre (art. 115)<br>
+                                └── Ciudad de México (art. 122)
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="color: var(--accent-purple); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">📜 LA CONSTITUCIÓN</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Ley fundamental del Estado<br>
+                                ├── Objetivos (7)<br>
+                                ├── Parte dogmática (arts. 1–29)<br>
+                                ├── Parte orgánica (arts. 30–136)<br>
+                                └── Medios de control<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;├── Jurisdiccionales<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;└── No jurisdiccionales
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="color: var(--accent-pink); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">⚖️ DERECHOS HUMANOS</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Definición y principios<br>
+                                ├── Clasificación (4 grupos)<br>
+                                ├── Garantías<br>
+                                │&nbsp;&nbsp;├── Igualdad · Libertad<br>
+                                │&nbsp;&nbsp;├── Seguridad jurídica<br>
+                                │&nbsp;&nbsp;└── Interculturalidad · Género<br>
+                                └── Protección: CNDH y amparo
+                            </div>
+
+                            <div style="color: var(--accent-orange); font-weight: 700; margin-top: 12px; margin-bottom: 6px; font-size: 1.05em;">🗳️ DIVISIÓN DE PODERES</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Legislativo (arts. 73–78)<br>
+                                ├── Ejecutivo (arts. 80–93)<br>
+                                └── Judicial (arts. 94 en adelante)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== ÍNDICE DE LA UNIDAD ========== -->
+            <section data-background-color="#0a0a1a" id="indice">
+                <h2><span class="icon-lg">📑</span> Índice de la Unidad 2</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Toca o haz clic en un tema para ir directo a él</p>
+
+                <div class="grid-3" style="margin-top: 10px; font-size: 0.9em;">
+                    <a class="card card-accent-blue" href="#/sec-estado" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">1. El Estado y sus elementos</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Origen · definición · elementos</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-poblacion" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">2. Población y Territorio</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Mexicanos · art. 42 · mar territorial</p>
+                    </a>
+                    <a class="card card-accent-pink" href="#/sec-gobierno" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-pink); margin: 0;">3. Gobierno y Soberanía</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Funciones · arts. 39 y 41</p>
+                    </a>
+                    <a class="card card-accent-green" href="#/sec-forma" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-green); margin: 0;">4. Forma de Gobierno</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Art. 40 · tres niveles</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/sec-municipio" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">5. Municipio y CDMX</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Arts. 115 y 122 · alcaldías</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/sec-constucion" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">6. La Constitución</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Objetivos · control constitucional</p>
+                    </a>
+                    <a class="card card-accent-blue" href="#/sec-ddhh" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">7. Derechos Humanos</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Arts. 1–29 · clasificación</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-garantias" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">8. Garantías y Protección</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">CNDH · amparo · sistema internacional</p>
+                    </a>
+                    <a class="card card-accent-pink" href="#/sec-poderes" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-pink); margin: 0;">9. División de Poderes</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Legislativo · Ejecutivo · Judicial</p>
+                    </a>
+                    <a class="card card-accent-green" href="#/quiz" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-green); margin: 0;">🧠 Autoevaluación</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Preguntas interactivas</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/casos" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">📋 Casos Prácticos</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Aplica lo aprendido</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/sintesis" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">🗂️ Síntesis Final</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Repaso completo</p>
+                    </a>
+                </div>
+            </section>
+            <!-- ========== SECCIÓN 1: EL ESTADO Y SUS ELEMENTOS ========== -->
+            <section class="section-header" id="sec-estado" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🌍</span>
+                <h2>El Estado y sus Elementos</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 20 min · Origen, definición y elementos (pp. 46–48)</p>
+            </section>
+
+            <!-- Origen del Estado -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌱</span> Origen del Estado</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">De la familia al Estado: la evolución de la organización humana</p>
+
+                <div class="timeline">
+                    <div class="timeline-item fragment">
+                        <div class="year">1. LA FAMILIA</div>
+                        <div class="event">Primeros vínculos y relaciones del ser humano; luego la horda, el clan y la tribu, con lazos de consanguinidad, derechos, deberes y jerarquías.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">2. LOS PUEBLOS</div>
+                        <div class="event">Alianzas de tribus que forman grandes grupos con una misma cultura y jerarquización social.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">3. LAS NACIONES</div>
+                        <div class="event">Se consolidan los pueblos y se impulsa la vida económica entre ellos.</div>
+                    </div>
+                    <div class="timeline-item fragment">
+                        <div class="year">4. EL ESTADO</div>
+                        <div class="event">Surgen las instituciones y órganos de gobierno: el grupo humano tiene un <strong>territorio común</strong>, está regido por una <strong>misma autoridad</strong> y bajo las <strong>mismas normas</strong>.</div>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment">
+                    <div class="ff-label">💬 Pregunta para el grupo</div>
+                    <p style="font-size: 0.85em;">¿Qué diferencia a una <strong>tribu</strong> de un <strong>Estado</strong>? Piensen en su propio municipio: ¿qué lo hace territorio de un Estado mexicano?</p>
+                </div>
+            </section>
+
+            <!-- Persona moral y definición de Estado -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> El Estado Mexicano como Persona Moral</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">💼 Persona moral sujeta a derechos y obligaciones</h4>
+                    <p style="font-size: 0.85em;">Legalmente, el Estado mexicano —denominado <strong>Estados Unidos Mexicanos</strong>— sólo puede llevar a cabo aquello para lo que está <strong>facultado y permitido por la máxima norma jurídica</strong> que lo rige: la <strong>Constitución Política de los Estados Unidos Mexicanos</strong>, así como el resto del orden jurídico que emane de ésta: leyes, decretos o reglamentos, entre otros.</p>
+                </div>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición de Estado</div>
+                    <div class="def-text">
+                        El Estado es la <strong>entidad jurídico-política conformada por una población que convive asentada en un territorio, bajo un poder de mando y sujeto a un orden jurídico</strong>. De esta definición se desprenden los elementos del Estado.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Elementos del Estado -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧩</span> Los Tres Elementos del Estado</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">👥</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Población</h4>
+                        <p style="font-size: 0.75em;">Mexicanos (ciudadanos y no ciudadanos) y extranjeros</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🗺️</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Territorio</h4>
+                        <p style="font-size: 0.75em;">Partes integrantes de la federación; mares territoriales y marítimas interiores; espacio aéreo</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🏛️</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Gobierno</h4>
+                        <p style="font-size: 0.75em;">Órdenes federal, estatal (local) y municipal</p>
+                    </div>
+                </div>
+
+                <div class="definition-box fragment" style="margin-top: 16px;">
+                    <div class="def-title">La Constitución los articula</div>
+                    <div class="def-text">
+                        La Constitución Política de los Estados Unidos Mexicanos, <strong>ley fundamental del Estado</strong>, regula la manera en que interactúan los elementos del Estado y los diversos niveles de gobierno.
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Proyecte los tres elementos y pida <strong>un ejemplo concreto de cada uno</strong> (ej. "los habitantes de Ixtapaluca", "el territorio del Estado de México", "el ayuntamiento"). Fije el concepto antes de avanzar a población y territorio.</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN 2: POBLACIÓN Y TERRITORIO ========== -->
+            <section class="section-header" id="sec-poblacion" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">👥</span>
+                <h2>Población y Territorio</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 15 min · Elementos del Estado en México (pp. 48–51)</p>
+            </section>
+
+            <!-- Población -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👥</span> Población: Mexicanos y Extranjeros</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">La población es el conjunto de habitantes del territorio nacional</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🇲🇽 Mexicana por nacimiento o naturalización</h4>
+                        <ul>
+                            <li style="font-size: 0.85em;"><strong>a)</strong> Por nacimiento.</li>
+                            <li style="font-size: 0.85em;"><strong>b)</strong> Por naturalización.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🌐 Extranjeros</h4>
+                        <p style="font-size: 0.85em;">Viven en el país de manera habitual sin tener la calidad de mexicanos. Tanto mexicanos como extranjeros <strong>gozan de los derechos humanos</strong> de la Constitución y de los tratados internacionales, con las limitaciones que unos y otros establecen.</p>
+                    </div>
+                </div>
+
+                <div class="definition-box fragment" style="margin-top: 14px;">
+                    <div class="def-title">Ciudadanía</div>
+                    <div class="def-text">
+                        Quien tiene nacionalidad mexicana, <strong>ha cumplido 18 años</strong> y desarrolla un <strong>modo honesto de vivir</strong> adquiere la calidad de <strong>ciudadano</strong>: la facultad para intervenir plenamente en los asuntos políticos del país.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Territorio art. 42 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Territorio Nacional — Artículo 42</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">El territorio es el espacio donde el Estado ejerce su soberanía</p>
+
+                <table class="comparison-table">
+                    <tr><th>Fracción</th><th>Comprende</th></tr>
+                    <tr><td><strong>I</strong></td><td>Las partes integrantes de la Federación.</td></tr>
+                    <tr><td><strong>II</strong></td><td>Las islas, incluyendo los arrecifes y cayos en los mares adyacentes.</td></tr>
+                    <tr><td><strong>III</strong></td><td>Las islas de Guadalupe y las de Revillagigedo, en el océano Pacífico.</td></tr>
+                    <tr><td><strong>IV</strong></td><td>La plataforma continental y los zócalos submarinos de las islas, cayos y arrecifes.</td></tr>
+                    <tr><td><strong>V</strong></td><td>Las aguas de los mares territoriales y las marítimas interiores.</td></tr>
+                    <tr><td><strong>VI</strong></td><td>El espacio situado sobre el territorio nacional, según el derecho internacional.</td></tr>
+                </table>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <p style="font-size: 0.85em;">El poder del Estado sólo se ejerce <strong>dentro de esos límites</strong>: el territorio determina el espacio en que se aplica el orden jurídico.</p>
+                </div>
+            </section>
+
+            <!-- Territorio: mar y entidades -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌊</span> Soberanía Marítima y las 32 Entidades</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🛥️ Convención de la ONU sobre el Derecho del Mar</h4>
+                        <ul>
+                            <li style="font-size: 0.85em;">La soberanía del Estado ribereño se extiende al <strong>espacio aéreo sobre el mar territorial</strong> y al <strong>lecho y subsuelo</strong> de ese mar.</li>
+                            <li style="font-size: 0.85em;">Anchura máxima: <strong class="highlight-orange">12 millas marinas</strong> a partir de líneas de base.</li>
+                            <li style="font-size: 0.85em;"><strong>Zona económica exclusiva:</strong> área adyacente al mar territorial donde el Estado tiene facultad exclusiva de explotación de sus recursos.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🏛️ La federación mexicana</h4>
+                        <p style="font-size: 0.85em;">31 estados —de Aguascalientes a Zacatecas— más la <strong>Ciudad de México</strong>, sede de los Poderes de la Unión y capital política y administrativa del país: <strong>32 entidades federativas</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💡 Dato</div>
+                    <p style="font-size: 0.85em;">La organización política y territorial de la República mexicana está integrada por <strong>32 entidades</strong> que forman su federación.</p>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 12px;">
+                    <div class="rl-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Pida a la clase que <strong>enumeren las 32 entidades</strong> en equipos y que señalen en el mapa las fracciones II, III y V del art. 42 (islas, mar territorial). Sirve como repaso de geografía cívica.</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN 3: GOBIERNO Y SOBERANÍA ========== -->
+            <section class="section-header" id="sec-gobierno" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏛️</span>
+                <h2>Gobierno y Soberanía</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 15 min · Funciones de gobierno y arts. 39 y 41 (pp. 51–53)</p>
+            </section>
+
+            <!-- Tres funciones de gobierno -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚙️</span> Gobierno y sus Tres Funciones</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición de gobierno</div>
+                    <div class="def-text">
+                        El <strong>gobierno</strong> es el conjunto de órganos que permiten al Estado desarrollar las funciones que garanticen el <strong>ejercicio de la soberanía</strong> en el territorio nacional. El Derecho pone límites a los gobernantes y señala a los gobernados sus derechos y obligaciones; si no se respetan esas normas, se aplica el Derecho de manera <strong>coercitiva</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">⚖️</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Función legislativa</h4>
+                        <p style="font-size: 0.75em;">Poder Legislativo — crea las leyes</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">⚙️</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Función administrativa</h4>
+                        <p style="font-size: 0.75em;">Poder Ejecutivo — aplica y ejecuta las leyes</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🔨</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Función jurisdiccional</h4>
+                        <p style="font-size: 0.75em;">Poder Judicial — resuelve los conflictos</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <p style="font-size: 0.85em;">Para ejercer sus funciones, el Estado es <strong>soberano</strong>: posee un poder supremo e independiente para dictar su propia Constitución y determinar su orden jurídico, y actúa <strong>sin injerencia de otros Estados o instancias</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Arts. 39 y 41 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> La Soberanía: Artículos 39 y 41</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Artículo 39 constitucional</div>
+                    <div class="def-text">
+                        <em>"La soberanía nacional reside esencial y originariamente en el pueblo. Todo poder público dimana del pueblo y se instituye para beneficio de éste. El pueblo tiene en todo tiempo el inalienable derecho de alterar o modificar la forma de su gobierno".</em>
+                    </div>
+                </div>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Artículo 41 constitucional</div>
+                    <div class="def-text">
+                        <em>"El pueblo ejerce su soberanía por medio de los Poderes de la Unión, en los casos de la competencia de éstos, y por los de los estados y la Ciudad de México, en lo que toca a sus regímenes interiores…"</em>
+                    </div>
+                </div>
+
+                <div class="card card-accent-orange fragment">
+                    <p style="font-size: 0.85em;"><strong>Titular originario de la soberanía: el pueblo</strong> (del latín <em>potestas populi</em>). Éste la delega en los órganos de gobierno —los poderes— y su voluntad queda plasmada en la Constitución Política.</p>
+                </div>
+
+                <div class="fun-fact fragment">
+                    <div class="ff-label">💡 Dato histórico</div>
+                    <p style="font-size: 0.85em;">Los cambios sociales, políticos y económicos de México —como la <strong>Reforma encabezada por Benito Juárez</strong>— han sido un reflejo de la soberanía popular.</p>
+                </div>
+            </section>
+            <!-- ========== SECCIÓN 4: FORMA DE GOBIERNO ========== -->
+            <section class="section-header" id="sec-forma" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🗳️</span>
+                <h2>Forma de Gobierno y Tres Niveles</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 15 min · Arts. 40 y federación (pp. 53–55)</p>
+            </section>
+
+            <!-- Forma de gobierno -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗳️</span> Forma de Gobierno del Estado Mexicano</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">🇲🇽 República presidencialista</h4>
+                    <p style="font-size: 0.85em;">Existe <strong>división de poderes</strong> y la jefatura de Estado y de gobierno la encabeza el <strong>Poder Ejecutivo</strong>, representado por el presidente de la República.</p>
+                </div>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Artículo 40 constitucional</div>
+                    <div class="def-text">
+                        <em>"Es voluntad del pueblo mexicano constituirse en una república representativa, democrática, laica y federal, compuesta por estados libres y soberanos en todo lo concerniente a su régimen interior, y por la Ciudad de México, unidos en una federación establecida según los principios de esta ley fundamental".</em>
+                    </div>
+                </div>
+
+                <div class="card card-accent-purple fragment">
+                    <h4 style="color: var(--accent-purple);">✨ Características</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">División de poderes con órganos <strong>renovados periódicamente</strong> y un presidente elegido por el pueblo.</li>
+                        <li style="font-size: 0.8em;">El pueblo delega el ejercicio de la soberanía en sus <strong>representantes</strong>.</li>
+                        <li style="font-size: 0.8em;">El Estado es <strong>independiente de cualquier organización religiosa</strong>.</li>
+                        <li style="font-size: 0.8em;">Estados libres y soberanos en su régimen interior + Ciudad de México, unidos en una federación.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Tres niveles de gobierno -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏗️</span> Los Tres Niveles de Gobierno</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Tres ámbitos de competencia: federal, estatal y municipal</p>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Federal</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;"><strong>Ejecutivo:</strong> presidente de la República</li>
+                            <li style="font-size: 0.75em;"><strong>Legislativo:</strong> Congreso de la Unión</li>
+                            <li style="font-size: 0.75em;"><strong>Judicial:</strong> SCJN, Tribunal Electoral, tribunales y juzgados</li>
+                        </ul>
+                        <p style="font-size: 0.7em;">Ámbito: todo el territorio nacional. Ley: la CPEUM.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🗺️ Estatal</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;"><strong>Ejecutivo:</strong> gobernador</li>
+                            <li style="font-size: 0.75em;"><strong>Legislativo:</strong> Legislatura (diputados)</li>
+                            <li style="font-size: 0.75em;"><strong>Judicial:</strong> tribunales de su Constitución local</li>
+                        </ul>
+                        <p style="font-size: 0.7em;">Ámbito: cada entidad federativa; supeditados a la Constitución federal.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🏘️ Municipal</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;"><strong>Base de la organización</strong> del país</li>
+                            <li style="font-size: 0.75em;"><strong>Ayuntamiento:</strong> presidente, regidores y síndico</li>
+                            <li style="font-size: 0.75em;">Gobierno libre y autónomo</li>
+                        </ul>
+                        <p style="font-size: 0.7em;">Ámbito: el territorio del municipio (art. 115).</p>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💬 Pregunta para el grupo</div>
+                    <p style="font-size: 0.85em;">Si en su municipio falta el alumbrado público, ¿a qué <strong>nivel de gobierno</strong> corresponde resolverlo? ¿Y si una ley contradice la Constitución?</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN 5: MUNICIPIO Y CDMX ========== -->
+            <section class="section-header" id="sec-municipio" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏘️</span>
+                <h2>Municipio Libre y Ciudad de México</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 15 min · Arts. 115 y 122 (pp. 55–57)</p>
+            </section>
+
+            <!-- Municipio libre -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏘️</span> El Municipio Libre — Artículo 115, Fracción III</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Servicios públicos a cargo del municipio:</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <ul>
+                            <li style="font-size: 0.82em;"><strong>a)</strong> Agua potable, drenaje, alcantarillado y disposición de aguas residuales.</li>
+                            <li style="font-size: 0.82em;"><strong>b)</strong> Alumbrado público.</li>
+                            <li style="font-size: 0.82em;"><strong>c)</strong> Limpia y disposición final de residuos.</li>
+                            <li style="font-size: 0.82em;"><strong>d)</strong> Mercados y centrales de abasto.</li>
+                            <li style="font-size: 0.82em;"><strong>e)</strong> Panteones.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <ul>
+                            <li style="font-size: 0.82em;"><strong>f)</strong> Rastro.</li>
+                            <li style="font-size: 0.82em;"><strong>g)</strong> Calles, parques, jardines y su equipamiento.</li>
+                            <li style="font-size: 0.82em;"><strong>h)</strong> Seguridad pública (art. 21), coordinación de policía preventiva y tránsito.</li>
+                            <li style="font-size: 0.82em;"><strong>i)</strong> Los demás servicios que determinen las legislaturas locales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ayuntamiento -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏢</span> El Ayuntamiento</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Órgano encargado del gobierno municipal, integrado por:</p>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🧑‍💼</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Presidente municipal</h4>
+                        <p style="font-size: 0.75em;">Titular de la administración pública del municipio.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🗳️</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Regidores</h4>
+                        <p style="font-size: 0.75em;">Proponen los acuerdos para el mejoramiento de la administración y servicios municipales.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🛡️</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Síndico</h4>
+                        <p style="font-size: 0.75em;">Procuración, defensa y promoción de los intereses municipales.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <p style="font-size: 0.85em;">El régimen jurídico de estados y municipios se ordena en los <strong>artículos 115 y 116</strong> de la Constitución: <strong>todo lo prohibido en ellos es competencia exclusiva de la federación</strong>.</p>
+                </div>
+
+                <div class="fun-fact fragment">
+                    <div class="ff-label">💡 Dato</div>
+                    <p style="font-size: 0.85em;"><strong>Oaxaca</strong> es la entidad con mayor número de municipios: <strong>570</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Ciudad de México -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏙️</span> La Ciudad de México</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">⚖️ Autonomía sin soberanía</h4>
+                        <p style="font-size: 0.85em;">Goza de <strong>autonomía</strong> en su régimen interior y organización político-administrativa y se rige por la Constitución Política de la Ciudad de México, pero <strong>no goza de soberanía interna</strong>. Adopta el sistema republicano, representativo, democrático y laico.</p>
+                        <ul>
+                            <li style="font-size: 0.8em;"><strong>Ejecutivo:</strong> jefe de gobierno</li>
+                            <li style="font-size: 0.8em;"><strong>Legislativo:</strong> Congreso de la Ciudad de México</li>
+                            <li style="font-size: 0.8em;"><strong>Judicial:</strong> Tribunal Superior de Justicia, Consejo de la Judicatura y juzgados</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🗺️ Alcaldías</h4>
+                        <p style="font-size: 0.85em;">Las <strong>demarcaciones territoriales</strong> son la base de su división territorial, con gobierno autónomo a cargo de una <strong>alcaldía</strong>.</p>
+                        <ul>
+                            <li style="font-size: 0.8em;">Se conforman por habitantes, territorio y autoridades políticas democráticamente electas.</li>
+                            <li style="font-size: 0.8em;">Es sede de los <strong>Poderes de la Unión</strong> y capital política y administrativa del país.</li>
+                        </ul>
+                        <p style="font-size: 0.78em;">Su autonomía y alcances están en el <strong>artículo 122</strong> de la CPEUM.</p>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Contraste con la clase: <strong>estados = soberanos internos</strong>, <strong>CDMX = autónoma pero no soberana</strong>, <strong>municipios = libertad administrativa</strong>. Use su propio municipio como ejemplo antes de pasar a la Constitución.</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN 6: LA CONSTITUCIÓN ========== -->
+            <section class="section-header" id="sec-constucion" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📜</span>
+                <h2>La Constitución como Ley Fundamental</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 25 min · Definición, objetivos y control constitucional (pp. 58–61)</p>
+            </section>
+
+            <!-- Definición de Constitución -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> ¿Qué es la Constitución?</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <div class="definition-box" style="margin: 0;">
+                        <div class="def-title">Suprema Corte de Justicia de la Nación (2016)</div>
+                        <div class="def-text">
+                            <em>"La Constitución es la ley primordial de un país, pues consagra los derechos fundamentales de los gobernados, a la vez que crea los poderes públicos y les confiere sus principales atribuciones, además de que otorga fundamento y validez a las demás normas del sistema jurídico nacional".</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-accent-purple fragment">
+                    <div class="definition-box" style="margin: 0;">
+                        <div class="def-title">Eduardo García Máynez</div>
+                        <div class="def-text">
+                            <em>"La estructura fundamental del Estado, es decir, la forma de organización política, la competencia de los diversos poderes y los principios relativos al estatus de las personas".</em>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Objetivos de la Constitución -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎯</span> Objetivos de la Constitución</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <ul>
+                            <li style="font-size: 0.82em;"><strong>1.</strong> Convoca, conjunta y ensambla a la sociedad del país.</li>
+                            <li style="font-size: 0.82em;"><strong>2.</strong> Incluye a toda persona, grupo, sector, región, identidad o cultura del país.</li>
+                            <li style="font-size: 0.82em;"><strong>3.</strong> Asegura la vida comunitaria, el orden y las libertades individuales, generales y colectivas.</li>
+                            <li style="font-size: 0.82em;"><strong>4.</strong> Reconoce los derechos con que nacen las personas y garantiza su cumplimiento.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <ul>
+                            <li style="font-size: 0.82em;"><strong>5.</strong> Organiza el ejercicio de los poderes: <strong>crear</strong> leyes (Legislativo), <strong>aplicarlas</strong> (Ejecutivo), <strong>resolver conflictos</strong> (Judicial).</li>
+                            <li style="font-size: 0.82em;"><strong>6.</strong> Ordena la interacción de los tres órdenes de gobierno: federal, estatal y municipal.</li>
+                            <li style="font-size: 0.82em;"><strong>7.</strong> Garantiza la prevalencia de valores, principios y normas de conducta: la suma de derechos y responsabilidades de cada habitante.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💡 Idea clave</div>
+                    <p style="font-size: 0.85em;">La Constitución es el <strong>marco normativo fundamental</strong> que garantiza la convivencia pacífica y constructiva en los ámbitos social y político de nuestro país.</p>
+                </div>
+            </section>
+
+            <!-- Medios de control: jurisdiccionales -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛡️</span> Medios de Control Constitucional</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Mecanismos para defender valores, principios y preceptos constitucionales — se clasifican en <strong>jurisdiccionales</strong> y <strong>no jurisdiccionales</strong>.</p>
+
+                <h4 style="color: var(--accent-blue);">⚖️ Jurisdiccionales</h4>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <p style="font-size: 0.8em;"><strong>a) Juicio de amparo.</strong> Para quien se considere agraviado personal y directamente: defenderse de leyes y actos de autoridad contrarios a la Constitución y restituirse en el goce de los derechos.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <p style="font-size: 0.8em;"><strong>b) Controversia constitucional.</strong> Promovida por niveles, poderes u órganos de gobierno para revisar la constitucionalidad de normas o actos de los entes públicos.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <p style="font-size: 0.8em;"><strong>c) Acción de inconstitucionalidad.</strong> Denuncia contradicción entre normas generales y la Constitución, para invalidarlas y que prevalezcan los mandatos constitucionales.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <p style="font-size: 0.8em;"><strong>d) Procesos jurisdiccionales en materia electoral.</strong> Buscan el apego de los actos de las autoridades electorales a la Constitución.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Medios no jurisdiccionales + elementos básicos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Medios No Jurisdiccionales y Elementos Básicos</h2>
+
+                <div class="card card-accent-orange fragment">
+                    <h4 style="color: var(--accent-orange);">No jurisdiccionales</h4>
+                    <ul>
+                        <li style="font-size: 0.82em;"><strong>b) Recomendaciones de las comisiones protectoras de DDHH.</strong> Reciben quejas ciudadanas (salvo asuntos electorales o judiciales) y formulan recomendaciones públicas o denuncias.</li>
+                        <li style="font-size: 0.82em;"><strong>c) Juicio político.</strong> Facultad del Congreso para resolver casos en que funcionarios de alto nivel incurran en actos que contravengan la Constitución federal.</li>
+                    </ul>
+                    <p style="font-size: 0.75em; color: rgba(255,255,255,0.6);"><em>Nota de transcripción: la modalidad a) de la figura 2.9 no pudo recuperarse del OCR.</em></p>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <p style="font-size: 0.8em;"><strong>Declaración de los Derechos del Hombre y el Ciudadano (1789), art. 1º:</strong></p>
+                        <p style="font-size: 0.8em;"><em>"Toda la sociedad en la cual la garantía de los derechos no está asegurada ni la separación de poderes establecida, no tiene Constitución"</em>.</p>
+                        <p style="font-size: 0.8em;">→ Además de la división de poderes, el otro elemento fundamental es <strong>garantizar el reconocimiento y respeto de los derechos humanos</strong>.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Las dos partes de la Constitución</h4>
+                        <ul>
+                            <li style="font-size: 0.82em;"><strong>Parte dogmática:</strong> artículos 1º al 29 — derechos humanos y sus garantías.</li>
+                            <li style="font-size: 0.82em;"><strong>Parte orgánica:</strong> artículos 30 al 136 — órganos de gobierno y demás elementos del Estado.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Abra la <strong>CPEUM digital</strong> y ubiquen juntos: art. 1 (dogmática), art. 30 (inicio de la orgánica) y art. 105 (controversias). Que los alumnos anoten en su cuaderno la <strong>diferencia entre medio jurisdiccional y no jurisdiccional</strong> (¿quién resuelve: un tribunal o un órgano político/administrativo?).</p>
+                </div>
+            </section>
+            <!-- ========== SECCIÓN 7: DERECHOS HUMANOS ========== -->
+            <section class="section-header" id="sec-ddhh" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">⚖️</span>
+                <h2>Derechos Humanos</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 25 min · Definición, principios y clasificación (pp. 61–67)</p>
+            </section>
+
+            <!-- Definición de DDHH -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤲</span> ¿Qué son los Derechos Humanos?</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <div class="definition-box" style="margin: 0;">
+                            <div class="def-title">Suprema Corte de Justicia de la Nación (2014)</div>
+                            <div class="def-text">
+                                <em>"Atributos propios de todos los seres humanos que salvaguardan su existencia, dignidad y potencialidades por el mero hecho de pertenecer a la especie humana; deben ser integrados y garantizados por los ordenamientos jurídicos nacionales e internacionales".</em>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <div class="definition-box" style="margin: 0;">
+                            <div class="def-title">Comisión Nacional de los DDHH (CNDH)</div>
+                            <div class="def-text">
+                                <em>"Conjunto de prerrogativas sustentadas en la dignidad humana, cuya realización efectiva resulta indispensable para el desarrollo integral de la persona".</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-accent-pink fragment" style="margin-top: 14px;">
+                    <p style="font-size: 0.85em;">Son <strong>inherentes</strong> (se nacen con ellos), <strong>inalienables</strong>, <strong>imprescriptibles</strong> e <strong>irrenunciables</strong>: con ellos todo ser humano puede actuar y decidir libremente si los ejerce o no.</p>
+                </div>
+            </section>
+
+            <!-- Art. 1 y principios -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Artículo 1º Constitucional y Sus Principios</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <p style="font-size: 0.85em;">Todas las personas gozarán de los derechos humanos reconocidos en la Constitución y en los <strong>tratados internacionales</strong> a los que el Estado mexicano se haya adherido, con sus garantías, cuyo ejercicio <strong>no podrá restringirse ni suspenderse</strong> salvo en los casos que la propia Constitución establezca.</p>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🧭 Principios de reconocimiento</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Corresponden a <strong>todas las personas</strong>.</li>
+                            <li style="font-size: 0.8em;">Están <strong>vinculados</strong>: requieren respeto y protección recíproca.</li>
+                            <li style="font-size: 0.8em;">No se pueden <strong>fragmentar</strong>.</li>
+                            <li style="font-size: 0.8em;">Permiten su <strong>ampliación</strong> en protección, contenido y eficacia.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">📚 Fundamentos jurídicos en México</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;"><strong>a)</strong> La Constitución de 1917.</li>
+                            <li style="font-size: 0.8em;"><strong>b)</strong> Instrumentos y tratados internacionales ratificados.</li>
+                            <li style="font-size: 0.8em;"><strong>c)</strong> Las leyes federales vigentes.</li>
+                            <li style="font-size: 0.8em;"><strong>d)</strong> La jurisprudencia interna e internacional, en especial de la <strong>Corte Interamericana de DDHH</strong>.</li>
+                        </ul>
+                        <p style="font-size: 0.75em;">+ Las constituciones locales cuando reconozcan derechos no incorporados en el orden federal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DUDH y clasificación -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> DUDH (1948) y Clasificación</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Declaración Universal de los Derechos Humanos — art. 1º</div>
+                    <div class="def-text">
+                        <em>"Todos los seres humanos nacen libres e iguales en dignidad y derechos y, dotados como están de razón y conciencia, deben comportarse fraternalmente los unos con los otros".</em>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">👤 Derechos civiles</h4>
+                        <p style="font-size: 0.78em;">A la vida, propiedad, familia, identidad, honra, imagen, información, dignidad, mínimo vital; de libertad (trabajo, expresión, imprenta, petición, reunión, tránsito, culto, conciencia); de igualdad (no discriminación, entre géneros, no esclavitud); de seguridad jurídica (legalidad, irretroactividad, debido proceso, reparación, verdad).</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🗳️ Derechos políticos</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Participar en el gobierno.</li>
+                            <li style="font-size: 0.8em;">Acceso a la función pública.</li>
+                            <li style="font-size: 0.8em;">Votar.</li>
+                            <li style="font-size: 0.8em;">Ser elegido para cargo de elección popular.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Clasificación: sociales y pueblos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> Derechos Sociales y de los Pueblos</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🏭 Sociales, económicos y culturales</h4>
+                        <p style="font-size: 0.8em;">Trabajo, seguridad económica y social, salario, alimentación, recreación, educación, vivienda, salud; acceso a la cultura, avances científicos, investigación y vida cultural.</p>
+                        <p style="font-size: 0.78em;"><strong>La Constitución de 1917 fue la primera del continente</strong> en reconocer derechos sociales: artículos <strong>3, 27 y 123</strong>.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange);">🌍 De los pueblos, minorías y grupos vulnerables</h4>
+                        <p style="font-size: 0.78em;"><strong>Colectivos:</strong> libre determinación, paz, independencia, identidad, agua, ambiente sano, agrarios.</p>
+                        <p style="font-size: 0.78em;"><strong>Vulnerabilidad:</strong> niños, mujeres, personas con discapacidad, adultas mayores, migrantes, personas con VIH.</p>
+                        <p style="font-size: 0.78em;"><strong>Étnicas, religiosas y culturales.</strong></p>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💬 Pregunta para el grupo</div>
+                    <p style="font-size: 0.85em;">¿A qué grupo pertenece el derecho a la <strong>educación</strong>? ¿Y el derecho a <strong>votar</strong>? Justifiquen su respuesta usando la clasificación anterior.</p>
+                </div>
+            </section>
+
+            <!-- Preceptos constitucionales I -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📑</span> Preceptos Constitucionales (Arts. 1º–14)</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.8em;">Título Primero, Capítulo I "De los Derechos Humanos y sus Garantías" — artículos 1º al 29, excepto 25 y 26</p>
+
+                <table class="comparison-table">
+                    <tr><th>Art.</th><th>Derechos humanos reconocidos</th></tr>
+                    <tr><td><strong>1</strong></td><td>Nacionalidad; igualdad y libertad (prohibición de esclavitud); no discriminación.</td></tr>
+                    <tr><td><strong>2</strong></td><td>De los pueblos y comunidades indígenas.</td></tr>
+                    <tr><td><strong>3</strong></td><td>A la educación.</td></tr>
+                    <tr><td><strong>4</strong></td><td>Igualdad hombre-mujer; derechos reproductivos; alimentación; salud; ambiente sano; agua; vivienda; identidad; niñez; cultura y deporte.</td></tr>
+                    <tr><td><strong>5</strong></td><td>Libertad de trabajo.</td></tr>
+                    <tr><td><strong>6</strong></td><td>Expresión; acceso a la información y a las tecnologías, radiodifusión, telecomunicaciones e Internet.</td></tr>
+                    <tr><td><strong>7</strong></td><td>Libertad de imprenta.</td></tr>
+                    <tr><td><strong>8</strong></td><td>Derecho de petición.</td></tr>
+                    <tr><td><strong>9</strong></td><td>Asociación, reunión y manifestación.</td></tr>
+                    <tr><td><strong>10</strong></td><td>Seguridad personal.</td></tr>
+                    <tr><td><strong>11</strong></td><td>Libertad de tránsito y residencia; asilo.</td></tr>
+                    <tr><td><strong>12</strong></td><td>Igualdad de todos (prohibición de títulos nobiliarios).</td></tr>
+                    <tr><td><strong>13</strong></td><td>Igualdad: no ser juzgado por leyes o tribunales especiales.</td></tr>
+                    <tr><td><strong>14</strong></td><td>Irretroactividad de la ley; audiencia y debido proceso; seguridad jurídica penal y civil.</td></tr>
+                </table>
+            </section>
+
+            <!-- Preceptos constitucionales II -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📑</span> Preceptos Constitucionales (Arts. 15–29)</h2>
+
+                <table class="comparison-table">
+                    <tr><th>Art.</th><th>Derechos humanos reconocidos</th></tr>
+                    <tr><td><strong>15</strong></td><td>Prohibición de tratados para extraditar reos políticos o alterar garantías y derechos.</td></tr>
+                    <tr><td><strong>16</strong></td><td>Legalidad; protección de datos personales; detención; inviolabilidad de comunicaciones y domicilio.</td></tr>
+                    <tr><td><strong>17</strong></td><td>Acceso a la justicia.</td></tr>
+                    <tr><td><strong>18</strong></td><td>Prisión preventiva sólo por delito con pena privativa de la libertad.</td></tr>
+                    <tr><td><strong>19</strong></td><td>Detenciones ante autoridad judicial.</td></tr>
+                    <tr><td><strong>20</strong></td><td>Debido proceso penal; derechos de la víctima u ofendido; reparación integral.</td></tr>
+                    <tr><td><strong>21</strong></td><td>Ministerio Público investiga; la autoridad judicial impone penas; autoridad administrativa impone sanciones y multas.</td></tr>
+                    <tr><td><strong>22</strong></td><td>Integridad y seguridad personales (prohibición de penas).</td></tr>
+                    <tr><td><strong>23</strong></td><td>No ser juzgado dos veces por el mismo delito.</td></tr>
+                    <tr><td><strong>24</strong></td><td>Libertad religiosa y de culto.</td></tr>
+                    <tr><td><strong>27</strong></td><td>Derecho a la propiedad.</td></tr>
+                    <tr><td><strong>28</strong></td><td>Libre competencia.</td></tr>
+                    <tr><td><strong>29</strong></td><td>Suspensión de los derechos humanos (casos de invasión, perturbación grave).</td></tr>
+                </table>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">💡 Recuerda</div>
+                    <p style="font-size: 0.85em;">Los artículos <strong>25 y 26</strong> (política de desarrollo, Banxico) <strong>no</strong> forman parte de este capítulo: son preceptos de política económica.</p>
+                </div>
+            </section>
+            <!-- ========== SECCIÓN 8: GARANTÍAS Y PROTECCIÓN ========== -->
+            <section class="section-header" id="sec-garantias" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🛡️</span>
+                <h2>Garantías y Protección de los DDHH</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 35 min · Garantías, CNDH, amparo y sistema internacional (pp. 68–79)</p>
+            </section>
+
+            <!-- Garantías: definición y obligaciones -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛡️</span> Garantías: Definición y Obligación del Estado</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <p style="font-size: 0.82em;"><strong>CNDH:</strong> las garantías son los <strong>medios</strong> con que cuenta la persona para hacer valer sus derechos.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <p style="font-size: 0.82em;"><strong>SCJN:</strong> son los <strong>requisitos, restricciones, exigencias u obligaciones</strong> previstas en la Constitución y los tratados, destinadas principalmente a las autoridades para proteger los derechos humanos.</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.85em; margin-top: 14px;">Artículo 1º: todas las autoridades tienen la obligación de <strong>promover, respetar, proteger y garantizar</strong> el ejercicio pleno de los derechos humanos:</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">📢 Promover</h4>
+                        <p style="font-size: 0.8em;">Que las personas conozcan sus derechos y los mecanismos para ejercerlos y defenderlos.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange);">🙇 Respetar</h4>
+                        <p style="font-size: 0.8em;">No interferir ni poner en peligro esos derechos, ni por acción ni por omisión.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🛡️ Proteger</h4>
+                        <p style="font-size: 0.8em;">Crear el marco jurídico e institucional para prevenir las violaciones.</p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red);">✅ Garantizar</h4>
+                        <p style="font-size: 0.8em;">Organizar todo el aparato gubernamental para asegurar jurídicamente el libre y pleno ejercicio.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prevenir, investigar, sancionar, reparar -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Prevenir, Investigar, Sancionar y Reparar</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <ul>
+                            <li style="font-size: 0.82em;"><strong>Prevenir:</strong> acciones y medidas que impidan la violación.</li>
+                            <li style="font-size: 0.82em;"><strong>Investigar:</strong> procesos de investigación respetando el debido proceso.</li>
+                            <li style="font-size: 0.82em;"><strong>Sancionar:</strong> consecuencia jurídica aplicada por la autoridad competente.</li>
+                            <li style="font-size: 0.82em;"><strong>Reparar:</strong> restituir en el derecho vulnerado, indemnizar o aplicar medidas de satisfacción.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🎯 Finalidad de la obligación</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Contribuir al desarrollo integral de la persona.</li>
+                            <li style="font-size: 0.8em;">Proteger la esfera de autonomía para trazar un plan de vida digna.</li>
+                            <li style="font-size: 0.8em;">Límite a los servidores públicos: prevenir abusos de poder y negligencia.</li>
+                            <li style="font-size: 0.8em;">Crear condiciones para la participación activa en los asuntos públicos (vida democrática).</li>
+                        </ul>
+                        <p style="font-size: 0.7em; color: rgba(255,255,255,0.6);">Fuente: CEDH Tabasco (2017).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Garantías de igualdad -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Garantías de Igualdad</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Mecanismos que garantizan la eliminación de distinciones entre quienes están en la misma situación frente a la ley</p>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Pacto Internacional de Derechos Civiles y Políticos — art. 2º</div>
+                    <div class="def-text">
+                        Toda persona tiene derecho, <strong>sin distinción alguna</strong>, al reconocimiento de sus derechos, responsabilidades y oportunidades; los Estados deben garantizar la igualdad de trato ante la ley y evitar cualquier acto de discriminación.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📜 Ley General para la Igualdad entre Mujeres y Hombres — art. 12</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Formular la política nacional de igualdad.</li>
+                            <li style="font-size: 0.78em;">Coordinar la transversalidad de la perspectiva de género.</li>
+                            <li style="font-size: 0.78em;">Garantizar igualdad de oportunidades con <strong>acciones afirmativas</strong>.</li>
+                            <li style="font-size: 0.78em;">Incorporar recursos en el Presupuesto de Egresos.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">🏛️ Conapred</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Contribuir al desarrollo cultural, social y democrático.</li>
+                            <li style="font-size: 0.78em;">Prevenir y eliminar la discriminación.</li>
+                            <li style="font-size: 0.78em;">Formular políticas públicas de igualdad de oportunidades.</li>
+                            <li style="font-size: 0.78em;">Coordinar al Poder Ejecutivo Federal en la materia.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">💬 Pregunta para el grupo</div>
+                    <p style="font-size: 0.85em;">¿Puede una ley tratar distinto a dos personas que están en la <strong>misma situación</strong>? Fundamenten su respuesta con el principio de igualdad.</p>
+                </div>
+            </section>
+
+            <!-- Libertad y seguridad jurídica -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🕊️</span> Libertad y Seguridad Jurídica</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🕊️ Garantías de libertad</h4>
+                        <p style="font-size: 0.8em;"><strong>Libertad:</strong> facultad del ser humano para decidir y hacer o no hacer lo que a sus intereses convenga, <strong>con las limitaciones que las leyes señalan</strong>.</p>
+                        <p style="font-size: 0.8em;">Las garantías de libertad aseguran las condiciones para actuar libremente; su responsable es el <strong>Estado</strong> (DUDH, arts. 1º y 3º).</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🔒 Seguridad jurídica</h4>
+                        <p style="font-size: 0.8em;">Certeza de que la persona, familia, posesiones y derechos serán respetados; toda molestia deberá ajustarse a los procedimientos de la ley.</p>
+                        <p style="font-size: 0.8em;">La Primera Sala de la SCJN: el gobernado <strong>nunca</strong> debe estar en incertidumbre ni en indefensión; consiste en <strong>"saber a qué atenerse"</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-orange fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-orange);">✍️ Requisitos de legalidad — art. 16</h4>
+                    <div class="grid-3" style="margin-top: 4px;">
+                        <p style="font-size: 0.8em; text-align: center;"><strong>1. Mandamiento escrito</strong></p>
+                        <p style="font-size: 0.8em; text-align: center;"><strong>2. Fundado y motivado</strong></p>
+                        <p style="font-size: 0.8em; text-align: center;"><strong>3. Girado por autoridad competente</strong></p>
+                    </div>
+                    <p style="font-size: 0.78em;">Sin ellos, el acto de autoridad <strong>no tiene validez</strong> y el orden jurídico faculta al gobernado para exigir que se actúe conforme a derecho.</p>
+                </div>
+            </section>
+
+            <!-- Interculturalidad y equidad -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌎</span> Interculturalidad y Equidad de Género</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🌎 Interculturalidad — art. 2º</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;"><strong>a)</strong> Composición pluricultural sustentada en los pueblos indígenas.</li>
+                            <li style="font-size: 0.78em;"><strong>b)</strong> Libre determinación en un marco de autonomía que asegure la unidad nacional.</li>
+                            <li style="font-size: 0.78em;"><strong>c)</strong> Instituciones y políticas para eliminar prácticas discriminatorias.</li>
+                            <li style="font-size: 0.78em;"><strong>d)</strong> Reconocimiento de los pueblos y comunidades <strong>afromexicanos</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">♀♂ Equidad de género</h4>
+                        <p style="font-size: 0.8em;">Conjunto de reglas que permiten la <strong>igualdad de participación</strong> de hombres y mujeres, evitando estereotipos y discriminación: un derecho humano que implica vivir en <strong>condiciones equivalentes</strong> de dignidad, respeto y libertad.</p>
+                        <p style="font-size: 0.8em;">Los Estados deben emprender <strong>acciones específicas</strong> para eliminar toda práctica contraria a la igualdad de género.</p>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Pida <strong>dos ejemplos</strong> de cada garantía en la vida cotidiana (igualdad: admisión laboral; libertad: expresión en redes; seguridad jurídica: una multa sin fundamento; interculturalidad: lenguas indígenas en la escuela). Conecte con el art. 2º si la clase es multigrado/ubicada.</p>
+                </div>
+            </section>
+
+            <!-- Protección: CNDH -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Protección: la CNDH — Artículo 102, Apartado B</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Artículo 102 B constitucional</div>
+                    <div class="def-text">
+                        El Congreso y las legislaturas establecerán <strong>organismos de protección de los derechos humanos</strong> que conozcan de quejas contra actos u omisiones de naturaleza administrativa de cualquier autoridad o servidor público, con excepción del Poder Judicial de la Federación. El del Congreso se denominará <strong>Comisión Nacional de los Derechos Humanos</strong>, con autonomía de gestión y presupuestaria.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📩 Mecanismos no jurisdiccionales</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Comisión Nacional de los Derechos Humanos.</li>
+                            <li style="font-size: 0.8em;">Comisiones estatales y locales de DDHH.</li>
+                            <li style="font-size: 0.8em;">Recomendaciones <strong>públicas no vinculatorias</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📌 Atribuciones destacadas de la CNDH (I–XVII)</h4>
+                        <ul>
+                            <li style="font-size: 0.76em;">Recibir quejas e investigar violaciones (I–II).</li>
+                            <li style="font-size: 0.76em;">Recomendar y denunciar (III); resolver inconformidades (IV–V).</li>
+                            <li style="font-size: 0.76em;">Impulsar la observancia y la enseñanza de DDHH (VII–IX).</li>
+                            <li style="font-size: 0.76em;">Mecanismo Nacional de Prevención de la tortura (XII Bis).</li>
+                            <li style="font-size: 0.76em;">Seguimiento de igualdad entre mujeres y hombres (XVI).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.8em; margin-top: 12px;">Cada entidad federativa tendrá un <strong>organismo local</strong> de derechos humanos conforme a su Constitución.</p>
+            </section>
+
+            <!-- Amparo: elementos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> El Juicio de Amparo — Arts. 103 y 107</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">¿Qué es el amparo?</div>
+                    <div class="def-text">
+                        Medio jurídico de defensa con el que cuenta cualquier persona para protegerse frente a todo <strong>acto u omisión de autoridad</strong> que vulnere sus derechos humanos, con el objeto de dejar sin efecto dicho acto. Se promueve ante una <strong>autoridad judicial del ámbito federal</strong> (Ley de Amparo).
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🧩 Los cuatro elementos</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;"><strong>a) El quejoso:</strong> titular del derecho o interés legítimo.</li>
+                            <li style="font-size: 0.8em;"><strong>b) La autoridad responsable:</strong> quien dicta o ejecuta el acto reclamado.</li>
+                            <li style="font-size: 0.8em;"><strong>c) El tercero interesado:</strong> con interés en la subsistencia del acto.</li>
+                            <li style="font-size: 0.8em;"><strong>d) El Ministerio Público federal:</strong> vigila el cumplimiento de los preceptos constitucionales.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📜 El art. 103 faculta a los tribunales a resolver sobre</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;"><strong>I.</strong> Normas, actos u omisiones que violen derechos humanos y sus garantías.</li>
+                            <li style="font-size: 0.8em;"><strong>II.</strong> Actos federales que restrinjan la soberanía de los estados o la esfera de competencia del Distrito Federal.</li>
+                            <li style="font-size: 0.8em;"><strong>III.</strong> Actos locales que invadan la esfera de competencia federal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Amparo: principios y clasificación -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧭</span> Principios y Clasificación del Amparo</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">Parte agraviada</h4>
+                        <p style="font-size: 0.76em;"><strong>Instancia de parte:</strong> sólo inicia a petición del agraviado. <strong>Agravio:</strong> debe existir ofensa específica.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Procedimiento</h4>
+                        <p style="font-size: 0.76em;"><strong>Definitividad:</strong> agotar primero los medios de impugnación. <strong>Contenido del fallo:</strong> estricto derecho.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">Efectos</h4>
+                        <p style="font-size: 0.76em;"><strong>Relatividad de la sentencia:</strong> beneficia sólo a quien lo solicitó.</p>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green);">a) Amparo indirecto</h4>
+                        <p style="font-size: 0.8em;">Contra actos <strong>en juicio, fuera de juicio o después de concluido</strong>, o contra actos aislados de autoridad administrativa; se tramita ante el Juez de Distrito correspondiente.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange);">b) Amparo directo</h4>
+                        <p style="font-size: 0.8em;">Contra <strong>sentencias definitivas, laudos o resoluciones que pongan fin al juicio</strong> cuando no exista recurso ordinario.</p>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💬 Pregunta para el grupo</div>
+                    <p style="font-size: 0.85em;">Una persona fue <strong>detenida sin orden judicial</strong>. ¿Qué medio jurisdiccional conviene: amparo indirecto o directo? ¿Y contra una <strong>sentencia condenatoria</strong>? ¿Por qué?</p>
+                </div>
+            </section>
+
+            <!-- Sistema internacional -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> Sistema Internacional de Protección</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Sistema Universal (ONU)</h4>
+                        <ul>
+                            <li style="font-size: 0.74em;">Declaración Universal de los Derechos Humanos.</li>
+                            <li style="font-size: 0.74em;">Convención Americana sobre DDHH.</li>
+                            <li style="font-size: 0.74em;">Pactos Internacionales (civiles y políticos; económicos, sociales y culturales).</li>
+                            <li style="font-size: 0.74em;">Convenciones sobre discriminación racial y contra la mujer.</li>
+                            <li style="font-size: 0.74em;">Convención contra la tortura; de los Derechos del Niño; de migrantes; de discapacidad; de desapariciones forzadas.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🌎 Sistema Interamericano</h4>
+                        <p style="font-size: 0.8em;">México forma parte de la <strong>Convención Americana sobre DDHH</strong> y desde <strong class="highlight-orange">1998</strong> reconoció la competencia de la <strong>Corte Interamericana de DDHH</strong>, lo que permite a los ciudadanos presentar <strong>denuncias individuales</strong>.</p>
+                        <p style="font-size: 0.8em;">Los comités de la ONU reciben denuncias tras <strong>agotar los recursos internos</strong>.</p>
+                        <p style="font-size: 0.78em;">Para que obligen en México, los instrumentos deben ser <strong>ratificados por el Senado</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Cierre del bloque: pida que escriban <strong>una frase</strong> por garantía (igualdad, libertad, seguridad jurídica, interculturalidad, equidad) con un ejemplo real. Antes del examen, retome el esquema: <strong>DDHH → garantías → mecanismos (CNDH / amparo / internacional)</strong>.</p>
+                </div>
+            </section>
+            <!-- ========== SECCIÓN 9: DIVISIÓN DE PODERES ========== -->
+            <section class="section-header" id="sec-poderes" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">⚖️</span>
+                <h2>División de Poderes</h2>
+                <p style="color: rgba(255,255,255,0.5);">⏱️ 25 min · Artículo 49 y los tres poderes de la Unión (pp. 80–85)</p>
+            </section>
+
+            <!-- Art. 49 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Artículo 49: El Supremo Poder se Divide</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <p style="font-size: 0.85em;">El poder público se deposita en órganos <strong>distintos e interdependientes</strong>: Poder Ejecutivo, Legislativo y Judicial. Cada uno actúa de manera <strong>autónoma, aunque interdependiente</strong>. La sociedad, dentro de un Estado, ejerce su soberanía por medio de dichos poderes.</p>
+                </div>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Artículo 49 constitucional</div>
+                    <div class="def-text">
+                        <em>"El Supremo Poder de la Federación se divide para su ejercicio en Legislativo, Ejecutivo y Judicial. No podrán reunirse dos o más de estos Poderes en una misma corporación, ni depositarse el Legislativo en un individuo, salvo el caso de facultades que temporalmente se otorguen al Ejecutivo de la Unión, conforme a lo dispuesto en el artículo 29".</em>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-green fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">📜</span>
+                        <h4 style="color: var(--accent-green); margin-top: 6px;">Legislativo</h4>
+                        <p style="font-size: 0.75em;">Congreso de la Unión (Senadores y Diputados)</p>
+                    </div>
+                    <div class="card card-accent-orange fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🏛️</span>
+                        <h4 style="color: var(--accent-orange); margin-top: 6px;">Ejecutivo</h4>
+                        <p style="font-size: 0.75em;">Presidente de la República</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🔨</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 6px;">Judicial</h4>
+                        <p style="font-size: 0.75em;">SCJN, Tribunal Electoral, tribunales, juzgados y Consejo de la Judicatura</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.8em; margin-top: 12px; color: rgba(255,255,255,0.7);">Cada poder tiene su <strong>estructura organizativa, funciones, facultades y responsabilidades</strong> definidas en la Constitución y en sus leyes secundarias.</p>
+            </section>
+
+            <!-- Tabla de funciones -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔍</span> Funciones de los Poderes Federales</h2>
+
+                <table class="comparison-table">
+                    <tr>
+                        <th>Función legislativa</th>
+                        <th>Función administrativa</th>
+                        <th>Función jurisdiccional</th>
+                    </tr>
+                    <tr>
+                        <td>Promulgar y modificar leyes federales.</td>
+                        <td><strong>a)</strong> Satisfacer los intereses colectivos.<br><strong>b)</strong> Organizar los servicios públicos.<br><strong>c)</strong> Ejecutar las leyes que expida el Congreso.</td>
+                        <td>Resolver controversias sobre la aplicación de las leyes en casos particulares.</td>
+                    </tr>
+                </table>
+
+                <div class="fun-fact fragment" style="margin-top: 16px;">
+                    <div class="ff-label">💬 Pregunta para el grupo</div>
+                    <p style="font-size: 0.85em;">El Congreso <strong>expide</strong> una ley, la Presidencia la <strong>ejecuta</strong> y un tribunal <strong>resuelve</strong> un conflicto sobre ella. ¿Están actuando de manera independiente o en coordinación? Expliquen el concepto de <strong>interdependencia</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Poder Legislativo -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Poder Legislativo — Arts. 73 a 78</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">El Congreso de la Unión es un organismo <strong>bicameral</strong> que expedirá las leyes de aplicación federal</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Cámara de Diputados</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;"><strong>500 diputados:</strong> 300 por distritos (votación mayoritaria relativa) + 200 de listas regionales (representación proporcional).</li>
+                            <li style="font-size: 0.78em;">Elegidos cada <strong>3 años</strong>; hasta <strong>4 periodos</strong> consecutivos; suplentes.</li>
+                            <li style="font-size: 0.78em;">Periodos de sesiones: <strong>1 sep – 15 dic</strong> y <strong>1 feb – 30 abr</strong>.</li>
+                            <li style="font-size: 0.78em;">En recesos: <strong>Comisión Permanente</strong> de 37 miembros (19 diputados y 18 senadores).</li>
+                            <li style="font-size: 0.78em;">Estudia, discute y vota iniciativas de ley.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🏛️ Cámara de Senadores</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;"><strong>128 senadores:</strong> 54 por mayoría relativa, 32 de la primera minoría por entidad, 32 de representación proporcional.</li>
+                            <li style="font-size: 0.78em;">Elegidos cada <strong>6 años</strong>; hasta <strong>2 periodos</strong> consecutivos; suplentes.</li>
+                            <li style="font-size: 0.78em;">Aprueba nombramientos: diplomáticos, altos mandos militares, ministros de la SCJN, fiscal General.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Facultades del Congreso -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">✋</span> Facultades del Congreso — Artículo 73</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <ul>
+                            <li style="font-size: 0.85em;"><strong>a)</strong> Admitir nuevas entidades federativas a la Unión federal.</li>
+                            <li style="font-size: 0.85em;"><strong>b)</strong> Formar nuevas entidades federativas.</li>
+                            <li style="font-size: 0.85em;"><strong>c)</strong> Cambiar la residencia de los supremos poderes de la federación.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <ul>
+                            <li style="font-size: 0.85em;"><strong>d)</strong> Imponer las contribuciones necesarias (ingresos) para cubrir el presupuesto de egresos.</li>
+                            <li style="font-size: 0.85em;"><strong>e)</strong> Expedir leyes en diversas materias de orden federal.</li>
+                        </ul>
+                        <p style="font-size: 0.78em; color: rgba(255,255,255,0.6);"><em>El artículo 73 contiene decenas de fracciones: estas son las que destaca el libro.</em></p>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Guía del docente</div>
+                    <p style="font-size: 0.85em;">Acá termine el primer gran bloque con un <strong>repaso oral de 3 preguntas</strong>: ¿qué es el Estado y sus elementos? ¿cuál es la forma de gobierno de México? ¿cómo se divide el Supremo Poder? Si dominan esto, continúe con el Poder Ejecutivo.</p>
+                </div>
+            </section>
+
+            <!-- Poder Ejecutivo -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Poder Ejecutivo — Arts. 80 a 93</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🗳️</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 6px;">Elección</h4>
+                        <p style="font-size: 0.75em;">Elegido en <strong>forma directa</strong></p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">⏳</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 6px;">Duración</h4>
+                        <p style="font-size: 0.75em;"><strong>6 años</strong> de mandato</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🚫</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 6px;">Reelección</h4>
+                        <p style="font-size: 0.75em;"><strong>No podrá</strong> ser reelegido</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.85em; margin-top: 14px;">El <strong>artículo 89 constitucional</strong> precisa las facultades y obligaciones del titular del Poder Ejecutivo —el presidente de la República—, entre las cuales destacan:</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment">
+                        <ul>
+                            <li style="font-size: 0.78em;">Promulgar y ejecutar las leyes del Congreso, procurando su <strong>exacta observancia</strong>.</li>
+                            <li style="font-size: 0.78em;">Nombrar libremente a los <strong>secretarios del despacho</strong> y remover a los agentes y empleados superiores de Hacienda.</li>
+                            <li style="font-size: 0.78em;">Nombrar <strong>agentes diplomáticos y cónsules</strong>, con aprobación del Senado.</li>
+                            <li style="font-size: 0.78em;">Nombrar coroneles y oficiales superiores de Ejército, Armada y Fuerza Aérea (con Senado) y a los demás oficiales.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <ul>
+                            <li style="font-size: 0.78em;">Tener a su cargo el <strong>mando supremo de la Fuerza Armada nacional</strong> para seguridad interior y defensa exterior.</li>
+                            <li style="font-size: 0.78em;"><strong>Disponer de la Guardia Nacional.</strong></li>
+                            <li style="font-size: 0.78em;"><strong>Declarar la guerra</strong> en nombre de los Estados Unidos Mexicanos.</li>
+                            <li style="font-size: 0.78em;">Proponer, con ratificación del Senado, al <strong>fiscal General de la República</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Art. 89 política exterior -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> Artículo 89: Política Exterior y Demás Facultades</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">🤝 Dirigir la política exterior y celebrar tratados</h4>
+                    <p style="font-size: 0.82em;">Terminar, denunciar, suspender, modificar, enmendar, retirar reservas y finiquitar declaraciones interpretativas, sometiéndolos a la aprobación del <strong>Senado</strong>. Principios que observará:</p>
+                    <div class="grid-3" style="margin-top: 8px;">
+                        <p style="font-size: 0.75em;"><strong>• Autodeterminación de los pueblos</strong></p>
+                        <p style="font-size: 0.75em;"><strong>• No intervención</strong></p>
+                        <p style="font-size: 0.75em;"><strong>• Solución pacífica de controversias</strong></p>
+                        <p style="font-size: 0.75em;"><strong>• Proscripción de la amenaza o el uso de la fuerza</strong></p>
+                        <p style="font-size: 0.75em;"><strong>• Igualdad jurídica de los Estados</strong></p>
+                        <p style="font-size: 0.75em;"><strong>• Cooperación internacional y lucha por la paz</strong></p>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-purple fragment">
+                        <ul>
+                            <li style="font-size: 0.8em;">Convocar al Congreso a <strong>sesiones extraordinarias</strong>.</li>
+                            <li style="font-size: 0.8em;">Facilitar al Poder Judicial los <strong>auxilios</strong> que necesite.</li>
+                            <li style="font-size: 0.8em;">Habilitar puertos, establecer <strong>aduanas</strong> marítimas y fronterizas.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <ul>
+                            <li style="font-size: 0.8em;">Conceder <strong>indultos</strong> a reos sentenciados.</li>
+                            <li style="font-size: 0.8em;">Conceder <strong>privilegios exclusivos</strong> a descubridores e inventores.</li>
+                            <li style="font-size: 0.8em;">Presentar la <strong>terna</strong> para ministros de la Suprema Corte.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.8em; margin-top: 12px; color: rgba(255,255,255,0.7);"><strong>El Poder Ejecutivo</strong> es encabezado por el presidente de la República y mantiene una relación de <strong>interdependencia</strong> con el resto de los poderes.</p>
+            </section>
+
+            <!-- Poder Judicial: integración -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔨</span> Poder Judicial de la Federación</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Encabezado por la Suprema Corte de Justicia de la Nación; se integra con tribunales colegiados y unitarios de circuito, juzgados de distrito y el Tribunal Electoral</p>
+
+                <table class="comparison-table">
+                    <tr><th>Órgano</th><th>Integración</th><th>Duración</th></tr>
+                    <tr><td><strong>Suprema Corte de Justicia de la Nación</strong></td><td>11 ministros. Funciona en <strong>Pleno</strong> o en <strong>Salas</strong>: Primera (civil y penal) y Segunda (administrativa y laboral).</td><td>15 años</td></tr>
+                    <tr><td><strong>Tribunal Electoral</strong></td><td>Sala Superior: 7 magistrados; 3 por cada una de las 5 Salas Regionales.</td><td>9 años</td></tr>
+                    <tr><td><strong>Tribunales Colegiados de Circuito</strong></td><td>3 magistrados.</td><td>—</td></tr>
+                    <tr><td><strong>Tribunales Unitarios de Circuito</strong></td><td>1 magistrado.</td><td>—</td></tr>
+                    <tr><td><strong>Juzgados de Distrito</strong></td><td>1 juez de Distrito.</td><td>—</td></tr>
+                </table>
+            </section>
+
+            <!-- SCJN, Salas y Tribunal Electoral -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> SCJN, Salas y Tribunal Electoral</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Suprema Corte (máxima instancia)</h4>
+                        <ul>
+                            <li style="font-size: 0.76em;"><strong>a)</strong> Controversias constitucionales y acciones de inconstitucionalidad.</li>
+                            <li style="font-size: 0.76em;"><strong>b)</strong> Recursos de revisión contra sentencias de audiencia constitucional cuando subsista problema de constitucionalidad.</li>
+                            <li style="font-size: 0.76em;"><strong>c)</strong> Autoridades que eluden el cumplimiento de sentencias de autoridad federal.</li>
+                            <li style="font-size: 0.76em;"><strong>d)</strong> Denuncias de contradicción de tesis de Salas, Tribunales Colegiados o Tribunal Electoral.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🧩 Salas y Tribunal Electoral</h4>
+                        <ul>
+                            <li style="font-size: 0.76em;"><strong>Salas:</strong> apelaciones en asuntos ordinarios con la federación; revisiones en amparo; asuntos de tesis en divergencia.</li>
+                            <li style="font-size: 0.76em;"><strong>Tribunal Electoral:</strong> órgano especializado que resuelve impugnaciones contra actos de autoridades electorales y procesos federales o locales, <strong>salvo las acciones de inconstitucionalidad</strong> (exclusivas de la SCJN).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💡 Dato</div>
+                    <p style="font-size: 0.85em;">El Tribunal Electoral de la Federación es la <strong>máxima autoridad jurisdiccional en materia electoral</strong> y resuelve las controversias de cualquier proceso electoral.</p>
+                </div>
+            </section>
+
+            <!-- Tribunales y juzgados -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏢</span> Tribunales Colegiados, Unitarios y Juzgados</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">Tribunales Colegiados</h4>
+                        <ul>
+                            <li style="font-size: 0.72em;"><strong>a)</strong> Amparos directos contra sentencias, laudos o resoluciones.</li>
+                            <li style="font-size: 0.72em;"><strong>b)</strong> Recursos contra resoluciones de jueces o tribunales.</li>
+                            <li style="font-size: 0.72em;"><strong>c)</strong> Revisiones contra sentencias de audiencia constitucional.</li>
+                            <li style="font-size: 0.72em;"><strong>d)</strong> Revisiones de tribunales contencioso administrativos.</li>
+                            <li style="font-size: 0.72em;"><strong>e)</strong> Conflictos de competencia en amparos.</li>
+                            <li style="font-size: 0.72em;"><strong>f)</strong> Asuntos delegados por el Pleno y las Salas.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Tribunales Unitarios</h4>
+                        <ul>
+                            <li style="font-size: 0.72em;"><strong>a)</strong> Amparos contra actos de otros Tribunales Unitarios.</li>
+                            <li style="font-size: 0.72em;"><strong>b)</strong> Apelaciones de juicios tramitados en Juzgados de Distrito.</li>
+                            <li style="font-size: 0.72em;"><strong>c)</strong> Recurso de apelación denegada.</li>
+                            <li style="font-size: 0.72em;"><strong>d)</strong> Conflictos de competencia entre jueces (salvo amparos).</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">Juzgados de Distrito</h4>
+                        <p style="font-size: 0.75em;"><strong>Primera instancia</strong> del Poder Judicial de la Federación:</p>
+                        <ul>
+                            <li style="font-size: 0.72em;"><strong>a)</strong> Juicios sobre aplicación de leyes federales o tratados (civil, penal, administrativa).</li>
+                            <li style="font-size: 0.72em;"><strong>b)</strong> Juicios de <strong>amparo indirecto</strong> (civil, penal, administrativa y laboral).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🧭 Guía del docente — cierre del bloque</div>
+                    <p style="font-size: 0.85em;">Pida dibujar en el pizarrón el <strong>diagrama de la figura 2.15</strong> (la del libro): Congreso, Presidente, SCJN y sus órganos, con una flecha de <strong>interdependencia</strong> entre ellos. Pregunta final: <em>"¿quién podría declarar inconstitucional una ley del Congreso?"</em> → SCJN (control constitucional).</p>
+                </div>
+            </section>
+            <!-- ========== AUTOEVALUACIÓN ========== -->
+            <section class="section-header" id="quiz" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🧠</span>
+                <h2>Autoevaluación</h2>
+                <p style="color: rgba(255,255,255,0.5);">Pon a prueba tus conocimientos</p>
+            </section>
+
+            <!-- Quiz 1 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 1</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Cuántos elementos componen el Estado según su definición jurídico-política?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Dos: gobierno y territorio</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Tres: población, territorio y gobierno</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Cuatro: población, territorio, gobierno y soberanía</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Cinco: según la ONU</div>
+                </div>
+            </section>
+
+            <!-- Quiz 2 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 2</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">De acuerdo con el artículo 42 constitucional, ¿cuántas millas marinas puede medir el mar territorial de México?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) 6 millas marinas</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) 12 millas marinas</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) 24 millas marinas</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) 200 millas marinas</div>
+                </div>
+            </section>
+
+            <!-- Quiz 3 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 3</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Cuáles son los tres niveles de gobierno en México?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Federal, estatal y local</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">B) Municipal, regional y federal</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">C) Federal, estatal y municipal</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Ejecutivo, Legislativo y Judicial</div>
+                </div>
+            </section>
+
+            <!-- Quiz 4 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 4</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Qué comprende la parte dogmática de la Constitución?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Los artículos 30 al 136: órganos de gobierno</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Los artículos 1º al 29: derechos humanos y sus garantías</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Sólo los artículos 1º y 2º</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Las leyes secundarias del Congreso</div>
+                </div>
+            </section>
+
+            <!-- Quiz 5 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 5</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Qué elementos intervienen en el juicio de amparo?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) Tres: quejoso, juez y autoridad</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">B) Cuatro: quejoso, autoridad responsable, tercero interesado y Ministerio Público</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Cinco: se suma la Suprema Corte</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Dos: agraviado y autoridad</div>
+                </div>
+            </section>
+
+            <!-- Quiz 6 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 6</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">¿Cómo se integra la Cámara de Diputados?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">A) 300 diputados</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">B) 400 diputados</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">C) 500 diputados: 300 por distritos y 200 de representación proporcional</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) 128 diputados</div>
+                </div>
+            </section>
+
+            <!-- Quiz 7 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Pregunta 7</h2>
+
+                <div class="quiz-card">
+                    <div class="quiz-q">Según el artículo 49, ¿en qué se divide el Supremo Poder de la Federación?</div>
+
+                    <div class="quiz-option fragment" onclick="this.classList.add('correct')">A) Legislativo, Ejecutivo y Judicial</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">B) Federal, Estatal y Municipal</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">C) Consultivo, Ejecutivo y Fiscal</div>
+                    <div class="quiz-option fragment" onclick="this.classList.add('wrong')">D) Político, Administrativo y Judicial</div>
+                </div>
+            </section>
+
+            <!-- ========== CASOS PRÁCTICOS ========== -->
+            <section class="section-header" id="casos" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📋</span>
+                <h2>Casos Prácticos</h2>
+                <p style="color: rgba(255,255,255,0.5);">Aplica lo aprendido</p>
+            </section>
+
+            <!-- Caso 1 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 1: La Basura sin Recoger</h2>
+
+                <div class="real-life">
+                    <div class="rl-label">🌍 Situación</div>
+                    <p style="font-size: 0.85em;">En tu municipio la recolección de residuos lleva semanas suspendida y los domicilios acumulan basura. Nadie responde en la presidencia municipal.</p>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-green);">🔍 Análisis</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;"><strong>¿Qué precepto lo ampara?</strong> Artículo 115, fracción III, inciso c) — limpia y disposición final de residuos.</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué nivel de gobierno?</strong> El <strong>municipal</strong>: el ayuntamiento es responsable.</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué órgano?</strong> El <strong>presidente municipal</strong> (administración) y los regidores (acuerdos).</li>
+                        <li style="font-size: 0.85em;"><strong>¿Y si no responden?</strong> Queja ante el organismo local de derechos humanos (art. 102 B) o ante la comisión protectora.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Caso 2 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 2: Detención sin Orden Judicial</h2>
+
+                <div class="real-life">
+                    <div class="rl-label">🌍 Situación</div>
+                    <p style="font-size: 0.85em;">Un estudiante es detenido por la policía sin que exista una orden de un juez y sin que se le informe el motivo. Los hechos ocurren fuera de un juicio.</p>
+                </div>
+
+                <div class="card card-accent-purple fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-purple);">🔍 Análisis</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;"><strong>¿Qué medio jurisdiccional?</strong> <strong>Amparo indirecto</strong> (acto aislado de autoridad, fuera de juicio).</li>
+                        <li style="font-size: 0.85em;"><strong>¿Cuáles son los 4 elementos?</strong> Quejoso (estudiante), autoridad responsable (policía/juez que ordena), tercero interesado y Ministerio Público federal.</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué principio opera?</strong> <strong>Instancia de parte</strong>: sólo él (o su representante) puede iniciarlo.</li>
+                        <li style="font-size: 0.85em;"><strong>¿Garantías violadas?</strong> Legalidad y debido proceso (art. 16) y seguridad personal (art. 10).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Caso 3 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Caso 3: Una Ley que Contradice la Constitución</h2>
+
+                <div class="real-life">
+                    <div class="rl-label">🌍 Situación</div>
+                    <p style="font-size: 0.85em;">El Congreso de la Unión aprueba una ley que, según varios juristas, restringe derechos reconocidos en el artículo 1º de la Constitución.</p>
+                </div>
+
+                <div class="card card-accent-orange fragment" style="margin-top: 16px;">
+                    <h4 style="color: var(--accent-orange);">🔍 Análisis</h4>
+                    <ul>
+                        <li style="font-size: 0.85em;"><strong>¿Qué medio de control?</strong> <strong>Acción de inconstitucionalidad</strong> (norma general vs. Constitución).</li>
+                        <li style="font-size: 0.85em;"><strong>¿Quién resuelve? La SCJN</strong>, como cabeza del Poder Judicial: única competente en controversias y acciones de inconstitucionalidad.</li>
+                        <li style="font-size: 0.85em;"><strong>¿Interviene el Ejecutivo?</strong> Sí: el presidente puede <strong>veto</strong> o promulgar; si se publica, el control es jurisdiccional.</li>
+                        <li style="font-size: 0.85em;"><strong>¿Qué principio se aplica?</strong> División de poderes y jerarquía normativa (arts. 1, 13 y 105).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Preguntas de repaso -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❓</span> Preguntas de Repaso de la Unidad</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Responde sin consultar el libro para identificar qué temas debes reforzar</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">📖 Bloque 1: El Estado</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">1. ¿Cuáles son los elementos del Estado? Define cada uno.</li>
+                            <li style="font-size: 0.75em;">2. ¿Qué diferencia hay entre <strong>autonomía</strong> y <strong>soberanía</strong>?</li>
+                            <li style="font-size: 0.75em;">3. Explica el artículo 39: ¿quién es el titular originario de la soberanía?</li>
+                            <li style="font-size: 0.75em;">4. Menciona cuatro servicios a cargo del municipio (art. 115, fr. III).</li>
+                            <li style="font-size: 0.75em;">5. ¿Qué establece el artículo 40 sobre la forma de gobierno?</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📖 Bloque 2: Constitución y DDHH</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">6. ¿Qué objetivos persigue la Constitución? Diferencia parte dogmática y orgánica.</li>
+                            <li style="font-size: 0.75em;">7. ¿Qué son los medios de control constitucional? Da un ejemplo de cada tipo.</li>
+                            <li style="font-size: 0.75em;">8. ¿Cómo se clasifican los derechos humanos en el libro?</li>
+                            <li style="font-size: 0.75em;">9. ¿En qué consisten promover, respetar, proteger y garantizar?</li>
+                            <li style="font-size: 0.75em;">10. ¿Qué es el amparo y cuáles son sus cuatro elementos?</li>
+                            <li style="font-size: 0.75em;">11. ¿Cómo se divide el Supremo Poder y cómo se integra el Poder Legislativo?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">💡 Consejo</div>
+                    <p style="font-size: 0.85em;">Responde en equipo primero y <strong>contrasten respuestas</strong> en plenaria. Marca con ★ las preguntas que te resulten difíciles: serán las de repaso antes del examen.</p>
+                </div>
+            </section>
+
+            <!-- Citas de autores -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💬</span> Citas de la Unidad</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Las voces que fundamentan el contenido del capítulo</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <div class="definition-box" style="margin: 0;">
+                            <div class="def-text" style="font-size: 0.8em;">
+                                <em>"La Constitución es la ley primordial de un país, pues consagra los derechos fundamentales de los gobernados, a la vez que crea los poderes públicos y les confiere sus principales atribuciones".</em>
+                            </div>
+                            <p style="font-size: 0.7em; color: var(--accent-blue); margin-top: 6px; text-align: right;">— Suprema Corte de Justicia de la Nación (2016)</p>
+                        </div>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <div class="definition-box" style="margin: 0;">
+                            <div class="def-text" style="font-size: 0.8em;">
+                                <em>"Constitución es la estructura fundamental del Estado, la forma de organización política, la competencia de los diversos poderes y los principios relativos al estatus de las personas".</em>
+                            </div>
+                            <p style="font-size: 0.7em; color: var(--accent-purple); margin-top: 6px; text-align: right;">— Eduardo García Máynez</p>
+                        </div>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <div class="definition-box" style="margin: 0;">
+                            <div class="def-text" style="font-size: 0.8em;">
+                                <em>"Las garantías son todos aquellos medios con que cuenta la persona para hacer valer sus derechos".</em>
+                            </div>
+                            <p style="font-size: 0.7em; color: var(--accent-pink); margin-top: 6px; text-align: right;">— Comisión Nacional de los Derechos Humanos</p>
+                        </div>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <div class="definition-box" style="margin: 0;">
+                            <div class="def-text" style="font-size: 0.8em;">
+                                <em>"Toda la sociedad en la cual la garantía de los derechos no está asegurada ni la separación de poderes establecida, no tiene Constitución".</em>
+                            </div>
+                            <p style="font-size: 0.7em; color: var(--accent-green); margin-top: 6px; text-align: right;">— Declaración de los Derechos del Hombre y el Ciudadano (1789), art. 1º</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== SÍNTESIS FINAL ========== -->
+            <section class="section-header" id="sintesis" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🗂️</span>
+                <h2>Síntesis de la Unidad</h2>
+                <p style="color: rgba(255,255,255,0.5);">Repaso final de todo lo aprendido</p>
+            </section>
+
+            <!-- Resumen completo -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Resumen de la Unidad 2</h2>
+
+                <div class="grid-2">
+                    <div>
+                        <div class="card card-accent-blue fragment">
+                            <h4 style="color: var(--accent-blue);">🌍 El Estado</h4>
+                            <p style="font-size: 0.75em;">Entidad jurídico-política con población, territorio, gobierno y orden jurídico. En México: 32 entidades federativas y mar territorial hasta 12 millas.</p>
+                        </div>
+                        <div class="card card-accent-purple fragment">
+                            <h4 style="color: var(--accent-purple);">🏛️ Gobierno y Soberanía</h4>
+                            <p style="font-size: 0.75em;">Soberanía en el pueblo (art. 39); república representativa, democrática, laica y federal (art. 40); tres niveles: federal, estatal y municipal.</p>
+                        </div>
+                        <div class="card card-accent-pink fragment">
+                            <h4 style="color: var(--accent-pink);">🏘️ Municipio y CDMX</h4>
+                            <p style="font-size: 0.75em;">Municipio libre (art. 115) con ayuntamiento; CDMX autónoma sin soberanía, con alcaldías (art. 122).</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-accent-green fragment">
+                            <h4 style="color: var(--accent-green);">📜 La Constitución</h4>
+                            <p style="font-size: 0.75em;">Ley fundamental: parte dogmática (arts. 1–29) y orgánica (arts. 30–136); medios de control jurisdiccionales y no jurisdiccionales.</p>
+                        </div>
+                        <div class="card card-accent-orange fragment">
+                            <h4 style="color: var(--accent-orange);">⚖️ DDHH y Garantías</h4>
+                            <p style="font-size: 0.75em;">Inherentes e inalienables; obligación de promover, respetar, proteger y garantizar; protección vía CNDH (art. 102 B) y amparo (arts. 103/107).</p>
+                        </div>
+                        <div class="card card-accent-red fragment">
+                            <h4 style="color: var(--accent-red);">🗳️ División de Poderes</h4>
+                            <p style="font-size: 0.75em;">Art. 49: Legislativo (500 diputados + 128 senadores), Ejecutivo (presidente, 6 años, no reelegido) y Judicial (SCJN de 11 ministros y sus órganos).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">🎯 La idea central de la unidad</div>
+                    <p style="font-size: 0.85em;">El Estado se organiza mediante una <strong>Constitución</strong> que reconoce <strong>derechos humanos</strong> con sus garantías y que <strong>divide el poder</strong> para evitar su concentración: <strong>esa es la base del Estado de derecho</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Cierre -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%)">
+                <span class="unit-badge">Unidad 2 Completa</span>
+                <h1 style="margin-top: 30px;">¡Excelente Trabajo!</h1>
+                <p class="subtitle">Ya conoces el Estado, la Constitución y la división de poderes</p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.7em; margin-top: 40px;">
+                    <i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Reveal.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js">
+</script>
+    
+    <script>
+        // ====== INICIALIZACIÓN ======
+        Reveal.initialize({
+            hash: true,
+            slideNumber: false,
+            controls: true,
+            controlsLayout: 'edges',
+            controlsTutorial: false,
+            progress: false,
+            center: false,
+            transition: 'slide',
+            transitionSpeed: 'fast',
+            width: 1280,
+            height: 720,
+            margin: 0.04,
+            keyboard: true,
+            overview: true,
+            touch: true,
+            loop: false
+
+            plugins:[RevealNotes,RevealMarkdown,RevealHighlight]
+
+        
+        // ====== NAVEGADOR DE DIAPOSITIVAS ======
+        const slideNav = document.getElementById('slide-nav');
+        const slideNavCurrent = document.getElementById('slide-nav-current');
+        const slideNavTotal = document.getElementById('slide-nav-total');
+        const slideNavInput = document.getElementById('slide-nav-input');
+        
+        Reveal.on('slidechanged', (event) => {
+            slideNavCurrent.textContent = event.indexh + 1;
+        });
+        
+        Reveal.on('ready', () => {
+            slideNavTotal.textContent = Reveal.getTotalSlides();
+            slideNavCurrent.textContent = Reveal.getIndices().h + 1;
+        });
+        
+        slideNav.addEventListener('click', () => {
+            slideNavInput.classList.toggle('active');
+            if (slideNavInput.classList.contains('active')) {
+                slideNavInput.value = slideNavCurrent.textContent;
+                slideNavInput.focus();
+                slideNavInput.select();
+            }
+        });
+        
+        slideNavInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const slideNum = parseInt(slideNavInput.value);
+                if (slideNum >= 1 && slideNum <= Reveal.getTotalSlides()) {
+                    Reveal.slide(slideNum - 1);
+                }
+                slideNavInput.classList.remove('active');
+            } else if (e.key === 'Escape') {
+                slideNavInput.classList.remove('active');
+            }
+        });
+        
+        slideNavInput.addEventListener('blur', () => {
+            slideNavInput.classList.remove('active');
+        });
+        
+        // ====== BOTÓN ÍNDICE ======
+        document.getElementById('index-btn').addEventListener('click', () => {
+            var s = document.getElementById('indice');
+            if (s) {
+                var i = Reveal.getIndices(s);
+                Reveal.slide(i.h, i.v, i.f);
+            }
+        });
+        
+        // ====== BOTÓN PANTALLA COMPLETA ======
+        document.getElementById('fullscreen-btn').addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log('Error:', err);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        });
+        
+        // ====== CONTADOR DE FRAGMENTS ======
+        const fragmentCounter = document.getElementById('fragment-counter');
+        const fcCurrent = fragmentCounter.querySelector('.fc-current');
+        const fcTotal = fragmentCounter.querySelector('.fc-total');
+        
+        Reveal.on('slidechanged', (event) => {
+            const slide = event.currentSlide;
+            const fragments = slide.querySelectorAll('.fragment');
+            if (fragments.length > 0) {
+                fragmentCounter.classList.add('has-fragments');
+                fcTotal.textContent = fragments.length;
+                fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+            } else {
+                fragmentCounter.classList.remove('has-fragments');
+            }
+        });
+        
+        Reveal.on('fragmentshown', () => {
+            const slide = Reveal.getCurrentSlide();
+            const fragments = slide.querySelectorAll('.fragment');
+            fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+        });
+        
+        Reveal.on('fragmenthidden', () => {
+            const slide = Reveal.getCurrentSlide();
+            fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+        });
+        
+        // ====== TECLAS DE VOLUMEN (USB) ======
+        document.addEventListener('keydown', (e) => {
+            if (e.keyCode === 175) { // Volumen +
+                window.scrollBy(0, -100);
+            } else if (e.keyCode === 174) { // Volumen -
+                window.scrollBy(0, 100);
+            }
+        });
+        
+        // ====== SCROLL VERTICAL ======
+        Reveal.on('ready', () => {
+            document.querySelectorAll('.reveal .slides section').forEach(section => {
+                section.style.overflowY = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>

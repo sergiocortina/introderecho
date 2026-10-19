@@ -2,10 +2,97 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=Presentacion/presentacion-unidad-1.html">
-    <title>Introducción al Derecho — Instituto Leonardo Bravo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al Derecho - Instituto Leonardo Bravo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.9);
+            padding: 24px;
+        }
+        .box { max-width: 760px; width: 100%; text-align: center; }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4f8cff, #a855f7);
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.7em;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4f8cff, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+        .sub { color: rgba(255,255,255,0.55); font-size: 0.95em; margin-bottom: 34px; }
+        .units { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+        a.unit {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-left: 4px solid #4f8cff;
+            border-radius: 14px;
+            padding: 22px 20px;
+            text-align: left;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        a.unit:nth-child(2) { border-left-color: #a855f7; }
+        a.unit:nth-child(3) { border-left-color: #ec4899; }
+        a.unit:hover { transform: translateY(-4px); background: rgba(79,140,255,0.14); border-color: #4f8cff; }
+        a.unit .n { font-size: 0.7em; letter-spacing: 2px; text-transform: uppercase; color: #4f8cff; font-weight: 700; }
+        a.unit:nth-child(2) .n { color: #a855f7; }
+        a.unit:nth-child(3) .n { color: #ec4899; }
+        a.unit h2 { font-family: 'Playfair Display', serif; font-size: 1.15em; margin: 8px 0 6px; }
+        a.unit p { font-size: 0.78em; color: rgba(255,255,255,0.6); line-height: 1.5; }
+        footer { margin-top: 34px; font-size: 0.75em; color: rgba(255,255,255,0.4); }
+        @media (max-width: 620px) { .units { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-    <p>Redirigiendo a la presentación...</p>
+    <div class="box">
+        <span class="badge">Introducción al Derecho</span>
+        <h1>Instituto Leonardo Bravo</h1>
+        <p class="sub">Selecciona la unidad que deseas impartir</p>
+
+        <div class="units">
+            <a class="unit" href="Presentacion/presentacion-unidad-1.html">
+                <span class="n">Unidad 1</span>
+                <h2>Estructura del Derecho Positivo Mexicano</h2>
+                <p>Conceptos básicos · normas jurídicas · definición del derecho · organización del Estado · procesos legislativos · fuentes del derecho.</p>
+            </a>
+            <a class="unit" href="Presentacion/presentacion-unidad-2.html">
+                <span class="n">Unidad 2</span>
+                <h2>El Estado, Ley Fundamental y División de Poderes</h2>
+                <p>Elementos del Estado · gobierno y soberanía · la Constitución · derechos humanos y garantías · amparo · división de poderes.</p>
+            </a>
+            <a class="unit" href="Presentacion/presentacion-unidad-3.html">
+                <span class="n">Unidad 3</span>
+                <h2>Ramas del Derecho en la vida cotidiana</h2>
+                <p>Ramas públicas y privadas · penal, laboral, fiscal y agrario · civil: personas, familia y contratos · mercantil y títulos de crédito · organización del Estado.</p>
+            </a>
+        </div>
+
+        <footer>Lic. Rosalba Sosa Guízar</footer>
+    </div>
 </body>
 </html>

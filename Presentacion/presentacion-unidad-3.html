@@ -1,0 +1,2361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3 — Ramas del Derecho en la vida cotidiana</title>
+    
+    <!-- Reveal.js CSS + Theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --r-background-color: #0a0a1a;
+            --r-main-font: 'Inter', sans-serif;
+            --r-heading-font: 'Playfair Display', serif;
+            --r-main-font-size: 24px;
+            --accent-blue: #4f8cff;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-red: #ef4444;
+            --glass: rgba(255,255,255,0.06);
+            --glass-border: rgba(255,255,255,0.1);
+        }
+        
+        .reveal {
+            font-family: var(--r-main-font);
+        }
+        
+        .reveal .slides {
+            text-align: left;
+        }
+        
+        .reveal .slides section {
+            padding: 20px 40px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .reveal .slides section * {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .reveal .slides p, .reveal .slides li, .reveal .slides h1, .reveal .slides h2, .reveal .slides h3, .reveal .slides h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        
+        /* ====== TITLE SLIDE ====== */
+        .reveal .slides section.title-slide {
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+        }
+        
+        .reveal .slides section.title-slide h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4f8cff, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        
+        .reveal .slides section.title-slide .subtitle {
+            font-size: 1em;
+            color: rgba(255,255,255,0.6);
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .reveal .slides section.title-slide .unit-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.7em;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+        
+        /* ====== SECTION HEADERS ====== */
+        .reveal .slides section.section-header {
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%);
+        }
+        
+        .reveal .slides section.section-header h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4f8cff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+        
+        .reveal .slides section.section-header .section-icon {
+            font-size: 2.5em;
+            margin-bottom: 14px;
+            display: block;
+        }
+        
+        /* ====== CONTENT CARDS ====== */
+        .card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin: 8px 0;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        
+        .card p, .card li, .card h4 {
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            hyphens: auto;
+            font-size: 0.85em;
+        }
+        
+        .card-accent-blue { border-left: 4px solid var(--accent-blue); }
+        .card-accent-purple { border-left: 4px solid var(--accent-purple); }
+        .card-accent-pink { border-left: 4px solid var(--accent-pink); }
+        .card-accent-green { border-left: 4px solid var(--accent-green); }
+        .card-accent-orange { border-left: 4px solid var(--accent-orange); }
+        .card-accent-red { border-left: 4px solid var(--accent-red); }
+        
+        /* ====== GRIDS ====== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 14px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 14px;
+        }
+        
+        .grid-2 > .card, .grid-3 > .card {
+            margin: 0;
+            min-width: 0;
+        }
+        
+        /* ====== HEADINGS ====== */
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            color: white;
+            font-weight: 700;
+        }
+        
+        .reveal h2 {
+            font-size: 1.4em;
+            margin-bottom: 14px;
+        }
+        
+        .reveal h3 {
+            font-size: 1.05em;
+            color: var(--accent-blue);
+            margin-bottom: 8px;
+        }
+        
+        .reveal h4 {
+            font-size: 0.9em;
+            color: var(--accent-purple);
+        }
+        
+        /* ====== TEXT ====== */
+        .reveal p, .reveal li {
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+        
+        .reveal ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .reveal ul li {
+            padding: 3px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .reveal ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        
+        /* ====== HIGHLIGHTS ====== */
+        .highlight {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+        
+        .highlight-purple {
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        
+        .highlight-pink {
+            color: var(--accent-pink);
+            font-weight: 600;
+        }
+        
+        .highlight-green {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+        
+        .highlight-orange {
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+        
+        /* ====== EMOJI ICONS ====== */
+        .icon-lg {
+            font-size: 1.6em;
+            display: inline-block;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        
+        .icon-xl {
+            font-size: 3em;
+            display: block;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        
+        /* ====== TIMELINE ====== */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple), var(--accent-pink));
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 10px;
+            padding: 8px 14px;
+            background: var(--glass);
+            border-radius: 8px;
+            border: 1px solid var(--glass-border);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 18px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            border: 2px solid #0a0a1a;
+        }
+        
+        .timeline-item .year {
+            font-size: 0.75em;
+            color: var(--accent-blue);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .timeline-item .event {
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.8);
+            margin-top: 4px;
+        }
+        
+        /* ====== QUOTE / DEFINITION ====== */
+        .definition-box {
+            background: linear-gradient(135deg, rgba(79,140,255,0.15), rgba(168,85,247,0.15));
+            border: 1px solid rgba(79,140,255,0.3);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 14px 0;
+            position: relative;
+        }
+        
+        .definition-box::before {
+            content: '📖';
+            font-size: 1.5em;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+        }
+        
+        .definition-box .def-title {
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-blue);
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        
+        .definition-box .def-text {
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.9);
+            line-height: 1.5;
+        }
+        
+        /* ====== COMPARISON TABLE ====== */
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 0.65em;
+            margin-top: 12px;
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            padding: 8px 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 7px 12px;
+            border-bottom: 1px solid var(--glass-border);
+            color: rgba(255,255,255,0.85);
+        }
+        
+        .comparison-table tr:nth-child(even) td {
+            background: var(--glass);
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* ====== FUN FACT / CURIOSITY ====== */
+        .fun-fact {
+            background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(239,68,68,0.1));
+            border: 1px solid rgba(245,158,11,0.3);
+            border-radius: 10px;
+            padding: 12px 16px;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+        
+        .fun-fact .ff-label {
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* ====== QUIZ CARD ====== */
+        .quiz-card {
+            background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(79,140,255,0.15));
+            border: 1px solid rgba(16,185,129,0.3);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 10px 0;
+        }
+        
+        .quiz-card .quiz-q {
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        
+        .quiz-option {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 7px 14px;
+            margin: 4px 0;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .quiz-option:hover {
+            border-color: var(--accent-green);
+            background: rgba(16,185,129,0.1);
+        }
+        
+        .quiz-option.correct {
+            border-color: var(--accent-green);
+            background: rgba(16,185,129,0.2);
+            color: var(--accent-green);
+        }
+        
+        .quiz-option.wrong {
+            border-color: var(--accent-red);
+            background: rgba(239,68,68,0.1);
+            opacity: 0.6;
+        }
+        
+        /* ====== PRINCIPLE CARDS ====== */
+        .principle-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 14px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-blue);
+        }
+        
+        .principle-card .p-icon {
+            font-size: 1.6em;
+            margin-bottom: 6px;
+        }
+        
+        .principle-card .p-name {
+            font-weight: 700;
+            font-size: 0.8em;
+            color: white;
+            margin-bottom: 4px;
+        }
+        
+        .principle-card .p-desc {
+            font-size: 0.65em;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.3;
+        }
+        
+        /* ====== REAL LIFE EXAMPLE ====== */
+        .real-life {
+            background: linear-gradient(135deg, rgba(236,72,153,0.15), rgba(168,85,247,0.15));
+            border: 1px solid rgba(236,72,153,0.3);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 10px 0;
+        }
+        
+        .real-life .rl-label {
+            color: var(--accent-pink);
+            font-weight: 700;
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 6px;
+        }
+        
+        /* ====== COUNTER ====== */
+        .counter-number {
+            font-size: 3em;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+        }
+        
+        /* ====== SCROLLBAR ====== */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(79,140,255,0.5);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(79,140,255,0.7);
+        }
+        
+        /* ====== BUTTONS ====== */
+        .index-btn, .fullscreen-btn {
+            position: fixed;
+            top: 16px;
+            z-index: 9999;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid var(--glass-border);
+            background: rgba(10,10,26,0.7);
+            backdrop-filter: blur(10px);
+            color: rgba(255,255,255,0.8);
+            font-size: 1em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .index-btn {
+            right: 16px;
+        }
+        
+        .fullscreen-btn {
+            right: 66px;
+        }
+        
+        .index-btn:hover, .fullscreen-btn:hover {
+            background: rgba(79,140,255,0.25);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* ====== SLIDE NAV ====== */
+        .slide-nav {
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(10,10,26,0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 6px 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
+        
+        .slide-nav:hover {
+            background: rgba(79,140,255,0.2);
+        }
+        
+        .slide-nav-display {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            color: rgba(255,255,255,0.9);
+        }
+        
+        .slide-nav-current {
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        
+        .slide-nav-sep {
+            color: rgba(255,255,255,0.4);
+        }
+        
+        .slide-nav-input {
+            width: 40px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            text-align: center;
+            outline: none;
+            display: none;
+        }
+        
+        .slide-nav-input.active {
+            display: block;
+        }
+        
+        /* ====== FRAGMENT COUNTER ====== */
+        .fragment-counter {
+            position: fixed;
+            top: 22px;
+            right: 142px;
+            z-index: 9999;
+            height: 38px;
+            padding: 0 14px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            background: rgba(10,10,26,0.65);
+            backdrop-filter: blur(10px);
+            color: rgba(255,255,255,0.9);
+            font-family: 'Consolas', monospace;
+            font-size: 0.85em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+            white-space: nowrap;
+        }
+        
+        .fragment-counter.has-fragments {
+            display: flex;
+        }
+        
+        .fragment-counter .fc-current {
+            color: var(--accent-blue);
+        }
+        
+        .reveal .slide-number { display: none !important; }
+        .reveal .controls { display: block !important; opacity: 1 !important; }
+    </style>
+</head>
+<body>
+    <!-- Contador de elementos por diapositiva -->
+    <div class="fragment-counter" id="fragment-counter" title="Elementos de la diapositiva (mostrados/total)">
+        <span class="fc-current">0</span>/<span class="fc-total">0</span>
+    </div>
+    
+    <button class="index-btn" id="index-btn" title="Ir al índice de la unidad" aria-label="Ir al índice de la unidad">
+        <i class="fa-solid fa-list-ul"></i>
+    </button>
+    
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa" aria-label="Pantalla completa">
+        <i class="fa-solid fa-expand"></i>
+    </button>
+    
+    <!-- Navegador de diapositivas -->
+    <div class="slide-nav" id="slide-nav" title="Clic para ir a una diapositiva">
+        <div class="slide-nav-display">
+            <span class="slide-nav-current" id="slide-nav-current">1</span>
+            <span class="slide-nav-sep">/</span>
+            <span id="slide-nav-total">1</span>
+        </div>
+        <input type="number" class="slide-nav-input" id="slide-nav-input" min="1" placeholder="">
+    </div>
+    
+    <div class="reveal">
+        <div class="slides">
+            <!-- ========== PORTADA ========== -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%)">
+                <span class="unit-badge">Unidad 3 de 3</span>
+                <h1 style="margin-top: 30px;">Ramas del Derecho<br>en la vida cotidiana</h1>
+                <p class="subtitle">Introducción al Derecho — Derecho 1, Bloque 3</p>
+                <p style="margin-top: 14px; font-size: 0.7em;"><a href="../index.html" style="color: rgba(255,255,255,0.55); text-decoration: underline;">⌂ Menú de unidades (1, 2 y 3)</a></p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.7em; margin-top: 40px;">
+                    <i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+            <!-- ========== MAPA CONCEPTUAL ========== -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Mapa Conceptual</h2>
+
+                <div style="font-family: 'Consolas', monospace; font-size: 0.65em; line-height: 1.5; color: rgba(255,255,255,0.85); background: var(--glass); border-radius: 12px; padding: 20px 24px; border: 1px solid var(--glass-border);">
+                    <div style="text-align: center; font-weight: 700; font-size: 1.15em; margin-bottom: 14px; color: var(--accent-blue);">RAMAS DEL DERECHO EN LA VIDA COTIDIANA</div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
+                        <div>
+                            <div style="color: var(--accent-blue); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">🏛️ RAMAS PÚBLICAS</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Constitucional (CPEUM)<br>
+                                ├── Administrativo (función del Estado)<br>
+                                ├── Penal (delitos · penas)<br>
+                                ├── Procesal (juicio · partes)<br>
+                                ├── Fiscal (contribuciones)<br>
+                                └── Agrario (art. 27 · tierra rural)
+                            </div>
+                            <div style="color: var(--accent-green); font-weight: 700; margin-top: 10px; margin-bottom: 6px; font-size: 1.05em;">Y TAMBIÉN…</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Laboral (art. 123)<br>
+                                ├── Económico (arts. 25–28)<br>
+                                ├── Ambiental (LGEEPA)<br>
+                                └── Educativo (art. 3°)
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="color: var(--accent-purple); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">👥 RAMAS PRIVADAS</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Civil<br>
+                                │&nbsp;&nbsp;├── Personas (físicas y morales)<br>
+                                │&nbsp;&nbsp;├── Bienes y contratos<br>
+                                │&nbsp;&nbsp;├── Familia y sucesiones<br>
+                                └── Mercantil<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;├── Comerciantes y actos de comercio<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;└── Títulos de crédito
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="color: var(--accent-pink); font-weight: 700; margin-bottom: 6px; font-size: 1.05em;">⚙️ ORGANIZACIÓN ESTATAL</div>
+                            <div style="padding-left: 10px; font-size: 0.9em; color: rgba(255,255,255,0.7);">
+                                ├── Art. 90: centralizada<br>
+                                │&nbsp;&nbsp;├── Secretarías de Estado<br>
+                                │&nbsp;&nbsp;├── Consejería Jurídica<br>
+                                │&nbsp;&nbsp;└── Órganos reguladores<br>
+                                ├── Desconcentrada<br>
+                                └── Paraestatal (art. 90)<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;├── Organismos descentralizados<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;├── Empresas de participación estatal<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;└── Fideicomisos
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== ÍNDICE DE LA UNIDAD ========== -->
+            <section data-background-color="#0a0a1a" id="indice">
+                <h2><span class="icon-lg">📑</span> Índice de la Unidad 3</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Toca o haz clic en un tema para ir directo a él</p>
+
+                <div class="grid-3" style="margin-top: 10px; font-size: 0.9em;">
+                    <a class="card card-accent-blue" href="#/sec-ramas" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">1. Ramas del Derecho</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Derecho objetivo · público y privado</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-constitucional" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">2. Constitucional</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">CPEUM · estructura y garantías</p>
+                    </a>
+                    <a class="card card-accent-pink" href="#/sec-administrativo" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-pink); margin: 0;">3. Administrativo</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Función administrativa · servicios</p>
+                    </a>
+                    <a class="card card-accent-green" href="#/sec-penal" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-green); margin: 0;">4. Penal</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Delitos · dolo y culpa · penas</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/sec-procesal" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">5. Procesal</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Juicio · órganos y partes</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/sec-fiscal" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">6. Fiscal</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Contribuciones · SHCP y SAT</p>
+                    </a>
+                    <a class="card card-accent-blue" href="#/sec-agrario" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">7. Agrario</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Art. 27 · tierra rural</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-laboral" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">8. Laboral</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Art. 123 · contrato · jornada · salario</p>
+                    </a>
+                    <a class="card card-accent-pink" href="#/sec-economico" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-pink); margin: 0;">9. Económico</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Arts. 25–28 · monopolios</p>
+                    </a>
+                    <a class="card card-accent-green" href="#/sec-ambiental" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-green); margin: 0;">10. Ambiental</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">LGEEPA · desarrollo sustentable</p>
+                    </a>
+                    <a class="card card-accent-orange" href="#/sec-educativo" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-orange); margin: 0;">11. Educativo</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Art. 3° · niveles educativos</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/sec-civil" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">12. Derecho civil</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Personas · bienes · contratos</p>
+                    </a>
+                    <a class="card card-accent-blue" href="#/sec-familiar" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-blue); margin: 0;">13. Derecho familiar</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Matrimonio · alimentos · sucesiones</p>
+                    </a>
+                    <a class="card card-accent-purple" href="#/sec-mercantil" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-purple); margin: 0;">14. Derecho mercantil</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Títulos de crédito · cheque</p>
+                    </a>
+                    <a class="card card-accent-pink" href="#/sec-organizacion" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-pink); margin: 0;">15. Organización estatal</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Centralizada · paraestatal</p>
+                    </a>
+                    <a class="card card-accent-red" href="#/sintesis" style="display: block; text-decoration: none;">
+                        <h4 style="color: var(--accent-red); margin: 0;">🗂️ Síntesis Final</h4>
+                        <p style="font-size: 0.7em; margin: 4px 0 0;">Repaso completo</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN 1: RAMAS DEL DERECHO ========== -->
+            <section class="section-header" id="sec-ramas" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🧩</span>
+                <h2>Ramas del Derecho</h2>
+                <p style="color: rgba(255,255,255,0.5);">Derecho objetivo: público y privado</p>
+            </section>
+            <!-- Derecho objetivo: público y privado -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Derecho Objetivo: Público y Privado</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Derecho objetivo</div>
+                    <div class="def-text">
+                        Conjunto de normas jurídicas que regulan las relaciones sociales. El Derecho tiene múltiples acepciones: regula aspectos del <strong>Estado</strong>, las relaciones entre el Estado y los <strong>particulares</strong>, o entre <strong>particulares</strong> entre sí.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Derecho público</h4>
+                        <p style="font-size: 0.85em;">Regula las relaciones del Estado con los particulares y entre los propios órganos del Estado. Sus normas son de <strong>orden público e interés social</strong>.</p>
+                        <p style="font-size: 0.75em; margin-top: 6px; color: var(--accent-blue);">Constitucional · Administrativo · Penal · Procesal · Fiscal · Agrario · Laboral · Económico · Ambiental · Educativo</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">👥 Derecho privado</h4>
+                        <p style="font-size: 0.85em;">Regula las relaciones <strong>entre particulares</strong>: personas físicas y morales. Sus normas son <strong>dispositivas</strong> (pueden pactarse en lo no prohibido).</p>
+                        <p style="font-size: 0.75em; margin-top: 6px; color: var(--accent-purple);">Civil · Mercantil</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.85em;">De estas dos grandes categorías se desprenden las <strong>diversas ramas del Derecho</strong> que estudiaremos en esta unidad.</p>
+                </div>
+            </section>
+
+            <!-- Constitucional -->
+            <section class="section-header" id="sec-constitucional" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📜</span>
+                <h2>Derecho Constitucional</h2>
+                <p style="color: rgba(255,255,255,0.5);">Definición</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Derecho Constitucional</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Conjunto de normas jurídicas contenidas en la <strong>Constitución Política de los Estados Unidos Mexicanos</strong> que regulan todo lo relativo a los elementos del Estado: su <strong>estructura y organización</strong>, así como los <strong>derechos humanos y sus garantías</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🧱 Estructura y organización</h4>
+                        <p style="font-size: 0.8em;">Poderes, niveles de gobierno, competencias de la federación, estados y municipios.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🛡️ Derechos humanos</h4>
+                        <p style="font-size: 0.8em;">Parte dogmática de la Constitución (arts. 1–29) y sus garantías: amparo, suspensión y queja.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.85em;">Es la <strong>madre de todas las ramas</strong>: todas las demás leyes (penal, laboral, civil…) deben apegarse a la Constitución, que es la ley fundamental del Estado (ya estudiada en la Unidad 2).</p>
+                </div>
+            </section>
+
+            <!-- Administrativo -->
+            <section class="section-header" id="sec-administrativo" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏛️</span>
+                <h2>Derecho Administrativo</h2>
+                <p style="color: rgba(255,255,255,0.5);">Función administrativa del Estado</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Derecho Administrativo</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Normas jurídicas cuyo objeto es regular la <strong>función administrativa del Estado</strong>: el conjunto de acciones del gobierno encaminadas a proporcionar los <strong>bienes y servicios</strong> que la población requiere, planificando la forma de hacerse de los recursos necesarios (Solís, 2010: 99).
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🤝</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 6px;">a) Intereses colectivos</h4>
+                        <p style="font-size: 0.7em;">Aplicar medidas y crear organismos (secretarías de Estado) para dotar a la población de lo necesario.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🚰</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 6px;">b) Servicios públicos</h4>
+                        <p style="font-size: 0.7em;">Agua, drenaje, alumbrado… satisfechos de forma continua, regular y permanente.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">⚙️</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 6px;">c) Ejecutar las leyes</h4>
+                        <p style="font-size: 0.7em;">Expedir reglamentos y crear instituciones para cumplir lo ordenado por el Poder Legislativo.</p>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">💡 Dato</div>
+                    <p style="font-size: 0.85em;">Las <strong>secretarías de Estado</strong> (Hacienda, Educación, Salud…) son los órganos más visibles de esta función: cada una atiende un área de la vida nacional.</p>
+                </div>
+            </section>
+
+
+            <!-- ========== SECCIÓN: PENAL ========== -->
+            <section class="section-header" id="sec-penal" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">⚖️</span>
+                <h2>Derecho Penal</h2>
+                <p style="color: rgba(255,255,255,0.5);">Delitos, penas y medidas de seguridad</p>
+            </section>
+
+            <!-- Penal: definición y elementos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Derecho Penal: Delitos y Consecuencias</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Conjunto de normas jurídicas que regula lo relativo a los <strong>delitos</strong> y las <strong>consecuencias</strong> de incurrir en ellos (<strong>penas</strong> y <strong>medidas de seguridad</strong>), con el fin de mantener el orden social. Su cuerpo normativo principal es el <strong>Código Penal Federal</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🚫</span>
+                        <h4 style="color: var(--accent-blue); margin-top: 8px;">Delito</h4>
+                        <p style="font-size: 0.75em;">Acción u omisión que la ley sanciona como reprochable</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">⛓️</span>
+                        <h4 style="color: var(--accent-purple); margin-top: 8px;">Pena</h4>
+                        <p style="font-size: 0.75em;">Castigo que el Estado impone al que incurrió en el delito</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 2em;">🛡️</span>
+                        <h4 style="color: var(--accent-pink); margin-top: 8px;">Medida de seguridad</h4>
+                        <p style="font-size: 0.75em;">Procedimientos para prevenir el delito o su reincidencia</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <p style="font-size: 0.85em;">Las acciones u omisiones serán delictivas cuando se realicen en forma <strong>dolosa</strong> o <strong>culposa</strong>. Ambas son formas de atribuir responsabilidad penal.</p>
+                </div>
+            </section>
+
+            <!-- Penal: dolo y culpa -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧠</span> Dolo y Culpa: Dos Formas de Actuar</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">En función de la conducta de la persona, ésta puede actuar de dos maneras</p>
+
+                <div class="grid-2">
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red);">😈 Obra dolosamente</h4>
+                        <p style="font-size: 0.85em;">Actúa <strong>con intención</strong>, de manera contraria a lo establecido por la ley: hay <strong>intención deliberada</strong> de cometer el delito, a sabiendas de su carácter delictivo y del daño que puede causar.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange);">😬 Obra culposamente</h4>
+                        <p style="font-size: 0.85em;">Produce el resultado típico que <strong>no previó</strong> o confiando en que no se produciría: actúa con <strong>imprudencia o negligencia</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="real-life fragment" style="margin-top: 14px;">
+                    <div class="rl-label">🌍 Ejemplo comparativo</div>
+                    <p style="font-size: 0.85em;"><strong>Dolo:</strong> alguien sustrae un celular sabiendo que no es suyo.<br><strong>Culpa:</strong> alguien deja caer su celular sobre el de otro y lo rompe por imprudencia (sin intención).</p>
+                </div>
+            </section>
+
+            <!-- Penal: clasificación de delitos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Clasificación de Delitos (CPF)</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">El Código Penal Federal los clasifica en función de si van en contra de…</p>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.85em;">🏛️ Estado y orden</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">La seguridad de la Nación</li>
+                            <li style="font-size: 0.75em;">El derecho internacional</li>
+                            <li style="font-size: 0.75em;">La humanidad</li>
+                            <li style="font-size: 0.75em;">La autoridad</li>
+                            <li style="font-size: 0.75em;">La administración de justicia</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">👥 Personas</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">La dignidad de las personas</li>
+                            <li style="font-size: 0.75em;">La seguridad pública</li>
+                            <li style="font-size: 0.75em;">La vida y la integridad corporal</li>
+                            <li style="font-size: 0.75em;">La paz y seguridad de las personas</li>
+                            <li style="font-size: 0.75em;">El libre desarrollo de la personalidad</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">💰 Patrimonio y otros</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">De las personas en su patrimonio</li>
+                            <li style="font-size: 0.75em;">La economía pública</li>
+                            <li style="font-size: 0.75em;">La salud</li>
+                            <li style="font-size: 0.75em;">El ambiente y la gestión ambiental</li>
+                            <li style="font-size: 0.75em;">Derechos de autor; delitos electorales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.8em;">También se incluyen: privación ilegal de la libertad, encubrimiento, revelación de secretos, acceso ilícito a sistemas informáticos y delitos cometidos por <strong>servidores públicos</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Penal: penas -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⛓️</span> Penas y Medidas de Seguridad</h2>
+
+                <div class="card card-accent-red fragment">
+                    <h4 style="color: var(--accent-red);">Penas principales (CPF)</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">Prisión (confinamiento) — privación de la libertad en <strong>centros de prevención y readaptación social</strong></li>
+                        <li style="font-size: 0.8em;">Tratamiento en libertad, semilibertad y trabajo en favor de la comunidad</li>
+                        <li style="font-size: 0.8em;">Internamiento o tratamiento para consumo de estupefacientes o psicotrópicos</li>
+                        <li style="font-size: 0.8em;">Prohibición de ir a un lugar determinado; vigilancia de la autoridad</li>
+                        <li style="font-size: 0.8em;">Sanción pecuniaria; decomiso de instrumentos, objetos y productos del delito</li>
+                        <li style="font-size: 0.8em;">Amonestación; apercibimiento; suspensión o privación de derechos</li>
+                        <li style="font-size: 0.8em;">Inhabilitación, destitución o suspensión de funciones; medidas tutelares para menores</li>
+                        <li style="font-size: 0.8em;">Decomiso de bienes del <strong>enriquecimiento ilícito</strong></li>
+                    </ul>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">💡 Dato</div>
+                    <p style="font-size: 0.85em;">La mayoría de los delitos tienen señalada la pena de <strong>prisión</strong>: privación de la libertad que se cumple en los <strong>CERESOS</strong> (Centros de Readaptación Social).</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN: PROCESAL ========== -->
+            <section class="section-header" id="sec-procesal" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🧑‍⚖️</span>
+                <h2>Derecho Procesal</h2>
+                <p style="color: rgba(255,255,255,0.5);">Función jurisdiccional y juicio</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧑‍⚖️</span> Derecho Procesal: El Juicio</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Función jurisdiccional</div>
+                    <div class="def-text">
+                        La <strong>administración de justicia</strong>: aplicar las normas jurídicas a cada situación particular para resolver controversias entre particulares, órganos del Estado, o entre particulares y el Estado, mediante resoluciones alcanzadas a través de <strong>juicios</strong> sujetos al procedimiento que las leyes establezcan.
+                    </div>
+                </div>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">🧑‍⚖️ Juicio o proceso</h4>
+                    <p style="font-size: 0.85em;">Conjunto de actos que se llevan a cabo para dar oportunidad a una persona de <strong>acreditar los hechos</strong> que dieron lugar a éste, así como a otra de <strong>defenderse</strong>, y que el órgano jurisdiccional pueda <strong>resolver</strong> la situación planteada.</p>
+                </div>
+
+                <div class="grid-4" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 14px;">
+                    <div class="card card-accent-blue fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🏛️</span>
+                        <h4 style="color: var(--accent-blue); font-size: 0.8em; margin: 4px 0;">Órgano jurisdiccional</h4>
+                        <p style="font-size: 0.65em;">Juez o tribunal que resuelve</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">👥</span>
+                        <h4 style="color: var(--accent-purple); font-size: 0.8em; margin: 4px 0;">Partes</h4>
+                        <p style="font-size: 0.65em;">Demandante y demandado</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🤝</span>
+                        <h4 style="color: var(--accent-pink); font-size: 0.8em; margin: 4px 0;">Terceros</h4>
+                        <p style="font-size: 0.65em;">Interesados en el resultado</p>
+                    </div>
+                    <div class="card card-accent-green fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🔍</span>
+                        <h4 style="color: var(--accent-green); font-size: 0.8em; margin: 4px 0;">Ministerio Público</h4>
+                        <p style="font-size: 0.65em;">Acusa en materia penal</p>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">💬 Juicios orales</div>
+                    <p style="font-size: 0.85em;">Desde 2016 entró en vigor en todas las entidades el <strong>nuevo sistema penal acusatorio</strong>, que implementó los <strong>juicios orales y públicos</strong> para mayor transparencia.</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN: FISCAL ========== -->
+            <section class="section-header" id="sec-fiscal" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">💰</span>
+                <h2>Derecho Fiscal</h2>
+                <p style="color: rgba(255,255,255,0.5);">Contribuciones e ingresos del Estado</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💰</span> Derecho Fiscal: Contribuciones</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Conjunto de normas jurídicas que regula las <strong>contribuciones e ingresos</strong> que el Estado recibe para cubrir el <strong>gasto público</strong> y satisfacer las necesidades de la sociedad.
+                    </div>
+                </div>
+
+                <table class="comparison-table fragment" style="margin-top: 12px;">
+                    <tr><th>Contribución</th><th>Descripción</th><th>Ejemplo</th></tr>
+                    <tr><td><strong>Impuestos</strong></td><td>Pago en proporción a los ingresos</td><td>IVA · ISR</td></tr>
+                    <tr><td><strong>Aportaciones de seguridad social</strong></td><td>Financiamiento de sistemas públicos</td><td>Cuotas IMSS e ISSSTE</td></tr>
+                    <tr><td><strong>Derechos</strong></td><td>Uso de bienes del dominio público o servicios</td><td>Actas de nacimiento · pasaportes</td></tr>
+                    <tr><td><strong>Tasas</strong></td><td>Pago por servicios públicos</td><td>Agua · drenaje · alumbrado</td></tr>
+                </table>
+
+                <div class="grid-2 fragment" style="margin-top: 14px;">
+                    <div class="card card-accent-blue">
+                        <h4 style="color: var(--accent-blue);">📜 Art. 73, fr. VII</h4>
+                        <p style="font-size: 0.8em;">El <strong>Congreso</strong> impone las contribuciones necesarias para cubrir el presupuesto del Estado; el <strong>Poder Ejecutivo</strong> recauda dichos recursos.</p>
+                    </div>
+                    <div class="card card-accent-purple">
+                        <h4 style="color: var(--accent-purple);">🏦 SHCP y SAT</h4>
+                        <p style="font-size: 0.8em;">El presidente delega en la <strong>Secretaría de Hacienda y Crédito Público</strong> la política financiera, a través del <strong>SAT</strong>, órgano recaudador.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN: AGRARIO ========== -->
+            <section class="section-header" id="sec-agrario" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🌾</span>
+                <h2>Derecho Agrario</h2>
+                <p style="color: rgba(255,255,255,0.5);">Tierra rural y art. 27</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌾</span> Derecho Agrario: Tierra Rural</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Normas jurídicas de carácter social enfocadas a regular las diversas <strong>formas de propiedad y tenencia de la tierra</strong> en el medio rural, así como las actividades vinculadas con la explotación <strong>agrícola, ganadera o forestal</strong>. Fundamento: <strong>art. 27 constitucional</strong> y la <strong>Ley Agraria</strong>.
+                    </div>
+                </div>
+
+                <table class="comparison-table fragment" style="margin-top: 12px;">
+                    <tr><th>Tipo de tierra</th><th>Descripción</th></tr>
+                    <tr><td><strong>Tierras ejidales</strong></td><td>Pertenecen a un núcleo de población; hasta 10% puede destinarse a asentamientos humanos</td></tr>
+                    <tr><td><strong>Bienes comunales</strong></td><td>Área necesaria para la vida comunitaria; sustento económico de la comunidad</td></tr>
+                    <tr><td><strong>Parcelas</strong></td><td>Aprovechamiento, uso y usufructo de los ejidatarios</td></tr>
+                    <tr><td><strong>Pequeña propiedad</strong></td><td>Suelos agrícolas, ganaderos o forestales de propiedad privada</td></tr>
+                </table>
+
+                <div class="grid-2 fragment" style="margin-top: 14px;">
+                    <div class="card card-accent-blue">
+                        <h4 style="color: var(--accent-blue);">👥 Núcleos ejidales (art. 9)</h4>
+                        <p style="font-size: 0.8em;">Tienen <strong>personalidad jurídica y patrimonio propio</strong>. Las tierras comunales son <strong>inalienables, imprescriptibles e inembargables</strong>, salvo cambio de régimen por asamblea.</p>
+                    </div>
+                    <div class="card card-accent-purple">
+                        <h4 style="color: var(--accent-purple);">🏛️ Protección constitucional</h4>
+                        <p style="font-size: 0.8em;">La comunidad ejidal está reconocida en el <strong>art. 27</strong> y goza de protección especial de sus bienes y recursos por la Ley Agraria.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ========== SECCIÓN: LABORAL ========== -->
+            <section class="section-header" id="sec-laboral" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">👷</span>
+                <h2>Derecho Laboral</h2>
+                <p style="color: rgba(255,255,255,0.5);">Art. 123, contrato, jornada y salario</p>
+            </section>
+
+            <!-- Laboral: definición y art. 123 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👷</span> Derecho Laboral y Artículo 123</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Conjunto de normas jurídicas que regulan las <strong>relaciones entre patrones y trabajadores</strong>. Su principal fundamento es el <strong>artículo 123 constitucional</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🅰️ Apartado “A”</h4>
+                        <p style="font-size: 0.85em;">Relaciones laborales entre <strong>particulares</strong> y trabajadores al servicio del <strong>sector privado</strong>.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🅱️ Apartado “B”</h4>
+                        <p style="font-size: 0.85em;">Empleados, domésticos y obreros al interior de los <strong>Poderes de la Unión</strong> y del <strong>Gobierno de la CDMX</strong> (sector público).</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-pink fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-pink);">Tipos de relaciones laborales</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;"><strong>Individuales:</strong> entre el patrón y cada uno de sus trabajadores.</li>
+                        <li style="font-size: 0.8em;"><strong>Colectivas:</strong> la representación de los trabajadores está unificada en uno o varios <strong>sindicatos</strong>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Laboral: contrato -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📄</span> El Contrato Individual de Trabajo</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Contrato de trabajo</div>
+                    <div class="def-text">
+                        Acuerdo generalmente <strong>escrito</strong> por el que dos o más partes (patrones y trabajadores) se comprometen recíprocamente a respetar y cumplir las condiciones de la relación laboral. Puede ser <strong>individual</strong> o <strong>colectivo</strong>.
+                    </div>
+                </div>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Cláusulas del contrato individual por tiempo indeterminado</h4>
+                    <ul>
+                        <li style="font-size: 0.78em;">Datos de las partes (declaraciones) · puesto y domicilio</li>
+                        <li style="font-size: 0.78em;">Salario · horario y días de labor · días de descanso obligatorio</li>
+                        <li style="font-size: 0.78em;">Vacaciones y <strong>prima vacacional 25%</strong> (mínimo 6 días el primer año)</li>
+                        <li style="font-size: 0.78em;"><strong>Aguinaldo</strong> mínimo 15 días (art. 87 LFT)</li>
+                        <li style="font-size: 0.78em;">Reconocimientos médicos · reglamento interior · capacitación</li>
+                        <li style="font-size: 0.78em;">Seguridad e higiene · sometimiento a la LFT en lo no previsto</li>
+                    </ul>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">🧮 Cálculo rápido</div>
+                    <p style="font-size: 0.85em;">Si tu salario diario es $500: aguinaldo mínimo = <strong>$7,500</strong> (15 días). Prima vacacional = <strong>25% extra</strong> sobre los días de vacaciones que disfrutes.</p>
+                </div>
+            </section>
+
+            <!-- Laboral: jornada -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⏰</span> Jornada de Trabajo</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Tiempo que un trabajador estará bajo órdenes de un patrón: tres modalidades</p>
+
+                <table class="comparison-table fragment">
+                    <tr><th>Modalidad</th><th>Horario</th><th>Detalle</th></tr>
+                    <tr><td><strong>Diurna</strong></td><td>6:00 – 20:00 h</td><td>Dentro del día</td></tr>
+                    <tr><td><strong>Nocturna</strong></td><td>20:00 – 6:00 h</td><td>Durante la noche</td></tr>
+                    <tr><td><strong>Mixta</strong></td><td>Parte diurna + nocturna</td><td>Cuando exceda de 3.5 h en el periodo nocturno</td></tr>
+                </table>
+
+                <div class="card card-accent-red fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-red);">⚠️ Límites y prohibiciones</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">El trabajo extraordinario no podrá exceder de <strong>3 horas diarias</strong> ni de <strong>3 veces consecutivas</strong>.</li>
+                        <li style="font-size: 0.8em;">Los <strong>menores de 16 años</strong> no pueden realizar labores insalubres o peligrosas, ni trabajo nocturno industrial o posterior a las 22:00 h.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Laboral: descansos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🛌</span> Descansos del Trabajador</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🕐 Diario</h4>
+                        <p style="font-size: 0.8em;">En cada jornada: al menos <strong>30 minutos</strong> de descanso.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📅 Semanal</h4>
+                        <p style="font-size: 0.8em;">Por cada 6 días: al menos 1 día con goce de salario íntegro. Si labora el domingo: <strong>prima dominical del 25%</strong>.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🏖️ Anual</h4>
+                        <p style="font-size: 0.8em;">Primer año: <strong>6 días</strong> mínimos; +2 días por cada año siguiente (hasta el 4°); después, +2 cada 5 años.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-orange fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-orange);">🎉 Días de descanso obligatorio</h4>
+                    <p style="font-size: 0.78em;">1 de enero · 1.º lunes de febrero (5 feb.) · 3.er lunes de marzo (21 mar.) · 1 de mayo · 16 de septiembre · 3.er lunes de noviembre (20 nov.) · 1 de diciembre (cada 6 años, transmisión del Ejecutivo federal) · 25 de diciembre.</p>
+                </div>
+            </section>
+
+            <!-- Laboral: mujeres embarazadas y salario -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤰</span> Mujeres Embarazadas y Salario</h2>
+
+                <div class="card card-accent-pink fragment">
+                    <h4 style="color: var(--accent-pink);">Trabajo de mujeres embarazadas</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">No pueden realizar actividades que exijan esfuerzo considerable o signifiquen peligro para su salud.</li>
+                        <li style="font-size: 0.8em;">Descanso forzoso de <strong>6 semanas anteriores</strong> y <strong>6 semanas posteriores</strong> al parto, con salario íntegro y conservación del empleo y derechos.</li>
+                        <li style="font-size: 0.8em;">Periodo de lactancia: dos descansos extraordinarios por día, de <strong>media hora cada uno</strong>, para alimentar a sus hijos.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-accent-blue fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-blue);">Salario</h4>
+                    <p style="font-size: 0.8em;">Retribución que paga el patrón al trabajador. Puede ser:</p>
+                    <ul>
+                        <li style="font-size: 0.78em;"><strong>Salario mínimo general:</strong> rige en las áreas geográficas determinadas.</li>
+                        <li style="font-size: 0.78em;"><strong>Salario mínimo profesional:</strong> se aplica en ramas de actividad económica o profesiones especiales (comisión nacional de trabajadores, patrones y gobierno).</li>
+                        <li style="font-size: 0.78em;"><strong>Salario integrado:</strong> cuota diaria en efectivo + gratificaciones, percepciones, habitación, primas, comisiones, prestaciones en especie y cualquier otra.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Laboral: PTU, vivienda, capacitación -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏠</span> PTU, Vivienda y Capacitación</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">💰 PTU</h4>
+                        <p style="font-size: 0.78em;"><strong>Participación de los trabajadores en las utilidades</strong> de la empresa. Una comisión nacional fija el porcentaje según días laborados y salario de cada trabajador.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🏘️ FOVISSSTE</h4>
+                        <p style="font-size: 0.78em;">Patrones obligados a proporcionar habitaciones cómodas e higiénicas; el <strong>FOVISSSTE</strong> financia vivienda con aportaciones patronales del <strong>5% del salario</strong>.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">🎓 Capacitación</h4>
+                        <p style="font-size: 0.78em;">Toda empresa debe proporcionar <strong>capacitación o adiestramiento</strong> para la profesionalización y la seguridad laboral.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-green);">🛡️ Seguridad e higiene y riesgos de trabajo</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">El patrón debe observar preceptos de higiene y seguridad y prevenir accidentes (máquinas, materiales, salud de los trabajadores y del producto de la concepción).</li>
+                        <li style="font-size: 0.8em;">Es responsable de propiciar condiciones seguras; si ocurre un accidente o enfermedad, debe pagar la <strong>indemnización</strong> que la ley determine.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Laboral: sindicatos, conflictos, indemnizaciones -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">✊</span> Sindicatos, Conflictos e Indemnizaciones</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🤜 Derecho de asociación</h4>
+                        <p style="font-size: 0.8em;">Obreros y empresarios pueden coaligarse formando <strong>sindicatos</strong> y asociaciones profesionales. La ley reconoce <strong>huelgas</strong> y <strong>paros</strong>.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">⚖️ Resolución de conflictos</h4>
+                        <p style="font-size: 0.8em;">Tribunales laborales del Poder Judicial. Principios: legalidad, imparcialidad, transparencia, autonomía e independencia. Antes se debe acudir a la <strong>conciliación</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-red fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-red);">💸 Indemnizaciones</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">Si el patrón se niega al arbitraje o al cumplimiento: se termina el contrato y debe indemnizar con <strong>3 meses de salario</strong>.</li>
+                        <li style="font-size: 0.8em;">Despido sin causa justificada o por ingresar a un sindicato o participar en huelga lícita: a elección del trabajador, <strong>cumplir el contrato</strong> o indemnizar con <strong>3 meses de salario</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">📜 Reforma 2019</div>
+                    <p style="font-size: 0.85em;">En <strong>2019</strong> se reformó la Ley Federal del Trabajo para actualizar derechos laborales individuales y colectivos, favorecer la <strong>solidez de género</strong> y la <strong>democracia sindical</strong>.</p>
+                </div>
+            </section>
+
+
+            <!-- ========== SECCIÓN: ECONÓMICO ========== -->
+            <section class="section-header" id="sec-economico" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">📈</span>
+                <h2>Derecho Económico</h2>
+                <p style="color: rgba(255,255,255,0.5);">Arts. 25, 26 y 28 · áreas estratégicas</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📈</span> Derecho Económico y Rectoría del Estado</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Disciplina jurídica que regula la relación del <strong>Estado</strong> frente a otros <strong>agentes económicos</strong>: establece las reglas de la participación del Estado en la economía de una nación, es decir, de la <strong>política económica</strong> que éste emprende (Muñoz, 2011: 10).
+                    </div>
+                </div>
+
+                <table class="comparison-table fragment" style="margin-top: 12px;">
+                    <tr><th>Artículo</th><th>Contenido</th></tr>
+                    <tr><td><strong>25</strong></td><td><strong>Rectoría del Estado en materia económica</strong>: el Estado planeará, coordinará y orientará la actividad económica; el sector público tiene el control exclusivo de las áreas estratégicas.</td></tr>
+                    <tr><td><strong>26</strong></td><td><strong>Planeación democrática del desarrollo nacional</strong> a través del <strong>Plan Nacional de Desarrollo</strong>.</td></tr>
+                    <tr><td><strong>28</strong></td><td><strong>Libre competencia y libre concurrencia</strong>: prohíbe los <strong>monopolios</strong> y el acaparo; exceptúa las áreas estratégicas.</td></tr>
+                </table>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-green);">Tres ejes del Plan Nacional de Desarrollo</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;"><strong>Justicia y Estado de Derecho:</strong> convivencia pacífica, acercamiento del gobierno y fortalecimiento institucional.</li>
+                        <li style="font-size: 0.8em;"><strong>Bienestar:</strong> condiciones de vida digna y protección social.</li>
+                        <li style="font-size: 0.8em;"><strong>Desarrollo económico:</strong> uso eficiente de recursos y generación de bienes, servicios y capacidades humanas.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⛽</span> Áreas Estratégicas del Estado</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Definición (SCJN)</h4>
+                    <p style="font-size: 0.85em;">Actividades económicas reservadas para <strong>uso exclusivo del Estado</strong> por razones de interés general: identificadas con la <strong>soberanía económica</strong>, servicios a cargo del gobierno federal y explotación de bienes de dominio directo.</p>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Áreas estratégicas (fig. 3.12)</h4>
+                        <ul>
+                            <li style="font-size: 0.8em;">Petróleo y demás hidrocarburos</li>
+                            <li style="font-size: 0.8em;">Petroquímica básica</li>
+                            <li style="font-size: 0.8em;">Minerales radiactivos y generación de energía nuclear</li>
+                            <li style="font-size: 0.8em;">Telégrafos y radiotelegrafía</li>
+                            <li style="font-size: 0.8em;">Electricidad</li>
+                            <li style="font-size: 0.8em;">Aquellas otras que señalen las leyes</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink);">Libre competencia</h4>
+                        <p style="font-size: 0.85em;">Nadie puede <strong>acaparar</strong> o aprovechar exclusivamente una industria o comercio sin que sea susceptible de ejercitarse por otros, impidiendo la libre competencia. <strong>Prohibición de monopolios</strong>.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ========== SECCIÓN: AMBIENTAL ========== -->
+            <section class="section-header" id="sec-ambiental" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🌿</span>
+                <h2>Derecho Ambiental</h2>
+                <p style="color: rgba(255,255,255,0.5);">LGEEPA y desarrollo sustentable</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌿</span> Derecho Ambiental</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Rama del Derecho <strong>público social</strong> enfocada a regular la relación de <strong>interdependencia</strong> entre los elementos del ambiente y el desarrollo del ser humano con los demás seres vivos (Muñoz, 2011: 86). Marco: <strong>art. 27 constitucional</strong> + <strong>LGEEPA</strong> (orden público e interés social).
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment">
+                    <h4 style="color: var(--accent-green);">Función del Estado</h4>
+                    <p style="font-size: 0.85em;">Dictar las medidas necesarias para <strong>preservar y restaurar el equilibrio ecológico</strong>, evitar la destrucción de los elementos naturales, revertir sus efectos nocivos e impulsar el <strong>desarrollo sustentable</strong>.</p>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.85em;">🛡️ Prevención</h4>
+                        <p style="font-size: 0.7em;">Evitar daños antes de que ocurran</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">⏳ Precautorio</h4>
+                        <p style="font-size: 0.7em;">Actuar ante la duda científica</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">🔄 Desarrollo sustentable</h4>
+                        <p style="font-size: 0.7em;">Equidad intergeneracional y responsabilidad</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-orange fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.85em;">Otros principios de la LGEEPA: <strong>equidad intergeneracional</strong>, <strong>responsabilidad</strong>, <strong>colaboración</strong> y coordinación entre órganos y niveles de gobierno.</p>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN: EDUCATIVO ========== -->
+            <section class="section-header" id="sec-educativo" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🎓</span>
+                <h2>Derecho Educativo</h2>
+                <p style="color: rgba(255,255,255,0.5);">Art. 3° constitucional y niveles educativos</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎓</span> Derecho Educativo y Artículo 3°</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Conjunto de disposiciones que regulan la <strong>educación en el territorio nacional</strong>, a la cual todos sus habitantes tienen derecho por mandato constitucional (Oruz, 2012: 82). Principios en el <strong>art. 3° constitucional</strong> y la <strong>Ley General de Educación</strong>.
+                    </div>
+                </div>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Artículo 3°: la educación es…</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;">Un medio fundamental para adquirir, transmitir y acrecentar la <strong>cultura</strong>.</li>
+                        <li style="font-size: 0.8em;">Proceso que contribuye al <strong>desarrollo del individuo</strong> y a la <strong>transformación de la sociedad</strong>.</li>
+                        <li style="font-size: 0.8em;">Factor determinante para adquirir conocimientos y formar sentido de <strong>solidaridad social</strong>.</li>
+                        <li style="font-size: 0.8em;">Derecho de toda persona; el Estado impartirá y garantizará educación <strong>inicial, preescolar, primaria, secundaria, media superior y superior</strong>: será <strong>laica y gratuita</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-accent-purple fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-purple);">Niveles educativos</h4>
+                    <p style="font-size: 0.85em;">Inicial · Preescolar · Primaria · Secundaria · Media superior · Superior. La <strong>educación básica</strong> (inicial, preescolar, primaria y secundaria) y la <strong>media superior</strong> son <strong>obligatorias</strong>.</p>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-green);">Sistema educativo nacional</h4>
+                    <p style="font-size: 0.8em;">Incluye: educandos, educadores y padres de familia; autoridades (SEP, estados, ayuntamientos); Servicio Profesional Docente; planes y materiales; instituciones públicas y particulares con validez oficial; educación superior con autonomía; evaluación; y sistema de información y gestión.</p>
+                </div>
+            </section>
+
+
+            <!-- ========== SECCIÓN: CIVIL ========== -->
+            <section class="section-header" id="sec-civil" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">👥</span>
+                <h2>Derecho Civil: Personas y sus Atributos</h2>
+                <p style="color: rgba(255,255,255,0.5);">Introducción y personas físicas y morales</p>
+            </section>
+
+            <!-- Civil: introducción -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👥</span> Introducción al Derecho Civil</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Normas jurídicas que regulan el accionar y comportamiento de las <strong>personas</strong> como sujetos de derecho, así como sus <strong>atributos, bienes, obligaciones, contratos y sucesiones</strong>. Cada entidad federativa tiene su propio <strong>Código Civil</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">Persona (García Máynez)</h4>
+                        <p style="font-size: 0.8em;">Todo ente capaz de tener facultades y deberes. Se distinguen dos tipos: <strong>física</strong> (el ser humano) y <strong>moral</strong> (entidad creada por la ley).</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Obligación</h4>
+                        <p style="font-size: 0.8em;">Vínculo jurídico por el cual una persona llamada <strong>deudor</strong> está comprometida con otra, el <strong>acreedor</strong>, para cumplir una <strong>prestación</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-pink fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-pink);">Fuentes de las obligaciones</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;"><strong>Contratos:</strong> obligaciones y derechos que se producen por acuerdo.</li>
+                        <li style="font-size: 0.8em;"><strong>Convenios:</strong> acuerdos de dos o más personas para transferir, modificar o extinguir obligaciones.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Civil: persona física -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧑</span> Persona Física: Atributos de la Personalidad</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">La personalidad es la aptitud para ser sujeto de derechos y obligaciones</p>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.85em;">🔤 Nombre</h4>
+                        <p style="font-size: 0.72em;">Signo distintivo ante los demás; se inscribe en el <strong>Registro Civil</strong>. El nombre de pila es libre; los apellidos se transmiten por generación.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">📍 Domicilio</h4>
+                        <p style="font-size: 0.72em;">Lugar donde reside con ánimo de permanencia. Puede ser <strong>voluntario</strong>, <strong>legal</strong> o <strong>convencional</strong>.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">🪪 Estado civil</h4>
+                        <p style="font-size: 0.72em;">Situación jurídica según las actas del Registro Civil: soltero(a), casado(a), divorciado(a)… origina derechos y deberes.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green); font-size: 0.85em;">💰 Patrimonio</h4>
+                        <p style="font-size: 0.72em;">Bienes y derechos apreciables en dinero de los cuales puede disponer; se transmite a los herederos.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange); font-size: 0.85em;">🇲🇽 Nacionalidad</h4>
+                        <p style="font-size: 0.72em;">Relación jurídica entre el individuo y el Estado. Se adquiere <strong>por nacimiento</strong> o <strong>por naturalización</strong> (art. 30).</p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red); font-size: 0.85em;">⚖️ Capacidad jurídica</h4>
+                        <p style="font-size: 0.72em;">Aptitud para tener derechos (<strong>de goce</strong>) y hacerlos valer (<strong>de ejercicio</strong>). Se adquiere al nacer y se pierde con la muerte.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Civil: nombre y domicilio detalles -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔤</span> Nombre y Domicilio: Detalles</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Tesis SCJN (10a. época, 2017)</h4>
+                    <p style="font-size: 0.85em;"><em>“Derecho a elegir el nombre de los hijos. Se encuentra protegido por el derecho a la vida privada y familiar.”</em> Corresponde únicamente a los progenitores elegir el nombre y el orden de los apellidos.</p>
+                </div>
+
+                <table class="comparison-table fragment" style="margin-top: 12px;">
+                    <tr><th>Tipo de domicilio</th><th>Descripción</th></tr>
+                    <tr><td><strong>Voluntario</strong></td><td>Lugar de residencia habitual (o asiento del centro de negocios); se presume permanencia con más de <strong>6 meses</strong>.</td></tr>
+                    <tr><td><strong>Legal</strong></td><td>Donde la ley fija la residencia para ejercer derechos y cumplir obligaciones: menores (padres/tutor), cónyuges (lugar donde viven juntos), militares y servidores públicos, sentenciados.</td></tr>
+                    <tr><td><strong>Convencional</strong></td><td>Lugar designado para el cumplimiento de determinadas obligaciones.</td></tr>
+                </table>
+
+                <div class="card card-accent-purple fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-purple);">Capacidad de goce vs. de ejercicio</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;"><strong>De goce:</strong> tener derechos. Todas las personas la tienen, sin distinción.</li>
+                        <li style="font-size: 0.8em;"><strong>De ejercicio:</strong> hacer valer los derechos y contraer obligaciones; se adquiere con la <strong>mayoría de edad</strong>.</li>
+                        <li style="font-size: 0.8em;">Tienen <strong>incapacidad legal y natural</strong>: menores de edad, mayores con inteligencia disminuida y personas con afecciones persistentes (físicas, psicológicas, sensoriales o por adicciones) que no puedan gobernarse ni obligarse.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Civil: nacionalidad -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🇲🇽</span> Nacionalidad y Ciudadanía (Art. 30)</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">Mexicanos por nacimiento</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Los que nazcan en territorio de la República, sea cual fuere la nacionalidad de sus padres.</li>
+                            <li style="font-size: 0.78em;">Los que nazcan en el extranjero, hijos de padres mexicanos nacidos en territorio nacional, de padre mexicano o de madre mexicana nacidos en territorio nacional.</li>
+                            <li style="font-size: 0.78em;">Los que nazcan en el extranjero, hijos de padres mexicanos por naturalización.</li>
+                            <li style="font-size: 0.78em;">Los que nazcan a bordo de embarcaciones o aeronaves mexicanas.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Mexicanos por naturalización</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Extranjeros que obtengan <strong>carta de naturalización</strong> de la Secretaría de Relaciones Exteriores.</li>
+                            <li style="font-size: 0.78em;">Mujeres o varones extranjeros que contraigan <strong>matrimonio con mexicanos</strong>, tengan su domicilio en el país y cumplan los requisitos de la ley.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-accent-red fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-red);">Pérdida de la nacionalidad y de la ciudadanía</h4>
+                    <ul>
+                        <li style="font-size: 0.78em;">Adquisición voluntaria de nacionalidad extranjera; uso de pasaporte extranjero; residir <strong>5 años continuos</strong> en el extranjero.</li>
+                        <li style="font-size: 0.78em;">Aceptar títulos nobiliarios; prestar servicios a gobierno extranjero sin permiso; aceptar condecoraciones; ayudar en contra de la nación.</li>
+                        <li style="font-size: 0.78em;"><strong>Ciudadanía:</strong> se adquiere a los <strong>18 años</strong> con modo honesto de vivir (art. 34).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Civil: persona moral -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏢</span> Persona Moral: Atributos</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Entidad creada por la ley con personalidad jurídica propia; actúa a través de un representante</p>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Se reconocen como personas morales</h4>
+                    <ul>
+                        <li style="font-size: 0.78em;">La Nación, la Ciudad de México, los estados y los municipios.</li>
+                        <li style="font-size: 0.78em;">Corporaciones de carácter público · sociedades civiles o mercantiles · sindicatos y asociaciones profesionales.</li>
+                        <li style="font-size: 0.78em;">Sociedades cooperativas y mutualistas · asociaciones con fines lícitos · personas morales extranjeras de naturaleza privada.</li>
+                    </ul>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">🔤 Nombre</h4>
+                        <p style="font-size: 0.72em;">Palabras con las que se identifica (libre o según tipo de sociedad: “S.A.”, “S. de R.L.”…).</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">📍 Domicilio</h4>
+                        <p style="font-size: 0.72em;">Lugar donde tiene su administración; sede para cumplir obligaciones.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green); font-size: 0.85em;">💰 Patrimonio</h4>
+                        <p style="font-size: 0.72em;">Bienes y derechos apreciables en dinero para cumplir su objeto social.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange); font-size: 0.85em;">🇲🇽 Nacionalidad</h4>
+                        <p style="font-size: 0.72em;">Mexicana si se constituye conforme a leyes mexicanas con domicilio legal en el país.</p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red); font-size: 0.85em;">⚖️ Capacidad jurídica</h4>
+                        <p style="font-size: 0.72em;">Adquirida al constituirse; ejerce derechos y contrae obligaciones por medio de su representante.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN: BIENES Y CONTRATOS ========== -->
+            <section class="section-header" id="sec-bienes" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏠</span>
+                <h2>Bienes y Contratos</h2>
+                <p style="color: rgba(255,255,255,0.5);">Clasificación de bienes y elementos del contrato</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏠</span> Los Bienes: Clasificación</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Todo objeto o posesión susceptible de valor económico y del comercio</p>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.85em;">Por su naturaleza</h4>
+                        <p style="font-size: 0.72em;"><strong>Muebles</strong> e <strong>inmuebles</strong>; <strong>públicos</strong> y <strong>privados</strong>.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">Por su incidencia patrimonial</h4>
+                        <p style="font-size: 0.72em;"><strong>Dominicales</strong> (pueden ingresar al patrimonio de particulares) y <strong>no dominicales</strong>.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">Por su fungibilidad</h4>
+                        <p style="font-size: 0.72em;"><strong>Fungibles</strong> (intercambiables por otros de la misma especie) y <strong>no fungibles</strong>.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green); font-size: 0.85em;">Por su transmisibilidad</h4>
+                        <p style="font-size: 0.72em;"><strong>Transmisibles</strong> y <strong>no transmisibles</strong>.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange); font-size: 0.85em;">Mostrencos</h4>
+                        <p style="font-size: 0.72em;">Bienes <strong>muebles abandonados</strong> y sin dueño.</p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red); font-size: 0.85em;">Vacantes</h4>
+                        <p style="font-size: 0.72em;">Bienes <strong>inmuebles</strong> sin dueño cierto y conocido.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> El Contrato: Elementos y Validez</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        <strong>Acuerdo de dos o más voluntades</strong> destinado a <strong>crear, transferir, modificar o extinguir</strong> derechos y obligaciones.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 12px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">Elementos</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;"><strong>Consentimiento:</strong> manifestación de la voluntad (verbal o escrita).</li>
+                            <li style="font-size: 0.78em;"><strong>Objeto:</strong> hacer, dar o no hacer.</li>
+                            <li style="font-size: 0.78em;"><strong>Capacidad</strong> de las partes.</li>
+                            <li style="font-size: 0.78em;"><strong>Causa u objeto lícito.</strong></li>
+                            <li style="font-size: 0.78em;"><strong>Formalidades</strong> (cuando la ley exige forma determinada).</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Vicios del consentimiento</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Sugestión o artificio</li>
+                            <li style="font-size: 0.78em;">Error (percepción diferente a la realidad)</li>
+                            <li style="font-size: 0.78em;">Mala fe</li>
+                            <li style="font-size: 0.78em;">Fuerza física o amenazas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-green);">Tipos de contratos</h4>
+                    <p style="font-size: 0.78em;"><strong>Traslativos de dominio:</strong> compraventa · <strong>Prestación de servicios:</strong> obra, hospedaje · <strong>Fin común:</strong> sociedad · <strong>Aleatorios:</strong> apuesta, juego · <strong>De uso:</strong> renta, usufructo · <strong>Aseguramiento:</strong> fianza, seguros · <strong>Preventivos.</strong></p>
+                </div>
+            </section>
+
+
+            <!-- ========== SECCIÓN: FAMILIAR ========== -->
+            <section class="section-header" id="sec-familiar" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">👨‍👩‍👧</span>
+                <h2>Derecho Familiar</h2>
+                <p style="color: rgba(255,255,255,0.5);">Parentesco, matrimonio, alimentos y sucesiones</p>
+            </section>
+
+            <!-- Familiar: introducción y parentesco -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👨‍👩‍👧</span> Derecho Familiar y Parentesco</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición (SCJN, 1a. Sala, 9a. época)</div>
+                    <div class="def-text">
+                        Conjunto de principios y valores dirigidos a proteger la <strong>estabilidad de la familia</strong> y a regular la conducta de sus integrantes; de <strong>orden público e interés social</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 12px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.85em;">👶 Natural</h4>
+                        <p style="font-size: 0.72em;">Procreación y conservación de la especie.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">💞 Moral</h4>
+                        <p style="font-size: 0.72em;">Lazos de afecto, solidaridad, cuidado y educación.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">🏠 Económico</h4>
+                        <p style="font-size: 0.72em;">Proveer alimento y techo a todos los integrantes.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-green);">Parentesco: vínculo familiar</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;"><strong>Recta (ascendente/descendente):</strong> personas que descienden de un mismo progenitor (padre → hijo → nieto).</li>
+                        <li style="font-size: 0.8em;"><strong>Transversal (colateral):</strong> hermanos (1.er grado), tíos-sobrinos (2.º grado), primos hermanos (5.º grado)…</li>
+                        <li style="font-size: 0.8em;">También por <strong>afinidad</strong>, <strong>matrimonio</strong>, <strong>adopción</strong> y <strong>concubinato</strong>.</li>
+                    </ul>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 12px;">
+                    <div class="ff-label">💬 Dato de la ONU</div>
+                    <p style="font-size: 0.85em;">La <strong>Declaración Universal de Derechos Humanos</strong> (art. 16): “La familia es el elemento natural y fundamental de la sociedad y tiene derecho a la protección de la sociedad y del Estado”.</p>
+                </div>
+            </section>
+
+            <!-- Matrimonio -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💍</span> Matrimonio: Requisitos e Impedimentos</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Institución jurídica mediante la cual se establece una serie de <strong>deberes y derechos</strong> de carácter patrimonial y personal. Su sentido fundamental es la <strong>constitución de una familia</strong> y otorga legitimidad a los hijos.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 12px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">✅ Requisitos</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Celebrarse ante el <strong>juez del Registro Civil</strong>.</li>
+                            <li style="font-size: 0.78em;">Edad mínima: <strong>16 años cumplidos</strong>.</li>
+                            <li style="font-size: 0.78em;">Menores de 18 años: <strong>consentimiento</strong> de padres, abuelos, tutor o juez de lo familiar.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red);">🚫 Impedimentos</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">Falta de edad o de consentimiento.</li>
+                            <li style="font-size: 0.75em;">Parentesco de consanguinidad recta; colateral hasta hermanos y tíos-sobrinos (3.er grado).</li>
+                            <li style="font-size: 0.75em;">Afinidad en línea recta · adulterio comprobado · atentado contra la vida.</li>
+                            <li style="font-size: 0.75em;">Violencia física o moral · impotencia sexual · enfermedad crónica contagiosa.</li>
+                            <li style="font-size: 0.75em;">Permanecer casado con otra persona.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-accent-purple fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-purple);">⚖️ Derechos y obligaciones (iguales para ambos cónyuges)</h4>
+                    <ul>
+                        <li style="font-size: 0.78em;">Vivir juntos en el <strong>domicilio conyugal</strong>; respetarse y socorrerse mutuamente.</li>
+                        <li style="font-size: 0.78em;">Decidir libremente sobre el <strong>número y espaciamiento de los hijos</strong>.</li>
+                        <li style="font-size: 0.78em;">Contribuir económicamente al hogar; el <strong>trabajo en el hogar o el cuidado de los hijos</strong> se estima como contribución económica.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Terminación del matrimonio y alimentos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💔</span> Terminación del Matrimonio y Alimentos</h2>
+
+                <div class="card card-accent-blue fragment">
+                    <h4 style="color: var(--accent-blue);">Formas de terminar el matrimonio</h4>
+                    <ul>
+                        <li style="font-size: 0.8em;"><strong>Muerte</strong> de uno de los cónyuges.</li>
+                        <li style="font-size: 0.8em;">Celebrado bajo un <strong>impedimento</strong> o sin formalidades de ley.</li>
+                        <li style="font-size: 0.8em;"><strong>Divorcio voluntario/administrativo:</strong> de común acuerdo ante el Registro Civil (mayores de edad, sin hijos o éstos mayores).</li>
+                        <li style="font-size: 0.8em;"><strong>Divorcio sin causa:</strong> ante el Juez de lo Familiar con convenio (patria potestad, alimentos, convivencia, liquidación de sociedad conyugal).</li>
+                    </ul>
+                </div>
+
+                <div class="card card-accent-pink fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-pink);">🍽️ Alimentos: obligación recíproca</h4>
+                    <ul>
+                        <li style="font-size: 0.78em;">Comprende: comida, vestido, habitación, asistencia médica, gastos de embarazo y parto.</li>
+                        <li style="font-size: 0.78em;">En menores: gastos de educación y profesión u oficio.</li>
+                        <li style="font-size: 0.78em;">Personas con discapacidad o interdicción: habitación, rehabilitación y desarrollo integral.</li>
+                        <li style="font-size: 0.78em;">Adultos sin capacidad económica: manutención y atención geriátrica.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <h4 style="color: var(--accent-green);">Quién los debe dar / recibir</h4>
+                    <p style="font-size: 0.78em;">Cónyuges · concubinos · padres-hijos · ascendientes más próximos · hermanos · colaterales hasta el 4.º grado · adoptante-adoptado. A falta de todos: el <strong>DIF</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Sucesiones -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Sucesiones: Testamentaria e Intestamentaria</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Transmisión de todos los <strong>bienes, derechos y obligaciones</strong> que no se extinguen con la muerte, de una persona fallecida a otra u otras.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 12px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);"> Testamentaria</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">El testador expresa su voluntad en un <strong>testamento</strong>: acto <strong>personalísimo, revocable y libre</strong>.</li>
+                            <li style="font-size: 0.78em;">Nombra <strong>heredero(s)</strong> (responde de las cargas) o <strong>legatario(s)</strong> (no responde).</li>
+                            <li style="font-size: 0.78em;">Nombra un <strong>albacea</strong>: persona encargada de cumplir la última voluntad.</li>
+                            <li style="font-size: 0.78em;">El testamento ordinario es el <strong>público abierto</strong> ante notario.</li>
+                        </ul>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Legítima / Intestamentaria</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Se establece por <strong>disposición de la ley</strong> cuando no hay testamento, es nulo, o el heredero no cumple la condición, muere antes, es incapaz o repudia.</li>
+                            <li style="font-size: 0.78em;">Derecho: descendientes, cónyuges, ascendientes, colaterales hasta el 4.º grado, concubina/o.</li>
+                            <li style="font-size: 0.78em;">A falta de todos: el <strong>Sistema DIF</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== SECCIÓN: MERCANTIL ========== -->
+            <section class="section-header" id="sec-mercantil" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">💳</span>
+                <h2>Derecho Mercantil</h2>
+                <p style="color: rgba(255,255,255,0.5);">Comerciantes, actos de comercio y títulos de crédito</p>
+            </section>
+
+            <!-- Mercantil: comerciantes y actos -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💳</span> Comerciantes y Actos de Comercio</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Derecho mercantil</div>
+                    <div class="def-text">
+                        Rama que regula la actividad del <strong>comercio</strong>: todo <strong>intercambio de bienes o prestación de servicios con fines de lucro</strong>.
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 12px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">¿Quién es comerciante?</h4>
+                        <ul>
+                            <li style="font-size: 0.78em;">Persona con capacidad legal que hace del comercio su <strong>ocupación ordinaria</strong>.</li>
+                            <li style="font-size: 0.78em;"><strong>Sociedades mercantiles.</strong></li>
+                            <li style="font-size: 0.78em;">Sociedades extranjeras, agencias y sucursales que ejerzan actos de comercio en el país.</li>
+                        </ul>
+                        <p style="font-size: 0.75em; margin-top: 6px;">Obligaciones: inscribir documentos en el <strong>Registro Público de Comercio</strong>, mantener <strong>contabilidad</strong> y conservar la <strong>correspondencia</strong>.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">Actos de comercio (más comunes)</h4>
+                        <ul>
+                            <li style="font-size: 0.75em;">Compra-venta de bienes con propósito de <strong>especulación comercial</strong>.</li>
+                            <li style="font-size: 0.75em;">Empresas de transporte, fábricas, imprentas, seguros, bancos.</li>
+                            <li style="font-size: 0.75em;">Cheques, letras de cambio y remesas de dinero.</li>
+                            <li style="font-size: 0.75em;">Enajenación de productos de finca o cultivo por su dueño.</li>
+                        </ul>
+                        <p style="font-size: 0.72em; margin-top: 6px; color: var(--accent-pink);"><strong>No son actos de comercio:</strong> la compra de artículos para uso propio o de la familia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Títulos de crédito -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧾</span> Títulos de Crédito</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Ley General de Títulos y Operaciones de Crédito</div>
+                    <div class="def-text">
+                        Documentos necesarios para ejercitar el <strong>derecho literal</strong> que en ellos se consigna; instrumentos de <strong>confianza o pago</strong> en las transacciones mercantiles. Su emisión, endoso, aval y aceptación son actos de comercio.
+                    </div>
+                </div>
+
+                <div class="grid-4" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; margin-top: 14px;">
+                    <div class="card card-accent-blue fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🔤</span>
+                        <h4 style="color: var(--accent-blue); font-size: 0.78em; margin: 4px 0;">Literalidad</h4>
+                        <p style="font-size: 0.65em;">El derecho se ejerce exactamente como está escrito.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🔗</span>
+                        <h4 style="color: var(--accent-purple); font-size: 0.78em; margin: 4px 0;">Autonomía</h4>
+                        <p style="font-size: 0.65em;">Derecho independiente de la causa que le dio origen.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🪪</span>
+                        <h4 style="color: var(--accent-pink); font-size: 0.78em; margin: 4px 0;">Legitimación</h4>
+                        <p style="font-size: 0.65em;">Quien lo posee se presume con el derecho.</p>
+                    </div>
+                    <div class="card card-accent-green fragment" style="text-align: center; padding: 10px;">
+                        <span style="font-size: 1.6em;">🔄</span>
+                        <h4 style="color: var(--accent-green); font-size: 0.78em; margin: 4px 0;">Transmisibilidad</h4>
+                        <p style="font-size: 0.65em;">Se transmite por endoso o tradición.</p>
+                    </div>
+                </div>
+
+                <div class="grid-2 fragment" style="margin-top: 14px;">
+                    <div class="card card-accent-blue">
+                        <h4 style="color: var(--accent-blue);">Nominativos</h4>
+                        <p style="font-size: 0.78em;">A favor de persona determinada cuyo nombre consta en el documento. Se transmiten por <strong>endoso</strong> (nombre del endosatario, firma, clase, lugar y fecha).</p>
+                    </div>
+                    <div class="card card-accent-purple">
+                        <h4 style="color: var(--accent-purple);">Al portador</h4>
+                        <p style="font-size: 0.78em;">A favor de quien los porte; se transmiten por simple <strong>tradición o entrega</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-orange fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.78em;">Tipos de endoso: <strong>en propiedad</strong> (transfiere la titularidad), <strong>en procuración</strong> (para cobrar, no transfiere) y <strong>en garantía</strong> (derechos de acreedor prendario). Los más usuales: <strong>letra de cambio, pagaré y cheque</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Letra de cambio y pagaré -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💱</span> Letra de Cambio y Pagaré</h2>
+
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">💱 Letra de cambio</h4>
+                        <p style="font-size: 0.78em;">El <strong>librador/girador</strong> ordena al <strong>librado/girado</strong> el pago de una cantidad a un <strong>beneficiario</strong> en una <strong>fecha determinada</strong>.</p>
+                        <p style="font-size: 0.72em; margin-top: 6px;"><strong>Requisitos:</strong> mención “letra de cambio” · lugar y fecha de suscripción · orden incondicional de pagar · nombre del girado · lugar y época de pago · nombre del beneficiario · firma del girador.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">📝 Pagaré</h4>
+                        <p style="font-size: 0.78em;">Promesa <strong>pura y simple</strong> de pagar una cantidad de dinero a una persona determinada.</p>
+                        <p style="font-size: 0.72em; margin-top: 6px;"><strong>Debe contener:</strong> la palabra “pagaré” · promesa de pago en números o letras · <strong>vencimiento</strong> · <strong>lugar de pago</strong> · <strong>aval</strong> (garantía: avalista y avalado).</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-green);">Modalidades de vencimiento del pagaré</h4>
+                    <p style="font-size: 0.78em;"><strong>A la vista</strong> (al presentarlo) · <strong>A cierto tiempo vista</strong> (desde la presentación) · <strong>A cierto tiempo fecha</strong> (desde la expedición) · <strong>A día fijo</strong> (fecha concreta señalada).</p>
+                </div>
+            </section>
+
+            <!-- Cheque -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏦</span> El Cheque y sus Modalidades</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Definición</div>
+                    <div class="def-text">
+                        Título de crédito mediante el cual el <strong>librador</strong> (titular de la cuenta) ordena al <strong>librado</strong> (banco) pagar al <strong>beneficiario/tenedor</strong> la cantidad consignada, siempre que haya fondos.
+                    </div>
+                </div>
+
+                <div class="grid-3" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">👤</span>
+                        <h4 style="color: var(--accent-blue); font-size: 0.8em; margin: 4px 0;">Librador</h4>
+                        <p style="font-size: 0.68em;">Tiene la deuda; emite y firma el cheque</p>
+                    </div>
+                    <div class="card card-accent-purple fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🏦</span>
+                        <h4 style="color: var(--accent-purple); font-size: 0.8em; margin: 4px 0;">Librado</h4>
+                        <p style="font-size: 0.68em;">Banco o entidad financiera que paga</p>
+                    </div>
+                    <div class="card card-accent-pink fragment" style="text-align: center;">
+                        <span style="font-size: 1.8em;">🎁</span>
+                        <h4 style="color: var(--accent-pink); font-size: 0.8em; margin: 4px 0;">Beneficiario</h4>
+                        <p style="font-size: 0.68em;">Tenedor que cobra la cantidad</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-orange fragment" style="margin-top: 14px;">
+                    <h4 style="color: var(--accent-orange);">Modalidades de cheques</h4>
+                    <ul>
+                        <li style="font-size: 0.78em;"><strong>Cruzado general:</strong> dos líneas paralelas; sólo se cobra por institución de crédito.</li>
+                        <li style="font-size: 0.78em;"><strong>Cruzado especial:</strong> entre las líneas se indica el banco que lo pagará.</li>
+                        <li style="font-size: 0.78em;"><strong>Para abono en cuenta:</strong> sólo se deposita en la cuenta del beneficiario.</li>
+                        <li style="font-size: 0.78em;"><strong>Certificado:</strong> el banco certifica fondos suficientes; nominativo y no negociable.</li>
+                        <li style="font-size: 0.78em;"><strong>De viajero:</strong> expedido a cargo del propio librador.</li>
+                        <li style="font-size: 0.78em;"><strong>De bancos:</strong> emitidos por instituciones de crédito; nominativos y no negociables.</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- ========== SECCIÓN: ORGANIZACIÓN ========== -->
+            <section class="section-header" id="sec-organizacion" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🏛️</span>
+                <h2>Organización de la Administración Pública</h2>
+                <p style="color: rgba(255,255,255,0.5);">Art. 90 · formas de organización</p>
+            </section>
+
+            <!-- Art. 90 -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Artículo 90: Centralizada y Paraestatal</h2>
+
+                <div class="definition-box fragment">
+                    <div class="def-title">Artículo 90 constitucional</div>
+                    <div class="def-text">
+                        <em>“La Administración Pública Federal será <strong>centralizada y paraestatal</strong> conforme a la Ley Orgánica que expida el Congreso, que distribuirá los negocios del orden administrativo de la federación que estarán a cargo de las <strong>secretarías de Estado</strong> y definirá las bases generales de creación de las <strong>entidades paraestatales</strong>…”</em>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: 14px;">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue);">🏛️ Centralizada</h4>
+                        <p style="font-size: 0.78em;">Encabezada por la <strong>Presidencia de la República</strong>; la integran las <strong>secretarías de Estado</strong>, la <strong>Consejería Jurídica</strong> y los <strong>órganos reguladores coordinados</strong>.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple);">🏢 Paraestatal</h4>
+                        <p style="font-size: 0.78em;">Se transfiere a entidades con personalidad jurídica y patrimonio propio la realización de ciertas actividades (Ley Federal de Entidades Paraestatales).</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-green fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.8em;"><strong>Desconcentrada:</strong> órganos dentro de una secretaría con facultades específicas (ej.: delegaciones, institutos). <strong>Base legal:</strong> Ley Orgánica de la Administración Pública Federal.</p>
+                </div>
+            </section>
+
+            <!-- Secretarías -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗂️</span> Secretarías de Estado (Ejemplos)</h2>
+                <p style="color: rgba(255,255,255,0.5); font-size: 0.85em;">Tienen igual rango; cada una formula proyectos de leyes, reglamentos y acuerdos</p>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.8em;">Gobernación</h4>
+                        <p style="font-size: 0.68em;">Desarrollo político; relaciones del Ejecutivo con los otros poderes.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.8em;">Hacienda y Crédito Público</h4>
+                        <p style="font-size: 0.68em;">Política financiera, fiscal, de gasto, ingresos y deuda.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.8em;">Seguridad y Protección Ciudadana</h4>
+                        <p style="font-size: 0.68em;">Seguridad y protección civil, prevención del delito, mando de fuerza pública.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color: var(--accent-green); font-size: 0.8em;">Educación Pública</h4>
+                        <p style="font-size: 0.68em;">Acceso de todas las mexicanas y mexicanos a educación de calidad.</p>
+                    </div>
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color: var(--accent-orange); font-size: 0.8em;">Salud</h4>
+                        <p style="font-size: 0.68em;">Prevención de enfermedades y promoción de la salud.</p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color: var(--accent-red); font-size: 0.8em;">Trabajo y Previsión Social</h4>
+                        <p style="font-size: 0.68em;">Vigilancia del art. 123 constitucional, LFT y reglamentos.</p>
+                    </div>
+                </div>
+
+                <div class="card card-accent-blue fragment" style="margin-top: 12px;">
+                    <p style="font-size: 0.75em;">También: Relaciones Exteriores · Defensa Nacional · Marina · Bienestar · Medio Ambiente · Energía · Economía · Agricultura · Comunicaciones y Transportes · Función Pública · Desarrollo Agrario, Territorial y Urbano · Cultura · Turismo.</p>
+                </div>
+
+                <div class="card card-accent-purple fragment" style="margin-top: 10px;">
+                    <h4 style="color: var(--accent-purple); font-size: 0.85em;">Consejería Jurídica y órganos reguladores</h4>
+                    <p style="font-size: 0.75em;">La <strong>Consejería Jurídica</strong> revisa y valida los instrumentos jurídicos del presidente. Los únicos <strong>órganos reguladores</strong> son la <strong>Comisión Nacional de Hidrocarburos</strong> y la <strong>Comisión Reguladora de Energía</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Paraestatal -->
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏢</span> Administración Paraestatal</h2>
+
+                <div class="grid-3">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color: var(--accent-blue); font-size: 0.85em;">🏛️ Organismos descentralizados</h4>
+                        <p style="font-size: 0.72em;">Instituciones creadas por ley con personalidad y patrimonio propios; realizan actividades estratégicas, servicios públicos o sociales. Dirige un <strong>director general</strong> designado por el presidente.</p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color: var(--accent-purple); font-size: 0.85em;">📈 Empresas de participación estatal</h4>
+                        <p style="font-size: 0.72em;">El gobierno u otro organismo paraestatal es propietario o aporta <strong>más del 50%</strong> del capital. Incluye instituciones nacionales de crédito y de seguros y fianzas.</p>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color: var(--accent-pink); font-size: 0.85em;">📜 Fideicomisos</h4>
+                        <p style="font-size: 0.72em;">Operaciones de crédito en las que interviene una institución fiduciaria autorizada; el gobierno destina bienes a un fin lícito y encomienda su manejo.</p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- ========== SÍNTESIS FINAL ========== -->
+            <section class="section-header" id="sintesis" data-background-gradient="linear-gradient(135deg, #0a0a1a, #1a1a3e)">
+                <span class="section-icon">🗂️</span>
+                <h2>Síntesis de la Unidad</h2>
+                <p style="color: rgba(255,255,255,0.5);">Repaso final de todo lo aprendido</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Resumen de la Unidad 3</h2>
+
+                <div class="grid-2">
+                    <div>
+                        <div class="card card-accent-blue fragment">
+                            <h4 style="color: var(--accent-blue);">🏛️ Ramas públicas</h4>
+                            <p style="font-size: 0.75em;">Constitucional (CPEUM) · administrativo (función del Estado) · penal (delitos, penas) · procesal (juicio) · fiscal (contribuciones) · agrario (art. 27) · laboral (art. 123) · económico (arts. 25–28) · ambiental (LGEEPA) · educativo (art. 3°).</p>
+                        </div>
+                        <div class="card card-accent-purple fragment">
+                            <h4 style="color: var(--accent-purple);">👥 Ramas privadas</h4>
+                            <p style="font-size: 0.75em;"><strong>Civil:</strong> personas (físicas y morales), bienes, contratos, familia (matrimonio, alimentos, sucesiones). <strong>Mercantil:</strong> comerciantes, actos de comercio, títulos de crédito (letra de cambio, pagaré, cheque).</p>
+                        </div>
+                        <div class="card card-accent-pink fragment">
+                            <h4 style="color: var(--accent-pink);">💼 Laboral en detalle</h4>
+                            <p style="font-size: 0.75em;">Contrato, jornada (diurna/nocturna/mixta), descansos, salario mínimo, PTU, FOVISSSTE, sindicatos, conciliación e indemnización de 3 meses.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card card-accent-green fragment">
+                            <h4 style="color: var(--accent-green);">⚖️ Económico y ambiental</h4>
+                            <p style="font-size: 0.75em;">Rectoría del Estado (art. 25), planeación (art. 26), libre competencia y áreas estratégicas (art. 28); LGEEPA con principios de prevención, precautorio y desarrollo sustentable.</p>
+                        </div>
+                        <div class="card card-accent-orange fragment">
+                            <h4 style="color: var(--accent-orange);">🏛️ Organización del Estado</h4>
+                            <p style="font-size: 0.75em;">Art. 90: <strong>centralizada</strong> (Presidencia, secretarías, Consejería Jurídica, órganos reguladores) y <strong>paraestatal</strong> (organismos descentralizados, empresas de participación estatal, fideicomisos).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fun-fact fragment" style="margin-top: 14px;">
+                    <div class="ff-label">🎯 La idea central de la unidad</div>
+                    <p style="font-size: 0.85em;">Cada situación de la vida cotidiana se rama en una o varias <strong>ramas del Derecho</strong>: reconocerlas te permite <strong>actuar conforme a la ley</strong> y tomar decisiones responsables en beneficio de la sociedad.</p>
+                </div>
+            </section>
+
+            <!-- Cierre -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #2d1b69 100%)">
+                <span class="unit-badge">Unidad 3 Completa</span>
+                <h1 style="margin-top: 30px;">¡Felicidades!</h1>
+                <p class="subtitle">Ya conoces las ramas del Derecho y su aplicación en la vida cotidiana</p>
+                <p style="color: rgba(255,255,255,0.4); font-size: 0.7em; margin-top: 40px;">
+                    <i class="fa-solid fa-graduation-cap"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+
+        </div>
+    </div>
+    
+    <!-- Reveal.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    
+    <script>
+        // ====== INICIALIZACIÓN ======
+        Reveal.initialize({
+            hash: true,
+            slideNumber: false,
+            controls: true,
+            controlsLayout: 'edges',
+            controlsTutorial: false,
+            progress: false,
+            center: false,
+            transition: 'slide',
+            transitionSpeed: 'fast',
+            width: 1280,
+            height: 720,
+            margin: 0.04,
+            keyboard: true,
+            overview: true,
+            touch: true,
+            loop: false,
+            plugins:[RevealNotes,RevealMarkdown,RevealHighlight]
+        });
+
+        
+        // ====== NAVEGADOR DE DIAPOSITIVAS ======
+        const slideNav = document.getElementById('slide-nav');
+        const slideNavCurrent = document.getElementById('slide-nav-current');
+        const slideNavTotal = document.getElementById('slide-nav-total');
+        const slideNavInput = document.getElementById('slide-nav-input');
+        
+        Reveal.on('slidechanged', (event) => {
+            slideNavCurrent.textContent = event.indexh + 1;
+        });
+        
+        Reveal.on('ready', () => {
+            slideNavTotal.textContent = Reveal.getTotalSlides();
+            slideNavCurrent.textContent = Reveal.getIndices().h + 1;
+        });
+        
+        slideNav.addEventListener('click', () => {
+            slideNavInput.classList.toggle('active');
+            if (slideNavInput.classList.contains('active')) {
+                slideNavInput.value = slideNavCurrent.textContent;
+                slideNavInput.focus();
+                slideNavInput.select();
+            }
+        });
+        
+        slideNavInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const slideNum = parseInt(slideNavInput.value);
+                if (slideNum >= 1 && slideNum <= Reveal.getTotalSlides()) {
+                    Reveal.slide(slideNum - 1);
+                }
+                slideNavInput.classList.remove('active');
+            } else if (e.key === 'Escape') {
+                slideNavInput.classList.remove('active');
+            }
+        });
+        
+        slideNavInput.addEventListener('blur', () => {
+            slideNavInput.classList.remove('active');
+        });
+        
+        // ====== BOTÓN ÍNDICE ======
+        document.getElementById('index-btn').addEventListener('click', () => {
+            var s = document.getElementById('indice');
+            if (s) {
+                var i = Reveal.getIndices(s);
+                Reveal.slide(i.h, i.v, i.f);
+            }
+        });
+        
+        // ====== BOTÓN PANTALLA COMPLETA ======
+        document.getElementById('fullscreen-btn').addEventListener('click', () => {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log('Error:', err);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        });
+        
+        // ====== CONTADOR DE FRAGMENTS ======
+        const fragmentCounter = document.getElementById('fragment-counter');
+        const fcCurrent = fragmentCounter.querySelector('.fc-current');
+        const fcTotal = fragmentCounter.querySelector('.fc-total');
+        
+        Reveal.on('slidechanged', (event) => {
+            const slide = event.currentSlide;
+            const fragments = slide.querySelectorAll('.fragment');
+            if (fragments.length > 0) {
+                fragmentCounter.classList.add('has-fragments');
+                fcTotal.textContent = fragments.length;
+                fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+            } else {
+                fragmentCounter.classList.remove('has-fragments');
+            }
+        });
+        
+        Reveal.on('fragmentshown', () => {
+            const slide = Reveal.getCurrentSlide();
+            const fragments = slide.querySelectorAll('.fragment');
+            fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+        });
+        
+        Reveal.on('fragmenthidden', () => {
+            const slide = Reveal.getCurrentSlide();
+            fcCurrent.textContent = slide.querySelectorAll('.fragment.visible').length;
+        });
+        
+        // ====== TECLAS DE VOLUMEN (USB) ======
+        document.addEventListener('keydown', (e) => {
+            if (e.keyCode === 175) { // Volumen +
+                window.scrollBy(0, -100);
+            } else if (e.keyCode === 174) { // Volumen -
+                window.scrollBy(0, 100);
+            }
+        });
+        
+        // ====== SCROLL VERTICAL ======
+        Reveal.on('ready', () => {
+            document.querySelectorAll('.reveal .slides section').forEach(section => {
+                section.style.overflowY = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>
